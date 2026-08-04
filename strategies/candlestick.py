@@ -234,8 +234,10 @@ class CandlestickStrategy(BaseStrategy):
 
     # ── Volume Confirmation ───────────────────────────────────────────────────
 
-    def _high_volume(self, df: pd.DataFrame, idx: int, multiplier: float = 1.2) -> bool:
-        """Returns True if candle volume is above average × multiplier."""
+    def _high_volume(self, df: pd.DataFrame, idx: int, multiplier: float = None) -> bool:
+        """Returns True if candle volume is above average x multiplier."""
+        if multiplier is None:
+            multiplier = config.VOLUME_FILTER_MULT
         avg_vol = df["volume"].iloc[max(0, idx-20):idx].mean()
         return df["volume"].iloc[idx] >= avg_vol * multiplier
 
@@ -270,8 +272,9 @@ class CandlestickStrategy(BaseStrategy):
         if self._hammer(c4) and self._is_bullish(c4):
             patterns_buy.append(("Hammer", 0.70))
 
-        # 2. Inverted Hammer
-        if self._hammer(c4) and self._is_bearish(c4) and trend_up:
+        # 2. Inverted Hammer: long UPPER wick, small body at bottom — bullish reversal after downtrend
+        #    (NOT the same as Hammer — uses _shooting_star shape but in a downtrend)
+        if self._shooting_star(c4) and trend_down:
             patterns_buy.append(("Inverted Hammer", 0.65))
 
         # 3. Bullish Engulfing
@@ -330,17 +333,20 @@ class CandlestickStrategy(BaseStrategy):
         if self._gravestone_doji(c4) and trend_down:
             patterns_sell.append(("Gravestone Doji", 0.72))
 
-        # 8. Hanging Man (Hammer in uptrend = bearish)
-        if self._hammer(c4) and trend_down and self._is_bearish(c4):
+        # 8. Hanging Man
+        if self._hammer(c4) and trend_up and self._is_bearish(c4):
             patterns_sell.append(("Hanging Man", 0.68))
 
-        # ── Pick best signal ──────────────────────────────────────────────────
+        # ── Pick best signal: compare best BUY confidence vs best SELL confidence ──
+        # (never let BUY automatically beat SELL just because of code order)
 
-        if patterns_buy:
-            # Sort by confidence, pick highest
-            best_name, best_conf = sorted(patterns_buy, key=lambda x: x[1], reverse=True)[0]
+        best_buy  = max(patterns_buy,  key=lambda x: x[1]) if patterns_buy  else None
+        best_sell = max(patterns_sell, key=lambda x: x[1]) if patterns_sell else None
+
+        if best_buy and (best_sell is None or best_buy[1] >= best_sell[1]):
+            name, conf = best_buy
             sl, tgt = self._compute_target_and_sl("BUY", entry, atr, rr=self.rr)
-            log.info("Candlestick BUY signal: %s on %s (conf=%.0f%%)", best_name, symbol, best_conf*100)
+            log.info("Candlestick BUY: %s on %s (conf=%.0f%%)", name, symbol, conf*100)
             return Signal(
                 symbol=symbol,
                 direction="BUY",
@@ -348,16 +354,16 @@ class CandlestickStrategy(BaseStrategy):
                 entry_price=round(entry, 2),
                 stop_loss=round(sl, 2),
                 target=round(tgt, 2),
-                confidence=best_conf,
-                notes=f"Pattern: {best_name}"
+                confidence=conf,
+                notes=f"Pattern: {name}"
                       + (f" + {len(patterns_buy)-1} more" if len(patterns_buy) > 1 else "")
                       + f" | Trend: {'UP' if trend_up else 'MIXED'}",
             )
 
-        if patterns_sell:
-            best_name, best_conf = sorted(patterns_sell, key=lambda x: x[1], reverse=True)[0]
+        if best_sell:
+            name, conf = best_sell
             sl, tgt = self._compute_target_and_sl("SELL", entry, atr, rr=self.rr)
-            log.info("Candlestick SELL signal: %s on %s (conf=%.0f%%)", best_name, symbol, best_conf*100)
+            log.info("Candlestick SELL: %s on %s (conf=%.0f%%)", name, symbol, conf*100)
             return Signal(
                 symbol=symbol,
                 direction="SELL",

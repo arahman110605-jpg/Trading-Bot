@@ -1,8 +1,8 @@
 """
 config.py — Central configuration for the Trading Bot.
 
-Fill in your Zerodha Kite Connect API credentials below.
-To get API credentials: https://kite.trade → Create App
+All sensitive credentials MUST be set via environment variables or a local .env file.
+Never hardcode credentials here — this file is committed to version control.
 """
 
 import os
@@ -19,11 +19,12 @@ BROKER = os.getenv("BROKER", "angel")
 
 # ─────────────────────────────────────────────
 # ANGEL ONE SMARTAPI CREDENTIALS (100% FREE)
+# Set these via .env file or Render environment variables — NEVER hardcode here
 # ─────────────────────────────────────────────
-ANGEL_API_KEY      = os.getenv("ANGEL_API_KEY", "8NVXD5FQ")
-ANGEL_CLIENT_CODE  = os.getenv("ANGEL_CLIENT_CODE", "AABB879420")
-ANGEL_PASSWORD     = os.getenv("ANGEL_PASSWORD", "9440")
-ANGEL_TOTP_SECRET  = os.getenv("ANGEL_TOTP_SECRET", "ZWIRJNNMNNTPDPXYBECPQXWZVE")
+ANGEL_API_KEY      = os.getenv("ANGEL_API_KEY", "")
+ANGEL_CLIENT_CODE  = os.getenv("ANGEL_CLIENT_CODE", "")
+ANGEL_PASSWORD     = os.getenv("ANGEL_PASSWORD", "")
+ANGEL_TOTP_SECRET  = os.getenv("ANGEL_TOTP_SECRET", "")
 
 # ─────────────────────────────────────────────
 # ZERODHA KITE CONNECT CREDENTIALS
@@ -44,16 +45,12 @@ TRADING_MODE = os.getenv("TRADING_MODE", "paper")
 # ─────────────────────────────────────────────
 # Use NSE symbols. Exchange prefix handled automatically.
 WATCHLIST = [
-    "RELIANCE",
-    "TCS",
-    "HDFCBANK",
-    "INFY",
-    "ICICIBANK",
-    "SBIN",
-    "AXISBANK",
-    "WIPRO",
-    "TATAMOTORS",
-    "BAJFINANCE",
+    # Nifty 50 — Top 25 most liquid large-cap stocks
+    "RELIANCE",  "TCS",       "HDFCBANK",  "INFY",      "ICICIBANK",
+    "SBIN",      "AXISBANK",  "WIPRO",     "TATAMOTORS","BAJFINANCE",
+    "BHARTIARTL","LT",        "ITC",       "KOTAKBANK", "HINDUNILVR",
+    "SUNPHARMA", "MARUTI",    "TATASTEEL", "TITAN",     "NTPC",
+    "HCLTECH",   "ADANIPORTS","DRREDDY",   "ULTRACEMCO","M&M",
 ]
 
 # Default exchange for equities
@@ -82,7 +79,26 @@ STRATEGIES = {
     "vwap":          True,
     "supertrend":    True,
     "candlestick":   True,
+    "orb":           True,   # Opening Range Breakout
 }
+
+# Minimum confidence score to execute a trade (0.0 – 1.0)
+MIN_SIGNAL_CONFIDENCE = 0.70
+
+# Volume filter multiplier — signal candle must have volume > N × 20-bar average
+VOLUME_FILTER_MULT = 1.5
+
+# ADX period for market regime detection
+ADX_PERIOD = 14
+ADX_TREND_THRESHOLD   = 25   # ADX > 25 → trending market
+ADX_CHOPPY_THRESHOLD  = 15   # ADX < 15 → very choppy, skip trading
+
+# Opening Range Breakout: minutes after 09:15 to define the opening range
+ORB_MINUTES = 15  # 09:15 – 09:30 AM defines opening range
+
+# Time-of-day filter: block new entries during midday lull (IST)
+NO_TRADE_START_HOUR, NO_TRADE_START_MIN = 11, 30
+NO_TRADE_END_HOUR,   NO_TRADE_END_MIN   = 13, 30
 
 # Candle interval for strategy signals
 # Options: "minute", "3minute", "5minute", "10minute", "15minute", "30minute", "60minute"

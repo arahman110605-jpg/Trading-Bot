@@ -100,7 +100,7 @@ class BaseStrategy(ABC):
             (high - close).abs(),
             (low  - close).abs(),
         ], axis=1).max(axis=1)
-        return tr.ewm(span=period, adjust=False).mean()
+        return tr.ewm(alpha=1/period, adjust=False).mean()
 
     @staticmethod
     def _compute_target_and_sl(

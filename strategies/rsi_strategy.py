@@ -29,28 +29,34 @@ class RSIStrategy(BaseStrategy):
         self.rr          = rr
 
     def _compute_rsi(self, close: pd.Series) -> pd.Series:
+        """Wilder-smoothed RSI matching TradingView reference."""
         delta = close.diff()
-        gain  = delta.clip(lower=0).ewm(span=self.rsi_period, adjust=False).mean()
-        loss  = (-delta.clip(upper=0)).ewm(span=self.rsi_period, adjust=False).mean()
+        gain  = delta.clip(lower=0).ewm(alpha=1/self.rsi_period, adjust=False).mean()
+        loss  = (-delta.clip(upper=0)).ewm(alpha=1/self.rsi_period, adjust=False).mean()
         rs    = gain / loss.replace(0, float("nan"))
         return 100 - (100 / (1 + rs))
 
     def _compute(self, symbol: str, df: pd.DataFrame) -> Signal:
+        if len(df) < 60:   # Need 60 bars for reliable EMA50
+            return NO_SIGNAL(symbol, self.name)
+
         close = df["close"]
 
-        rsi    = self._compute_rsi(close)
-        ema20  = close.ewm(span=20, adjust=False).mean()
-        ema50  = close.ewm(span=50, adjust=False).mean()
+        rsi  = self._compute_rsi(close)
+        ema50 = close.ewm(span=50, adjust=False).mean()
+
+        # Volume filter
+        vol_avg = df["volume"].rolling(20).mean()
+        vol_ok  = df["volume"].iloc[-1] >= vol_avg.iloc[-1] * config.VOLUME_FILTER_MULT
 
         prev_rsi = rsi.iloc[-2]
         curr_rsi = rsi.iloc[-1]
         entry    = close.iloc[-1]
-        e20      = ema20.iloc[-1]
         e50      = ema50.iloc[-1]
         atr      = self._atr(df).iloc[-1]
 
-        # ── BUY: RSI exits oversold, price above EMA50 (uptrend) ──
-        if (prev_rsi < self.oversold) and (curr_rsi >= self.oversold) and (entry > e50):
+        # ── BUY: RSI exits oversold with a buffer, price above EMA50 (uptrend), volume spike ──
+        if (prev_rsi < self.oversold) and (curr_rsi >= self.oversold + 2) and (entry > e50) and vol_ok:
             sl, tgt = self._compute_target_and_sl("BUY", entry, atr, rr=self.rr)
             return Signal(
                 symbol=symbol,
@@ -60,11 +66,11 @@ class RSIStrategy(BaseStrategy):
                 stop_loss=round(sl, 2),
                 target=round(tgt, 2),
                 confidence=0.80,
-                notes=f"RSI bounced from oversold ({prev_rsi:.1f}→{curr_rsi:.1f}) | Uptrend (price > EMA50)",
+                notes=f"RSI bounced from oversold ({prev_rsi:.1f}>{curr_rsi:.1f}) | Uptrend (price > EMA50)",
             )
 
-        # ── SELL: RSI exits overbought, price below EMA50 (downtrend) ──
-        if (prev_rsi > self.overbought) and (curr_rsi <= self.overbought) and (entry < e50):
+        # ── SELL: RSI exits overbought with a buffer, price below EMA50 (downtrend), volume spike ──
+        if (prev_rsi > self.overbought) and (curr_rsi <= self.overbought - 2) and (entry < e50) and vol_ok:
             sl, tgt = self._compute_target_and_sl("SELL", entry, atr, rr=self.rr)
             return Signal(
                 symbol=symbol,
@@ -74,7 +80,7 @@ class RSIStrategy(BaseStrategy):
                 stop_loss=round(sl, 2),
                 target=round(tgt, 2),
                 confidence=0.80,
-                notes=f"RSI dropped from overbought ({prev_rsi:.1f}→{curr_rsi:.1f}) | Downtrend (price < EMA50)",
+                notes=f"RSI dropped from overbought ({prev_rsi:.1f}<{curr_rsi:.1f}) | Downtrend (price < EMA50)",
             )
 
         return NO_SIGNAL(symbol, self.name)

@@ -33,12 +33,17 @@ class EMACrossoverStrategy(BaseStrategy):
         ema_fast = close.ewm(span=self.fast, adjust=False).mean()
         ema_slow = close.ewm(span=self.slow, adjust=False).mean()
 
-        # RSI filter
+        # RSI filter — use config period
+        rsi_period = config.RSI_PERIOD
         delta  = close.diff()
-        gain   = delta.clip(lower=0).ewm(span=14, adjust=False).mean()
-        loss   = (-delta.clip(upper=0)).ewm(span=14, adjust=False).mean()
+        gain   = delta.clip(lower=0).ewm(alpha=1/rsi_period, adjust=False).mean()
+        loss   = (-delta.clip(upper=0)).ewm(alpha=1/rsi_period, adjust=False).mean()
         rs     = gain / loss.replace(0, float("nan"))
         rsi    = 100 - (100 / (1 + rs))
+
+        # Volume filter: signal candle must have above-average volume
+        vol_avg = df["volume"].rolling(20).mean()
+        vol_ok  = df["volume"].iloc[-1] >= vol_avg.iloc[-1] * config.VOLUME_FILTER_MULT
 
         # Latest and previous values
         prev_fast = ema_fast.iloc[-2]
@@ -52,8 +57,8 @@ class EMACrossoverStrategy(BaseStrategy):
         atr = self._atr(df).iloc[-1]
 
         # ── BUY: Golden Cross ──
-        if (prev_fast < prev_slow) and (curr_fast > curr_slow):
-            if 40 < curr_rsi < 70:  # Avoid overbought
+        if (prev_fast < prev_slow) and (curr_fast > curr_slow) and vol_ok:
+            if config.RSI_OVERSOLD + 10 < curr_rsi < config.RSI_OVERBOUGHT:
                 sl, tgt = self._compute_target_and_sl("BUY", entry, atr, rr=self.rr)
                 return Signal(
                     symbol=symbol,
@@ -67,8 +72,8 @@ class EMACrossoverStrategy(BaseStrategy):
                 )
 
         # ── SELL: Death Cross ──
-        if (prev_fast > prev_slow) and (curr_fast < curr_slow):
-            if 30 < curr_rsi < 60:  # Avoid oversold
+        if (prev_fast > prev_slow) and (curr_fast < curr_slow) and vol_ok:
+            if config.RSI_OVERSOLD < curr_rsi < config.RSI_OVERBOUGHT - 10:
                 sl, tgt = self._compute_target_and_sl("SELL", entry, atr, rr=self.rr)
                 return Signal(
                     symbol=symbol,
