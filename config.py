@@ -20,10 +20,10 @@ BROKER = os.getenv("BROKER", "angel")
 # ─────────────────────────────────────────────
 # ANGEL ONE SMARTAPI CREDENTIALS (100% FREE)
 # ─────────────────────────────────────────────
-ANGEL_API_KEY      = os.getenv("ANGEL_API_KEY", "your_angel_api_key_here")
-ANGEL_CLIENT_CODE  = os.getenv("ANGEL_CLIENT_CODE", "your_angel_client_code_here")
-ANGEL_PASSWORD     = os.getenv("ANGEL_PASSWORD", "your_angel_password_here")
-ANGEL_TOTP_SECRET  = os.getenv("ANGEL_TOTP_SECRET", "your_angel_totp_secret_here")
+ANGEL_API_KEY      = os.getenv("ANGEL_API_KEY", "8NVXD5FQ")
+ANGEL_CLIENT_CODE  = os.getenv("ANGEL_CLIENT_CODE", "AABB879420")
+ANGEL_PASSWORD     = os.getenv("ANGEL_PASSWORD", "9440")
+ANGEL_TOTP_SECRET  = os.getenv("ANGEL_TOTP_SECRET", "ZWIRJNNMNNTPDPXYBECPQXWZVE")
 
 # ─────────────────────────────────────────────
 # ZERODHA KITE CONNECT CREDENTIALS

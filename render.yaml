@@ -12,10 +12,10 @@ services:
       - key: CAPITAL
         value: "100000"
       - key: ANGEL_API_KEY
-        sync: false
+        value: "8NVXD5FQ"
       - key: ANGEL_CLIENT_CODE
-        sync: false
+        value: "AABB879420"
       - key: ANGEL_PASSWORD
-        sync: false
+        value: "9440"
       - key: ANGEL_TOTP_SECRET
-        sync: false
+        value: "ZWIRJNNMNNTPDPXYBECPQXWZVE"
