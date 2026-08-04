@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: trading-bot
+    env: docker
+    plan: free
+    region: singapore # Close to India NSE for low latency
+    envVars:
+      - key: TRADING_MODE
+        value: paper
+      - key: BROKER
+        value: angel
+      - key: CAPITAL
+        value: "100000"
+      - key: ANGEL_API_KEY
+        sync: false
+      - key: ANGEL_CLIENT_CODE
+        sync: false
+      - key: ANGEL_PASSWORD
+        sync: false
+      - key: ANGEL_TOTP_SECRET
+        sync: false

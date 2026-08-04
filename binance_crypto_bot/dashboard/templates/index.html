@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Crypto & Web3 Trading Bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="crypto-icon">⚡</span>
+                <div>
+                    <h1>Binance Crypto & Web3 Trading Bot</h1>
+                    <p class="subtitle">Spot, Futures & Web3 DEX Algorithmic Execution</p>
+                </div>
+            </div>
+            <div class="controls">
+                <span id="botStatusBadge" class="badge badge-running">RUNNING</span>
+                <button id="pauseBtn" class="btn btn-warning" onclick="pauseBot()">Pause Bot</button>
+                <button id="resumeBtn" class="btn btn-success" onclick="resumeBot()">Resume Bot</button>
+                <button id="squareOffBtn" class="btn btn-danger" onclick="squareOffAll()">Square Off All</button>
+            </div>
+        </header>
+
+        <!-- Metric Cards -->
+        <div class="metrics-grid">
+            <div class="card metric-card">
+                <span class="card-label">Wallet Balance</span>
+                <h2 id="walletBalance">$0.00 <span class="currency">USDT</span></h2>
+            </div>
+            <div class="card metric-card">
+                <span class="card-label">Total Equity</span>
+                <h2 id="totalEquity">$0.00 <span class="currency">USDT</span></h2>
+            </div>
+            <div class="card metric-card">
+                <span class="card-label">Unrealized P&L</span>
+                <h2 id="unrealizedPnl" class="neutral">$0.00</h2>
+            </div>
+            <div class="card metric-card">
+                <span class="card-label">Active Positions</span>
+                <h2 id="activePositionsCount">0</h2>
+            </div>
+        </div>
+
+        <!-- Tickers Bar -->
+        <div class="card ticker-bar">
+            <h3>Live Market Feed</h3>
+            <div id="tickerFeed" class="ticker-items">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+
+        <!-- Main Content Layout -->
+        <div class="main-grid">
+            <!-- Active Positions -->
+            <div class="card panel">
+                <h3>Active Crypto Positions</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Side</th>
+                                <th>Size</th>
+                                <th>Entry Price</th>
+                                <th>Current Price</th>
+                                <th>Unrealized P&L</th>
+                            </tr>
+                        </thead>
+                        <tbody id="positionsTableBody">
+                            <tr><td colspan="6" class="text-center">No open positions</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Signal & Trade Log -->
+            <div class="card panel">
+                <h3>Latest Signals & Trades</h3>
+                <div id="signalsList" class="signals-list">
+                    <div class="empty-state">Listening for market signals...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Futures & Options (F&O) Trading Bot Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation Header -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="logo-badge">F&O</div>
+                <div>
+                    <h1>Futures & Options Trading Bot</h1>
+                    <span class="sub-badge" id="trading-mode-badge">PAPER TRADING MODE</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="system-time" id="clock">00:00:00</div>
+                <button class="btn btn-danger" id="btn-square-off" onclick="triggerSquareOff()">🚨 Emergency Square Off All</button>
+            </div>
+        </header>
+
+        <!-- Key Metrics Cards -->
+        <section class="metrics-grid">
+            <div class="card metric-card">
+                <span class="card-label">Total Capital</span>
+                <span class="card-value" id="val-capital">₹200,000.00</span>
+                <span class="card-subtext">Available Margin</span>
+            </div>
+            <div class="card metric-card">
+                <span class="card-label">Live Open P&L</span>
+                <span class="card-value pnl-neutral" id="val-open-pnl">₹0.00</span>
+                <span class="card-subtext" id="val-open-count">0 Open Positions</span>
+            </div>
+            <div class="card metric-card">
+                <span class="card-label">NIFTY 50 Spot</span>
+                <span class="card-value" id="val-nifty">24,500.00</span>
+                <span class="card-subtext">Index Spot Price</span>
+            </div>
+            <div class="card metric-card">
+                <span class="card-label">BANKNIFTY Spot</span>
+                <span class="card-value" id="val-banknifty">52,200.00</span>
+                <span class="card-subtext">Index Spot Price</span>
+            </div>
+        </section>
+
+        <!-- Main Content Area: Active Positions & Option Chain -->
+        <main class="main-content">
+            <!-- Active Positions Section -->
+            <div class="card content-card">
+                <div class="card-header">
+                    <h2>📊 Active F&O Positions</h2>
+                    <span class="badge" id="positions-count">0 Active</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Trading Symbol</th>
+                                <th>Type</th>
+                                <th>Lots</th>
+                                <th>Qty</th>
+                                <th>Entry Price</th>
+                                <th>Current Price</th>
+                                <th>Unrealized P&L</th>
+                                <th>P&L %</th>
+                                <th>Timestamp</th>
+                            </tr>
+                        </thead>
+                        <tbody id="positions-table-body">
+                            <tr>
+                                <td colspan="9" class="empty-text">No active open positions currently. Scanning market...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Option Chain & Strategy Signals Split -->
+            <div class="split-grid">
+                <div class="card content-card">
+                    <div class="card-header">
+                        <h2>📈 NIFTY Option Chain (Black-Scholes & Greeks)</h2>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table compact-table">
+                            <thead>
+                                <tr>
+                                    <th>CE Price</th>
+                                    <th>CE Delta</th>
+                                    <th>Strike</th>
+                                    <th>PE Delta</th>
+                                    <th>PE Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="option-chain-body">
+                                <tr>
+                                    <td colspan="5" class="empty-text">Loading option chain...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card content-card">
+                    <div class="card-header">
+                        <h2>⚡ F&O Signal & Trade Logs</h2>
+                    </div>
+                    <div class="log-container" id="trade-logs">
+                        <div class="log-entry log-info">[SYSTEM] F&O Algorithmic Bot initialized. Monitoring NIFTY, BANKNIFTY & FINNIFTY...</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

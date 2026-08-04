@@ -1,0 +1,2 @@
+id,timestamp,date,symbol,strategy,direction,confidence,entry_price,stop_loss,target,rr_ratio,was_executed,rejection_reason,notes
+1,2026-08-04T11:59:22,2026-08-04,RELIANCE,candlestick,BUY,0.85,2950.0,2930.0,2990.0,2.0,1,,Bullish Engulfing

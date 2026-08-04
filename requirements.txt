@@ -1,0 +1,30 @@
+# Zerodha Trading Bot - Requirements
+
+# Broker SDKs
+kiteconnect==5.0.1
+smartapi-python
+
+# Web Dashboard
+flask==3.0.3
+flask-socketio==5.3.6
+# eventlet removed — not compatible with Python 3.14, using threading mode instead
+
+# Data & Technical Analysis
+# Using --prefer-binary to get pre-built wheels (no compiler needed)
+pandas
+numpy
+ta==0.11.0
+
+# Utilities
+python-dotenv==1.0.1
+requests==2.32.3
+schedule==1.2.2
+
+# Database
+# (SQLite is built-in, no extra package needed)
+
+# Notifications (optional)
+python-telegram-bot==21.5
+
+# Development
+colorlog==6.8.2
