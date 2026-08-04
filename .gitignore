@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+data/*.db
+data/test*.db
+logs/*
+reports/*
+scratch/*
+.vscode/
+.idea/
