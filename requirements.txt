@@ -3,6 +3,8 @@
 # Broker SDKs
 kiteconnect==5.0.1
 smartapi-python
+pyotp
+logzero
 
 # Web Dashboard
 flask==3.0.3
