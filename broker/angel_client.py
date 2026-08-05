@@ -22,12 +22,15 @@ from utils.logger import get_logger
 log = get_logger("AngelClient")
 
 try:
-    from SmartApi import SmartConnect
+    try:
+        from SmartApi import SmartConnect
+    except ImportError:
+        from smartapi import SmartConnect
     import pyotp
     ANGEL_AVAILABLE = True
-except ImportError:
+except ImportError as e:
     ANGEL_AVAILABLE = False
-    log.warning("smartapi-python or pyotp not installed.")
+    log.warning("smartapi-python or pyotp not installed or import failed: %s", e)
 
 
 class AngelClient:
@@ -44,12 +47,14 @@ class AngelClient:
         self.smart_api: Optional["SmartConnect"] = None
         self._token_map: Dict[str, str] = {}  # symbol -> token string
 
-        log.info("AngelClient init | api_key=%s... | client_code=%s", self.api_key[:4] if self.api_key else 'NONE', self.client_code)
+        log.info("AngelClient init | ANGEL_AVAILABLE=%s | api_key=%s... | client_code=%s",
+                 ANGEL_AVAILABLE, self.api_key[:4] if self.api_key else 'NONE', self.client_code)
 
         if ANGEL_AVAILABLE and self.api_key and self.client_code:
             self._login()
         else:
-            log.info("AngelClient initialised without API connection (mode=%s)", self.mode.upper())
+            log.warning("AngelClient cannot login | ANGEL_AVAILABLE=%s | api_key=%s | client_code=%s",
+                        ANGEL_AVAILABLE, bool(self.api_key), bool(self.client_code))
 
     def _login(self):
         """Authenticate with Angel One SmartAPI using TOTP."""
