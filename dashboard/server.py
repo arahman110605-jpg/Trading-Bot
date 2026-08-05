@@ -140,6 +140,17 @@ def api_analytics():
     return jsonify({})
 
 
+@app.route("/api/logs")
+def api_logs():
+    try:
+        with open("logs/trading_bot.log", "r") as f:
+            # Return last 1000 lines
+            lines = f.readlines()[-1000:]
+            return "".join(lines), 200, {'Content-Type': 'text/plain'}
+    except Exception as e:
+        return str(e), 500
+
+
 @app.route("/api/toggle_mode", methods=["POST"])
 def api_toggle_mode():
     """Toggle between paper and live mode (requires bot stop first)."""
