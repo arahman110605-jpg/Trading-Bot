@@ -3511,3 +3511,18 @@
 2026-08-05 09:22:14 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for INFY: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
 2026-08-05 09:22:14 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for ICICIBANK: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
 2026-08-05 09:22:16 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for TATAMOTORS: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-08-05 09:22:27 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 09:22:27 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 09:34:59 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 09:34:59 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 09:35:08 | INFO     | TradingBot.Candlestick | Candlestick SELL: Hanging Man on ICICIBANK (conf=68%)
+2026-08-05 09:35:08 | ERROR    | TradingBot.candlestick | Error computing signal for ICICIBANK: name 'best_conf' is not defined
+2026-08-05 09:35:18 | INFO     | TradingBot.Candlestick | Candlestick BUY: Hammer on TATAMOTORS (conf=70%)
+2026-08-05 09:35:24 | INFO     | TradingBot.Candlestick | Candlestick SELL: Shooting Star on LT (conf=70%)
+2026-08-05 09:35:24 | ERROR    | TradingBot.candlestick | Error computing signal for LT: name 'best_conf' is not defined
+2026-08-05 09:35:27 | INFO     | TradingBot.Candlestick | Candlestick SELL: Shooting Star on HINDUNILVR (conf=70%)
+2026-08-05 09:35:27 | ERROR    | TradingBot.candlestick | Error computing signal for HINDUNILVR: name 'best_conf' is not defined
+2026-08-05 09:35:44 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 09:35:45 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 09:35:52 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on LT (conf=70%)
+2026-08-05 09:35:54 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on HINDUNILVR (conf=70%)

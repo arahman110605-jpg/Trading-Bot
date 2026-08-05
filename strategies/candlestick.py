@@ -371,8 +371,8 @@ class CandlestickStrategy(BaseStrategy):
                 entry_price=round(entry, 2),
                 stop_loss=round(sl, 2),
                 target=round(tgt, 2),
-                confidence=best_conf,
-                notes=f"Pattern: {best_name}"
+                confidence=conf,
+                notes=f"Pattern: {name}"
                       + (f" + {len(patterns_sell)-1} more" if len(patterns_sell) > 1 else "")
                       + f" | Trend: {'DOWN' if trend_down else 'MIXED'}",
             )
