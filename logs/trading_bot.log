@@ -3496,3 +3496,18 @@
 2026-08-04 15:16:59 | INFO     | TradingBot.StrategyRunner | Trading loop exited.
 2026-08-04 15:17:03 | INFO     | TradingBot.StrategyRunner | Trading loop exited.
 2026-08-04 15:26:36 | INFO     | TradingBot.AnalyticsLogger | Analytics telemetry initialised in database at data/trades.db
+2026-08-05 09:07:22 | INFO     | TradingBot.AngelClient | AngelClient initialised in PAPER mode
+2026-08-05 09:21:40 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 09:21:40 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 09:21:41 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for RELIANCE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-08-05 09:21:58 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 09:21:58 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 09:22:00 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for HDFCBANK: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-08-05 09:22:01 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for INFY: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-08-05 09:22:07 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 09:22:07 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 09:22:12 | ERROR    | TradingBot.AngelClient | Angel candle fetch failed for SBIN: Too many requests
+2026-08-05 09:22:12 | ERROR    | TradingBot.AngelClient | Angel candle fetch failed for TCS: Too many requests
+2026-08-05 09:22:14 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for INFY: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-08-05 09:22:14 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for ICICIBANK: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-08-05 09:22:16 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for TATAMOTORS: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'

@@ -44,10 +44,10 @@ class AngelClient:
         self.smart_api: Optional["SmartConnect"] = None
         self._token_map: Dict[str, str] = {}  # symbol -> token string
 
-        if self.mode == "live" and ANGEL_AVAILABLE and self.api_key:
+        if ANGEL_AVAILABLE and self.api_key and self.client_code:
             self._login()
         else:
-            log.info("AngelClient initialised in %s mode", self.mode.upper())
+            log.info("AngelClient initialised without API connection (mode=%s)", self.mode.upper())
 
     def _login(self):
         """Authenticate with Angel One SmartAPI using TOTP."""
@@ -103,30 +103,41 @@ class AngelClient:
         to_date   = datetime.now()
         from_date = to_date - timedelta(days=days)
 
-        try:
-            params = {
-                "exchange": exchange,
-                "symboltoken": token,
-                "interval": angel_interval,
-                "fromdate": from_date.strftime("%Y-%m-%d %H:%M"),
-                "todate": to_date.strftime("%Y-%m-%d %H:%M"),
-            }
-            res = self.smart_api.getCandleData(params)
+        for attempt in range(3):
+            try:
+                params = {
+                    "exchange": exchange,
+                    "symboltoken": token,
+                    "interval": angel_interval,
+                    "fromdate": from_date.strftime("%Y-%m-%d %H:%M"),
+                    "todate": to_date.strftime("%Y-%m-%d %H:%M"),
+                }
+                res = self.smart_api.getCandleData(params)
 
-            if res.get("status") and res.get("data"):
-                # Data format: [timestamp, open, high, low, close, volume]
-                cols = ["date", "open", "high", "low", "close", "volume"]
-                df = pd.DataFrame(res["data"], columns=cols)
-                df["date"] = pd.to_datetime(df["date"])
-                df.set_index("date", inplace=True)
-                return df
-            else:
-                log.error("Angel candle fetch failed for %s: %s", symbol, res.get("message"))
+                if isinstance(res, dict) and res.get("status") and res.get("data"):
+                    cols = ["date", "open", "high", "low", "close", "volume"]
+                    df = pd.DataFrame(res["data"], columns=cols)
+                    df["date"] = pd.to_datetime(df["date"])
+                    df.set_index("date", inplace=True)
+                    return df
+
+                msg = res.get("message", "") if isinstance(res, dict) else str(res)
+                if "Too many requests" in msg or "access rate" in msg or "AB1021" in msg:
+                    log.debug("Rate limit hit for %s (attempt %d/3). Pausing 1.2s...", symbol, attempt+1)
+                    time.sleep(1.2)
+                    continue
+
+                log.error("Angel candle fetch failed for %s: %s", symbol, msg)
                 return pd.DataFrame()
 
-        except Exception as e:
-            log.error("Failed to fetch historical data for %s: %s", symbol, e)
-            return pd.DataFrame()
+            except Exception as e:
+                if "access rate" in str(e) or "Too many requests" in str(e):
+                    time.sleep(1.2)
+                    continue
+                log.error("Failed to fetch historical data for %s: %s", symbol, e)
+                return pd.DataFrame()
+
+        return pd.DataFrame()
 
     def get_ltp(self, symbol: str, exchange: str = "NSE") -> Optional[float]:
         """Get Last Traded Price."""

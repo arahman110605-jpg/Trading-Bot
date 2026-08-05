@@ -209,6 +209,8 @@ class StrategyRunner:
             if symbol in open_symbols:
                 continue
 
+            time.sleep(0.6)  # Respect Angel One SmartAPI rate limit (max 1.5 req/sec)
+
             df = self.kite.get_historical_data(symbol, interval=self.interval, days=5)
             if df is None or df.empty or len(df) < 30:
                 log.debug("No data for %s", symbol)
