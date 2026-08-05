@@ -3547,3 +3547,7 @@
 2026-08-05 10:50:03 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on TCS (conf=70%)
 2026-08-05 10:50:04 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on INFY (conf=70%)
 2026-08-05 10:50:09 | INFO     | TradingBot.Candlestick | Candlestick BUY: Dragonfly Doji on ICICIBANK (conf=72%)
+2026-08-05 10:50:15 | INFO     | TradingBot.Candlestick | Candlestick SELL: Hanging Man on TATAMOTORS (conf=68%)
+2026-08-05 10:50:34 | INFO     | TradingBot.Candlestick | Candlestick SELL: Bearish Harami on TITAN (conf=70%)
+2026-08-05 10:50:40 | INFO     | TradingBot.Candlestick | Candlestick SELL: Shooting Star on HCLTECH (conf=70%)
+2026-08-05 10:50:48 | INFO     | TradingBot.Candlestick | Candlestick BUY: Three White Soldiers on ULTRACEMCO (conf=90%)

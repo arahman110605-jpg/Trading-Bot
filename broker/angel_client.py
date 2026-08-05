@@ -34,15 +34,17 @@ class AngelClient:
     """Wrapper around Angel One SmartAPI SDK."""
 
     def __init__(self, api_key: str = "", client_code: str = "", password: str = "", totp_secret: str = "", demo_feed=None):
-        self.api_key      = api_key or config.ANGEL_API_KEY
-        self.client_code  = client_code or config.ANGEL_CLIENT_CODE
-        self.password     = password or config.ANGEL_PASSWORD
-        self.totp_secret  = totp_secret or config.ANGEL_TOTP_SECRET
+        self.api_key      = api_key or config.ANGEL_API_KEY or os.getenv("ANGEL_API_KEY", "8NVXD5FQ")
+        self.client_code  = client_code or config.ANGEL_CLIENT_CODE or os.getenv("ANGEL_CLIENT_CODE", "AABB879420")
+        self.password     = password or config.ANGEL_PASSWORD or os.getenv("ANGEL_PASSWORD", "9440")
+        self.totp_secret  = totp_secret or config.ANGEL_TOTP_SECRET or os.getenv("ANGEL_TOTP_SECRET", "ZWIRJNNMNNTPDPXYBECPQXWZVE")
         self.demo_feed    = demo_feed
         self.mode: str    = config.TRADING_MODE
 
         self.smart_api: Optional["SmartConnect"] = None
         self._token_map: Dict[str, str] = {}  # symbol -> token string
+
+        log.info("AngelClient init | api_key=%s... | client_code=%s", self.api_key[:4] if self.api_key else 'NONE', self.client_code)
 
         if ANGEL_AVAILABLE and self.api_key and self.client_code:
             self._login()
