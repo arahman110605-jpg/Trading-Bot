@@ -3535,3 +3535,15 @@
 2026-08-05 10:48:33 | INFO     | TradingBot.StrategyRunner | StrategyRunner ready | 6 strategies | 25 symbols | interval=5minute
 2026-08-05 10:48:33 | INFO     | TradingBot.RiskManager | Daily risk counters reset for new trading day.
 2026-08-05 10:48:36 | INFO     | TradingBot.Candlestick | Candlestick SELL: Shooting Star on RELIANCE (conf=70%)
+2026-08-05 10:49:02 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for TATAMOTORS: HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Read timed out. (read timeout=7)
+2026-08-05 10:49:58 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 10:49:59 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 10:49:59 | INFO     | TradingBot.TradeJournal | Trade journal database initialised at data/trades.db
+2026-08-05 10:49:59 | INFO     | TradingBot.RiskManager | RiskManager | capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=4.0%
+2026-08-05 10:49:59 | INFO     | TradingBot.AnalyticsLogger | Analytics telemetry initialised in database at data/trades.db
+2026-08-05 10:49:59 | INFO     | TradingBot.StrategyRunner | Loaded strategies: ['ema_crossover', 'rsi', 'vwap', 'supertrend', 'candlestick', 'orb']
+2026-08-05 10:49:59 | INFO     | TradingBot.StrategyRunner | StrategyRunner ready | 6 strategies | 25 symbols | interval=5minute
+2026-08-05 10:49:59 | INFO     | TradingBot.RiskManager | Daily risk counters reset for new trading day.
+2026-08-05 10:50:03 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on TCS (conf=70%)
+2026-08-05 10:50:04 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on INFY (conf=70%)
+2026-08-05 10:50:09 | INFO     | TradingBot.Candlestick | Candlestick BUY: Dragonfly Doji on ICICIBANK (conf=72%)

@@ -210,18 +210,32 @@ class AngelClient:
             return None
 
     def _get_symbol_token(self, symbol: str, exchange: str = "NSE") -> str:
-        """Lookup token for symbol (stub/cache map)."""
-        # Common NSE Symbol Tokens for quick lookup
+        """Lookup token for symbol."""
         DEFAULT_TOKENS = {
-            "RELIANCE": "2885",
-            "TCS": "11536",
-            "HDFCBANK": "1333",
-            "INFY": "1594",
-            "ICICIBANK": "4963",
-            "SBIN": "3045",
-            "AXISBANK": "5900",
-            "WIPRO": "3787",
-            "TATAMOTORS": "3456",
-            "BAJFINANCE": "317",
+            "RELIANCE":   "2885",
+            "TCS":        "11536",
+            "HDFCBANK":   "1333",
+            "INFY":       "1594",
+            "ICICIBANK":  "4963",
+            "SBIN":       "3045",
+            "AXISBANK":   "5900",
+            "WIPRO":      "3787",
+            "TATAMOTORS":  "3456",
+            "BAJFINANCE":  "317",
+            "BHARTIARTL": "10604",
+            "LT":         "11483",
+            "ITC":        "1660",
+            "KOTAKBANK":  "1922",
+            "HINDUNILVR": "1394",
+            "SUNPHARMA":  "3351",
+            "MARUTI":     "10999",
+            "TATASTEEL":  "3499",
+            "TITAN":      "3506",
+            "NTPC":       "11630",
+            "HCLTECH":    "7229",
+            "ADANIPORTS": "15083",
+            "DRREDDY":    "881",
+            "ULTRACEMCO": "11532",
+            "M&M":        "2031",
         }
-        return DEFAULT_TOKENS.get(symbol, "2885")
+        return DEFAULT_TOKENS.get(symbol, "")
