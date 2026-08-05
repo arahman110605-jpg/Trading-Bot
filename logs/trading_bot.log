@@ -3526,3 +3526,12 @@
 2026-08-05 09:35:45 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
 2026-08-05 09:35:52 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on LT (conf=70%)
 2026-08-05 09:35:54 | INFO     | TradingBot.Candlestick | Candlestick BUY: Bullish Harami on HINDUNILVR (conf=70%)
+2026-08-05 10:48:33 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 10:48:33 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 10:48:33 | INFO     | TradingBot.TradeJournal | Trade journal database initialised at data/trades.db
+2026-08-05 10:48:33 | INFO     | TradingBot.RiskManager | RiskManager | capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=4.0%
+2026-08-05 10:48:33 | INFO     | TradingBot.AnalyticsLogger | Analytics telemetry initialised in database at data/trades.db
+2026-08-05 10:48:33 | INFO     | TradingBot.StrategyRunner | Loaded strategies: ['ema_crossover', 'rsi', 'vwap', 'supertrend', 'candlestick', 'orb']
+2026-08-05 10:48:33 | INFO     | TradingBot.StrategyRunner | StrategyRunner ready | 6 strategies | 25 symbols | interval=5minute
+2026-08-05 10:48:33 | INFO     | TradingBot.RiskManager | Daily risk counters reset for new trading day.
+2026-08-05 10:48:36 | INFO     | TradingBot.Candlestick | Candlestick SELL: Shooting Star on RELIANCE (conf=70%)

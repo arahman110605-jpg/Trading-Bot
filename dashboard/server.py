@@ -69,6 +69,8 @@ def _build_state() -> dict:
         "watchlist":  config.WATCHLIST,
         "strategies": config.STRATEGIES,
         "capital":    config.CAPITAL,
+        "broker_connected": bool(_orders and _orders.kite and getattr(_orders.kite, 'smart_api', None) is not None),
+        "api_key_set": bool(config.ANGEL_API_KEY != ""),
     }
 
 
