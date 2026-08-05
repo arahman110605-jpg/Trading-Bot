@@ -4,6 +4,7 @@
 kiteconnect==5.0.1
 smartapi-python
 pyotp
+websocket-client
 logzero
 
 # Web Dashboard

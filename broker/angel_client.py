@@ -22,10 +22,7 @@ from utils.logger import get_logger
 log = get_logger("AngelClient")
 
 try:
-    try:
-        from SmartApi import SmartConnect
-    except ImportError:
-        from smartapi import SmartConnect
+    from SmartApi import SmartConnect
     import pyotp
     ANGEL_AVAILABLE = True
 except ImportError as e:
