@@ -56,6 +56,7 @@ def _build_state() -> dict:
     trades   = _journal.get_todays_trades() if _journal else []
     signals  = _runner.get_signal_log() if _runner else []
     positions = _orders.get_open_positions() if _orders else []
+    total_pnl = _journal.get_total_pnl() if _journal else 0.0
 
     return {
         "mode":       config.TRADING_MODE,
@@ -68,7 +69,8 @@ def _build_state() -> dict:
         "signals":    signals[:20],   # Last 20 signals
         "watchlist":  config.WATCHLIST,
         "strategies": config.STRATEGIES,
-        "capital":    config.CAPITAL,
+        "capital":    config.CAPITAL + total_pnl,
+        "total_pnl":  total_pnl,
         "broker_connected": bool(_orders and _orders.kite and getattr(_orders.kite, 'smart_api', None) is not None),
         "api_key_set": bool(config.ANGEL_API_KEY != ""),
     }

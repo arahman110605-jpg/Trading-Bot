@@ -3551,3 +3551,29 @@
 2026-08-05 10:50:34 | INFO     | TradingBot.Candlestick | Candlestick SELL: Bearish Harami on TITAN (conf=70%)
 2026-08-05 10:50:40 | INFO     | TradingBot.Candlestick | Candlestick SELL: Shooting Star on HCLTECH (conf=70%)
 2026-08-05 10:50:48 | INFO     | TradingBot.Candlestick | Candlestick BUY: Three White Soldiers on ULTRACEMCO (conf=90%)
+2026-08-05 19:18:52 | INFO     | TradingBot.Main | DEMO MODE active — using simulated market data
+2026-08-05 19:18:52 | INFO     | TradingBot.Main | Starting Trading Bot | mode=PAPER | date=2026-08-05
+2026-08-05 19:18:53 | INFO     | TradingBot.DemoFeed | DemoMarket initialised | 25 symbols | candle every 30s
+2026-08-05 19:18:53 | INFO     | TradingBot.Main | Demo feed ready — candles every 30 seconds
+2026-08-05 19:18:55 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-05 19:18:55 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-05 19:18:55 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-05 19:18:55 | INFO     | TradingBot.Main | Broker active: Angel One (SmartAPI - FREE)
+2026-08-05 19:18:56 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-05 19:18:56 | INFO     | TradingBot.RiskManager | RiskManager | capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=4.0%
+2026-08-05 19:18:56 | INFO     | TradingBot.AnalyticsLogger | Analytics telemetry initialised in database at data/trades.db
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | Loaded strategies: ['ema_crossover', 'rsi', 'vwap', 'supertrend', 'candlestick', 'orb']
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | StrategyRunner ready | 6 strategies | 25 symbols | interval=demo
+2026-08-05 19:18:56 | INFO     | TradingBot.Main | Demo: scan interval set to 30 seconds
+2026-08-05 19:18:56 | INFO     | TradingBot.Dashboard | Dashboard initialised and connected to engine.
+2026-08-05 19:18:56 | INFO     | TradingBot.Dashboard | Dashboard starting at http://localhost:5000
+2026-08-05 19:18:56 | INFO     | TradingBot.Main | ✓ Dashboard running at http://localhost:5000
+2026-08-05 19:18:56 | INFO     | TradingBot.Main | Demo mode: bypassing market hours check
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | Main trading loop started. Tick every 30s.
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | ── Scan cycle | 19:18:56 | mode=paper ──
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | Strategy runner started (mode=paper)
+2026-08-05 19:18:56 | INFO     | TradingBot.Main | Bot running. Press Ctrl+C to stop.
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | Square-off time reached. Closing all positions.
+2026-08-05 19:18:56 | INFO     | TradingBot.OrderManager | No open positions to square off.
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | Strategy runner stopped.
+2026-08-05 19:18:56 | INFO     | TradingBot.StrategyRunner | Trading loop exited.

@@ -32,7 +32,7 @@ class RiskManager:
 
     def __init__(self, journal: TradeJournal):
         self.journal   = journal
-        self.capital   = config.CAPITAL
+        self.initial_capital = config.CAPITAL
         self.max_risk_per_trade = config.RISK_PER_TRADE_PCT / 100
         self.max_daily_loss     = config.MAX_DAILY_LOSS_PCT / 100
         self.max_open_positions = config.MAX_OPEN_POSITIONS
@@ -40,9 +40,13 @@ class RiskManager:
         self._daily_loss_hit    = False
         self._last_reset_date: Optional[str] = None   # tracks which date we last reset
         log.info(
-            "RiskManager | capital=INR %s | risk/trade=%.1f%% | max_daily_loss=%.1f%%",
-            f"{self.capital:,}", config.RISK_PER_TRADE_PCT, config.MAX_DAILY_LOSS_PCT
+            "RiskManager | initial_capital=INR %s | risk/trade=%.1f%% | max_daily_loss=%.1f%%",
+            f"{self.initial_capital:,}", config.RISK_PER_TRADE_PCT, config.MAX_DAILY_LOSS_PCT
         )
+
+    def get_current_capital(self) -> float:
+        """Returns dynamically compounding capital from all historical trades."""
+        return self.initial_capital + self.journal.get_total_pnl()
 
     # ── Auto Daily Reset ─────────────────────────────────────────────────────
 
@@ -91,7 +95,8 @@ class RiskManager:
 
         # Check daily P&L
         daily_pnl = self.journal.get_todays_pnl()
-        max_loss  = -self.capital * self.max_daily_loss
+        current_capital = self.get_current_capital()
+        max_loss  = -current_capital * self.max_daily_loss
         if daily_pnl <= max_loss:
             self._daily_loss_hit = True
             log.warning("Daily loss limit reached! P&L=INR %.2f | Limit=INR %.2f", daily_pnl, max_loss)
@@ -161,7 +166,8 @@ class RiskManager:
         Risk amount = capital × risk_per_trade%
         Quantity    = risk_amount / (entry - stop_loss)
         """
-        risk_amount = self.capital * self.max_risk_per_trade
+        current_capital = self.get_current_capital()
+        risk_amount = current_capital * self.max_risk_per_trade
         risk_per_share = abs(signal.entry_price - signal.stop_loss)
 
         if risk_per_share <= 0:
@@ -172,7 +178,7 @@ class RiskManager:
         qty = max(1, qty)
 
         # Safety: don't put more than 20% of capital in one trade
-        max_qty = int((self.capital * 0.20) / signal.entry_price)
+        max_qty = int((current_capital * 0.20) / signal.entry_price)
         qty = min(qty, max(1, max_qty))
 
         log.info(

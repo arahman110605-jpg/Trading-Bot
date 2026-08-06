@@ -96,6 +96,13 @@ function renderKPIs(data) {
   if (data.capital) {
     setText("capitalDisplay", "₹" + Number(data.capital).toLocaleString("en-IN"));
   }
+  if (data.total_pnl !== undefined) {
+    const totalPnlEl = document.getElementById("totalPnlDisplay");
+    totalPnlEl.innerText = "Total P&L: ₹" + Number(data.total_pnl).toLocaleString("en-IN");
+    if (data.total_pnl > 0) totalPnlEl.style.color = "#10b981";
+    else if (data.total_pnl < 0) totalPnlEl.style.color = "#ef4444";
+    else totalPnlEl.style.color = "#9ca3af";
+  }
 
   // Date
   if (data.date) setText("liveDate", data.date);

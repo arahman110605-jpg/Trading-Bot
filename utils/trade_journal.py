@@ -233,6 +233,28 @@ class TradeJournal:
         trades = self.get_todays_trades()
         return round(sum(t.get('pnl', 0) for t in trades if t.get('status') != 'OPEN'), 2)
 
+    def get_total_pnl(self) -> float:
+        """Returns the total accumulated P&L across all historical closed trades."""
+        if self._total_pnl_cache is not None:
+            return self._total_pnl_cache
+            
+        try:
+            if self.use_firebase:
+                # Fetch all documents to compute total PnL
+                # We use select(['pnl']) to minimise data transfer
+                docs = self.db.collection('trades').select(['pnl']).get()
+                total = sum(doc.to_dict().get('pnl', 0) for doc in docs)
+            else:
+                with self._conn() as conn:
+                    res = conn.execute("SELECT SUM(pnl) FROM trades").fetchone()[0]
+                    total = float(res) if res else 0.0
+                    
+            self._total_pnl_cache = round(total, 2)
+            return self._total_pnl_cache
+        except Exception as e:
+            log.error("Failed to compute total PnL: %s", e)
+            return 0.0
+
     def get_todays_stats(self) -> Dict[str, Any]:
         trades = self.get_todays_trades()
         closed = [t for t in trades if t.get("status") != "OPEN"]
