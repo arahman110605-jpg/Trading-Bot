@@ -45,12 +45,11 @@ TRADING_MODE = os.getenv("TRADING_MODE", "paper")
 # ─────────────────────────────────────────────
 # Use NSE symbols. Exchange prefix handled automatically.
 WATCHLIST = [
-    # Nifty 50 — Top 25 most liquid large-cap stocks
-    "RELIANCE",  "TCS",       "HDFCBANK",  "INFY",      "ICICIBANK",
-    "SBIN",      "AXISBANK",  "WIPRO",     "TATAMOTORS","BAJFINANCE",
-    "BHARTIARTL","LT",        "ITC",       "KOTAKBANK", "HINDUNILVR",
-    "SUNPHARMA", "MARUTI",    "TATASTEEL", "TITAN",     "NTPC",
-    "HCLTECH",   "ADANIPORTS","DRREDDY",   "ULTRACEMCO","M&M",
+    # High-Volatility, Low-Cost, Retail-Favorite Stocks
+    "SUZLON", "IDEA", "YESBANK", "ZOMATO", "PNB",
+    "IDFCFIRSTB", "IRFC", "RVNL", "NHPC", "BHEL",
+    "TATASTEEL", "COALINDIA", "RECLTD", "PFC", "SAIL",
+    "JIOFIN", "IREDA", "BANKBARODA", "GMRINFRA", "HUDCO"
 ]
 
 # Default exchange for equities
@@ -64,6 +63,19 @@ RISK_PER_TRADE_PCT = 1.5    # Max % of capital to risk per trade (1.5%)
 MAX_DAILY_LOSS_PCT = 4.0    # Stop bot if daily loss exceeds this %
 MAX_OPEN_POSITIONS = 3      # Maximum simultaneous open positions
 REWARD_TO_RISK_RATIO = 2.0  # Minimum R:R ratio for trade entry
+
+# ─────────────────────────────────────────────
+# CUSTOM STOP-LOSS OVERRIDES
+# ─────────────────────────────────────────────
+# Default percentage SL for all stocks. 0.0 means use the Strategy's native technical SL.
+DEFAULT_SL_PCT = 2.0 
+
+# Specific overrides per stock (e.g. extremely volatile penny stocks get a wider SL)
+PER_STOCK_SL_PCT = {
+    "SUZLON": 3.0,
+    "IDEA":   4.0,
+    "YESBANK":3.0,
+}
 
 # Auto square-off time (IST, 24h format)
 SQUARE_OFF_HOUR   = 15
