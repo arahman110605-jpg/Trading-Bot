@@ -29,6 +29,7 @@ class TradeJournal:
         self.db_path = db_path
         self.use_firebase = False
         self.db = None
+        self._total_pnl_cache = None
         
         # Try initializing Firebase first
         if FIREBASE_AVAILABLE:
