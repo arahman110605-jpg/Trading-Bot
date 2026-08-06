@@ -91,6 +91,23 @@ class OrderManager:
         self.open_positions: Dict[str, OpenPosition] = {}  # symbol → position
         self._lock = threading.Lock()
 
+        # Hydrate open positions from journal (for state recovery after restarts)
+        open_trades = self.journal.get_open_trades()
+        for t in open_trades:
+            self.open_positions[t["symbol"]] = OpenPosition(
+                trade_id=t.get("id") or t.get("trade_id"), # Handle SQLite and Firebase
+                symbol=t["symbol"],
+                direction=t["direction"],
+                quantity=t["quantity"],
+                entry_price=t["entry_price"],
+                stop_loss=t["stop_loss"],
+                target=t["target"],
+                order_id=t.get("order_id", ""),
+                strategy=t.get("strategy", ""),
+            )
+        if self.open_positions:
+            log.info("Recovered %d open positions from trade journal.", len(self.open_positions))
+
     # ── Entry ────────────────────────────────────────────────────────────────
 
     def execute_signal(self, signal: Signal) -> bool:
