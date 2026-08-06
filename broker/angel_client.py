@@ -131,6 +131,12 @@ class AngelClient:
                     time.sleep(1.2)
                     continue
 
+                if "Invalid Token" in msg or "AB1020" in msg or "session expired" in msg.lower():
+                    log.warning("Angel One token expired! Attempting auto-relogin...")
+                    self._login()
+                    time.sleep(1.0)
+                    continue
+
                 log.error("Angel candle fetch failed for %s: %s", symbol, msg)
                 return pd.DataFrame()
 
@@ -138,6 +144,12 @@ class AngelClient:
                 if "access rate" in str(e) or "Too many requests" in str(e):
                     time.sleep(1.2)
                     continue
+                if "Invalid Token" in str(e) or "expired" in str(e).lower():
+                    log.warning("Angel One token expired exception! Attempting auto-relogin...")
+                    self._login()
+                    time.sleep(1.0)
+                    continue
+                
                 log.error("Failed to fetch historical data for %s: %s", symbol, e)
                 return pd.DataFrame()
 
@@ -159,7 +171,27 @@ class AngelClient:
             res = self.smart_api.ltpData(exchange, f"{symbol}-EQ", token)
             if res.get("status") and res.get("data"):
                 return float(res["data"]["ltp"])
+            else:
+                msg = res.get("message", "")
+                if "Invalid Token" in msg or "AB1020" in msg or "session expired" in msg.lower():
+                    log.warning("Angel One token expired in LTP fetch! Attempting auto-relogin...")
+                    self._login()
+                    time.sleep(1.0)
+                    # Retry once
+                    res = self.smart_api.ltpData(exchange, f"{symbol}-EQ", token)
+                    if res.get("status") and res.get("data"):
+                        return float(res["data"]["ltp"])
         except Exception as e:
+            if "Invalid Token" in str(e) or "expired" in str(e).lower():
+                log.warning("Angel One token expired exception in LTP! Attempting auto-relogin...")
+                self._login()
+                time.sleep(1.0)
+                try:
+                    res = self.smart_api.ltpData(exchange, f"{symbol}-EQ", token)
+                    if res.get("status") and res.get("data"):
+                        return float(res["data"]["ltp"])
+                except:
+                    pass
             log.error("Failed to fetch LTP for %s: %s", symbol, e)
         return None
 
