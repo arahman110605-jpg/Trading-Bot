@@ -234,7 +234,6 @@ class StrategyRunner:
                     continue
 
                 signal = strategy.generate_signal(symbol, df)
-                signal = self._apply_sl_override(signal)
                 
                 if signal.is_actionable:
                     candidate_signals.append(signal)
@@ -297,28 +296,6 @@ class StrategyRunner:
         with self._signal_lock:
             self._signal_log.insert(0, entry)
             self._signal_log = self._signal_log[:50]
-
-    def _apply_sl_override(self, signal: Signal) -> Signal:
-        """Applies a strict percentage-based Stop Loss override if configured."""
-        if not signal.is_actionable:
-            return signal
-            
-        # Get custom SL pct if defined for this stock, otherwise fallback to default
-        sl_pct = config.PER_STOCK_SL_PCT.get(signal.symbol, getattr(config, "DEFAULT_SL_PCT", 0.0))
-        
-        if sl_pct > 0:
-            sl_distance = signal.entry_price * (sl_pct / 100)
-            
-            if signal.direction == "BUY":
-                signal.stop_loss = round(signal.entry_price - sl_distance, 2)
-                signal.target = round(signal.entry_price + (sl_distance * config.REWARD_TO_RISK_RATIO), 2)
-            else:
-                signal.stop_loss = round(signal.entry_price + sl_distance, 2)
-                signal.target = round(signal.entry_price - (sl_distance * config.REWARD_TO_RISK_RATIO), 2)
-                
-            signal.notes = f"{signal.notes} | (Custom {sl_pct}% SL applied)"
-            
-        return signal
 
     def get_signal_log(self) -> List[Dict]:
         with self._signal_lock:

@@ -34,8 +34,9 @@ class RiskManager:
         self.journal   = journal
         self.initial_capital = config.CAPITAL
         self.max_risk_per_trade = config.RISK_PER_TRADE_PCT / 100
-        self.max_daily_loss     = config.MAX_DAILY_LOSS_PCT / 100
+        self.max_daily_loss     = getattr(config, "MAX_DAILY_LOSS_PCT", 2.0) / 100
         self.max_open_positions = config.MAX_OPEN_POSITIONS
+        self.max_trades_per_day = getattr(config, "MAX_TRADES_PER_DAY", 5)
         self.min_rr             = config.REWARD_TO_RISK_RATIO
         self._daily_loss_hit    = False
         self._last_reset_date: Optional[str] = None   # tracks which date we last reset
@@ -81,8 +82,9 @@ class RiskManager:
           1. Market is open
           2. Daily loss limit not hit
           3. Max open positions not exceeded
-          4. Not within 30 min of square-off
-          5. Not in the midday no-trade window (11:30–13:30)
+          4. Max daily trades not exceeded
+          5. Not within 30 min of square-off
+          6. Not in the midday no-trade window (11:30–13:30)
         """
         # Auto-reset daily counters if it's a new day
         self._auto_reset_if_new_day()
@@ -106,6 +108,11 @@ class RiskManager:
         open_trades = self.journal.get_open_trades()
         if len(open_trades) >= self.max_open_positions:
             return False, f"Max open positions ({self.max_open_positions}) reached"
+
+        # Check total trades for the day
+        todays_trades = self.journal.get_todays_trades()
+        if len(todays_trades) >= self.max_trades_per_day:
+            return False, f"Max trades per day ({self.max_trades_per_day}) reached"
 
         now = _now_ist()
 
