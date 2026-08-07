@@ -89,8 +89,8 @@ VOLUME_FILTER_MULT = 1.5
 
 # ADX period for market regime detection
 ADX_PERIOD = 14
-ADX_TREND_THRESHOLD   = 25   # ADX > 25 → trending market
-ADX_CHOPPY_THRESHOLD  = 15   # ADX < 15 → very choppy, skip trading
+ADX_TREND_THRESHOLD   = 15   # ADX > 15 → trending market
+ADX_CHOPPY_THRESHOLD  = 12   # ADX < 12 → very choppy, skip trading
 
 # Opening Range Breakout: minutes after 09:15 to define the opening range
 ORB_MINUTES = 15  # 09:15 – 09:30 AM defines opening range
@@ -116,8 +116,8 @@ EMA_SLOW  = 21
 # RSI SETTINGS
 # ─────────────────────────────────────────────
 RSI_PERIOD     = 14
-RSI_OVERSOLD   = 30
-RSI_OVERBOUGHT = 70
+RSI_OVERSOLD   = 35
+RSI_OVERBOUGHT = 65
 
 # ─────────────────────────────────────────────
 # VWAP SETTINGS
