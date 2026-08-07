@@ -46,7 +46,7 @@ TRADING_MODE = os.getenv("TRADING_MODE", "paper")
 # Use NSE symbols. Exchange prefix handled automatically.
 WATCHLIST = [
     # Liquid High-Beta Stocks for optimal Intraday Risk-Reward
-    "ZOMATO", "SUZLON", "TATASTEEL", "ADANIENT", "TATAMOTORS",
+    "ETERNAL", "SUZLON", "TATASTEEL", "ADANIENT", "TMPV",
     "SBIN", "ICICIBANK", "RELIANCE", "BHEL", "IRFC",
     "HDFCBANK", "INFY", "ITC", "WIPRO", "AXISBANK"
 ]
