@@ -49,6 +49,7 @@ class AngelClient:
 
         if ANGEL_AVAILABLE and self.api_key and self.client_code:
             self._login()
+            self._fetch_token_map()
         else:
             log.warning("AngelClient cannot login | ANGEL_AVAILABLE=%s | api_key=%s | client_code=%s",
                         ANGEL_AVAILABLE, bool(self.api_key), bool(self.client_code))
@@ -70,7 +71,25 @@ class AngelClient:
             else:
                 log.error("Angel One login failed: %s", data.get("message"))
         except Exception as e:
-            log.error("Angel One login error: %s", e)
+            log.error("Failed to authenticate with Angel One: %s", e)
+
+    def _fetch_token_map(self):
+        """Dynamically fetch all NSE tokens from Angel One open API."""
+        try:
+            import urllib.request
+            import json
+            url = "https://margincalculator.angelbroking.com/OpenAPI_File/files/OpenAPIScripMaster.json"
+            log.info("Fetching dynamic token map from Angel One...")
+            req = urllib.request.urlopen(url)
+            data = json.loads(req.read().decode("utf-8"))
+            for item in data:
+                if item.get("exch_seg") == "NSE":
+                    name = item.get("name", "")
+                    if name:
+                        self._token_map[name] = item.get("token", "")
+            log.info("Loaded %d NSE tokens.", len(self._token_map))
+        except Exception as e:
+            log.error("Failed to fetch dynamic token map: %s", e)
 
     # ── Market Data ──────────────────────────────────────────────────────────
 
@@ -246,32 +265,7 @@ class AngelClient:
             return None
 
     def _get_symbol_token(self, symbol: str, exchange: str = "NSE") -> str:
-        """Lookup token for symbol."""
-        DEFAULT_TOKENS = {
-            "RELIANCE":   "2885",
-            "TCS":        "11536",
-            "HDFCBANK":   "1333",
-            "INFY":       "1594",
-            "ICICIBANK":  "4963",
-            "SBIN":       "3045",
-            "AXISBANK":   "5900",
-            "WIPRO":      "3787",
-            "TATAMOTORS":  "3456",
-            "BAJFINANCE":  "317",
-            "BHARTIARTL": "10604",
-            "LT":         "11483",
-            "ITC":        "1660",
-            "KOTAKBANK":  "1922",
-            "HINDUNILVR": "1394",
-            "SUNPHARMA":  "3351",
-            "MARUTI":     "10999",
-            "TATASTEEL":  "3499",
-            "TITAN":      "3506",
-            "NTPC":       "11630",
-            "HCLTECH":    "7229",
-            "ADANIPORTS": "15083",
-            "DRREDDY":    "881",
-            "ULTRACEMCO": "11532",
-            "M&M":        "2031",
-        }
-        return DEFAULT_TOKENS.get(symbol, "")
+        """Lookup token for symbol dynamically."""
+        if not self._token_map:
+            return ""
+        return self._token_map.get(symbol, "")
