@@ -48,7 +48,6 @@ class AnalyticsLogger:
                 except Exception as e:
                     log.error("AnalyticsLogger: Failed to initialize Firebase: %s", e)
         
-        import os
         self.bot_id = os.getenv("BOT_ID", "default")
         self.signal_collection = f"{self.bot_id}_signal_telemetry" if self.bot_id != "default" else "signal_telemetry"
         self.trades_collection  = f"{self.bot_id}_trades" if self.bot_id != "default" else "trades"
