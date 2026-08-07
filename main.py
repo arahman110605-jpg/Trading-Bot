@@ -2,10 +2,14 @@
 main.py — Trading Bot Entry Point
 
 Usage:
-  python main.py                  # Paper trading mode (default)
+  python main.py                  # Paper trading mode (default, single bot)
   python main.py --mode paper     # Explicit paper mode
   python main.py --mode live      # Live trading (requires API key)
   python main.py --no-dashboard   # Run without web dashboard
+
+Multi-Bot Mode (8 bots, shared data hub):
+  Set MULTI_BOT_MODE=true in .env or Render environment variables
+  then run: python main.py
 """
 
 import argparse
@@ -117,6 +121,46 @@ def main():
     journal   = TradeJournal()
     risk_mgr  = RiskManager(journal=journal)
     order_mgr = OrderManager(kite=broker_client, risk=risk_mgr, journal=journal)
+
+    # ── Multi-Bot Mode (8 independent bots, shared data hub) ─────────────────
+    if config.MULTI_BOT_MODE:
+        log.info("MULTI-BOT MODE enabled — launching 8 bots with shared MarketDataHub")
+        from engine.multi_bot_manager import MultiBotManager
+
+        def _on_update():
+            pass  # Dashboard update hook (wired in after dashboard init)
+
+        multi_manager = MultiBotManager(on_update_callback=_on_update)
+
+        # ── Dashboard (multi-bot mode) ──────────────────────────────────
+        if not args.no_dashboard:
+            from dashboard.server import init_dashboard, run_dashboard
+            init_dashboard(None, order_mgr, journal, multi_manager=multi_manager)
+            dashboard_thread = threading.Thread(target=run_dashboard, daemon=True, name="Dashboard")
+            dashboard_thread.start()
+            log.info("Dashboard running at http://localhost:%d (Multi-Bot Arena)", config.DASHBOARD_PORT)
+
+        print_banner(multi_bot=True)
+        multi_manager.start()
+
+        log.info("All 8 bots running. Press Ctrl+C to stop.")
+        print("\n  " + "="*58)
+        print(f"  Dashboard : http://localhost:{config.DASHBOARD_PORT}")
+        print(f"  Arena     : http://localhost:{config.DASHBOARD_PORT}/arena")
+        print(f"  Mode      : MULTI-BOT (8 bots | 1 API connection)")
+        print(f"  Capital   : INR {8 * 100000:,} (8 x INR 1,00,000)")
+        print("  " + "="*58 + "\n")
+
+        try:
+            while True:
+                time.sleep(30)
+        except KeyboardInterrupt:
+            log.info("Ctrl+C received. Shutting down all bots...")
+            multi_manager.stop()
+            log.info("Multi-bot shutdown complete.")
+        return
+
+    # ── Single-Bot Mode (original behaviour) ────────────────────────────
     runner    = StrategyRunner(kite=broker_client, order_mgr=order_mgr, risk_mgr=risk_mgr)
 
     # In demo mode, use faster tick interval (30 sec)
@@ -192,14 +236,26 @@ def main():
         log.info("Bot shutdown complete. Goodbye!")
 
 
-def print_banner():
-    banner = """
+def print_banner(multi_bot: bool = False):
+    if multi_bot:
+        banner = """
+  ███╗   ███╗██╗   ██╗██╗  ████████╗██╗    ██████╗  ██████╗ ████████╗
+  ████╗ ████║██║   ██║██║  ╚══██╔══╝██║    ██╔══██╗██╔═══██╗╚══██╔══╝
+  ██╔████╔██║██║   ██║██║     ██║   ██║    ██████╔╝██║   ██║   ██║
+  ██║╚██╔╝██║██║   ██║██║     ██║   ██║    ██╔══██╗██║   ██║   ██║
+  ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██║    ██████╔╝╚██████╔╝   ██║
+  ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝    ╚═════╝  ╚═════╝    ╚═╝
+
+    8 Bot Arena  |  5 Equity + 3 Options  |  1 Angel One Connection
+    """
+    else:
+        banner = """
   ████████╗██████╗  █████╗ ██████╗ ███████╗██████╗  ██████╗ ████████╗
      ██╔══╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔═══██╗╚══██╔══╝
-     ██║   ██████╔╝███████║██║  ██║█████╗  ██████╔╝██║   ██║   ██║   
-     ██║   ██╔══██╗██╔══██║██║  ██║██╔══╝  ██╔══██╗██║   ██║   ██║   
-     ██║   ██║  ██║██║  ██║██████╔╝███████╗██████╔╝╚██████╔╝   ██║   
-     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═════╝  ╚═════╝    ╚═╝   
+     ██║   ██████╔╝███████║██║  ██║█████╗  ██████╔╝██║   ██║   ██║
+     ██║   ██╔══██╗██╔══██║██║  ██║██╔══╝  ██╔══██╗██║   ██║   ██║
+     ██║   ██║  ██║██║  ██║██████╔╝███████╗██████╔╝╚██████╔╝   ██║
+     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═════╝  ╚═════╝    ╚═╝
 
     Zerodha Intraday Bot  |  NSE + BSE Equities  |  4 Strategies
     """

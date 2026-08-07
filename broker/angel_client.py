@@ -214,6 +214,19 @@ class AngelClient:
             log.error("Failed to fetch LTP for %s: %s", symbol, e)
         return None
 
+    def get_ltp_by_token(self, token: str, exchange: str = "NFO") -> Optional[float]:
+        """Get Last Traded Price by token (used for options)."""
+        if not self.smart_api or not token:
+            return None
+        try:
+            # For options, use NFO exchange
+            res = self.smart_api.ltpData(exchange, "", token)
+            if res.get("status") and res.get("data"):
+                return float(res["data"]["ltp"])
+        except Exception as e:
+            log.debug("get_ltp_by_token failed for token=%s: %s", token, e)
+        return None
+
     # ── Orders ───────────────────────────────────────────────────────────────
 
     def place_market_order(

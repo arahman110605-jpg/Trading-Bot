@@ -154,3 +154,60 @@ LOG_FILE  = "logs/trading_bot.log"
 # DATABASE
 # ─────────────────────────────────────────────
 DATABASE_PATH = "data/trades.db"
+
+# ─────────────────────────────────────────────
+# MULTI-BOT ARCHITECTURE
+# ─────────────────────────────────────────────
+# Enable multi-bot mode (8 bots, shared Market Data Hub)
+MULTI_BOT_MODE = os.getenv("MULTI_BOT_MODE", "false").lower() == "true"
+
+# Unique ID for this bot instance (set via env var when running multiple bots)
+BOT_ID = os.getenv("BOT_ID", "default")
+
+# ─────────────────────────────────────────────
+# CONSENSUS ENGINE SETTINGS
+# ─────────────────────────────────────────────
+# Minimum number of independent strategies that must agree for a trade entry
+CONSENSUS_MIN_SIGNALS = 2
+
+# Minimum confidence score for any individual signal
+CONSENSUS_CONFIDENCE = 0.70
+
+# High-confidence override: a single signal above this threshold can trade alone
+CONSENSUS_HIGH_CONF = 0.85
+
+# ─────────────────────────────────────────────
+# OPTIONS TRADING SETTINGS
+# ─────────────────────────────────────────────
+# Options are always paper mode until explicitly enabled
+OPTIONS_TRADING_ENABLED = os.getenv("OPTIONS_TRADING_ENABLED", "false").lower() == "true"
+
+# India VIX maximum for options selling strategies (Straddle, Iron Condor)
+# High VIX = dangerous to sell options (unlimited risk amplified)
+OPTIONS_VIX_MAX_SELL   = 18.0   # Block straddle/condor selling above this VIX
+OPTIONS_VIX_MAX_BUY    = 25.0   # Block options buying above this VIX (too expensive)
+
+# NIFTY/BANKNIFTY strike intervals for ATM calculation
+NIFTY_STRIKE_INTERVAL     = 50    # NIFTY options are in ₹50 strike intervals
+BANKNIFTY_STRIKE_INTERVAL = 100   # BANKNIFTY options are in ₹100 intervals
+
+# NSE lot sizes (update when SEBI revises)
+NIFTY_LOT_SIZE     = 75
+BANKNIFTY_LOT_SIZE = 35
+
+# Theta Straddle (Bot 06) parameters
+STRADDLE_ENTRY_TIME       = "09:20"  # Enter at 9:20 AM sharp
+STRADDLE_EXIT_TIME        = "15:00"  # Force-exit by 3:00 PM
+STRADDLE_SL_PCT           = 40       # Exit if combined premium rises 40% (stop-loss)
+STRADDLE_TARGET_PCT       = 50       # Exit if combined premium falls 50% (take-profit)
+
+# Iron Condor (Bot 07) parameters
+CONDOR_SPREAD_WIDTH       = 100      # ₹100 spread width (OTM distance for NIFTY)
+CONDOR_ENTRY_DAYS         = ["Monday", "Tuesday"]   # Enter early in the week
+CONDOR_TARGET_PCT         = 50       # Take profit at 50% of max premium collected
+CONDOR_VIX_MAX            = 15.0     # Tighter VIX limit for condor (needs low vol)
+
+# Options Momentum (Bot 08) parameters
+OPTIONS_MOMENTUM_SL_PCT   = 30       # Stop-loss: exit if premium drops 30%
+OPTIONS_MOMENTUM_TP_PCT   = 100      # Target: exit if premium doubles (+100%)
+OPTIONS_MOMENTUM_WINDOW   = "13:30"  # No new buys after 1:30 PM (time decay risk)

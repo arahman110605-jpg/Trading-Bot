@@ -48,6 +48,11 @@ class AnalyticsLogger:
                 except Exception as e:
                     log.error("AnalyticsLogger: Failed to initialize Firebase: %s", e)
         
+        import os
+        self.bot_id = os.getenv("BOT_ID", "default")
+        self.signal_collection = f"{self.bot_id}_signal_telemetry" if self.bot_id != "default" else "signal_telemetry"
+        self.trades_collection  = f"{self.bot_id}_trades" if self.bot_id != "default" else "trades"
+
         if not self.use_firebase:
             log.warning("AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.")
 
@@ -86,7 +91,7 @@ class AnalyticsLogger:
             "notes": notes
         }
         try:
-            self.db.collection("signal_telemetry").add(data)
+            self.db.collection(self.signal_collection).add(data)
             log.debug("Telemetry logged for %s signal on %s", strategy, symbol)
         except Exception as e:
             log.error("AnalyticsLogger: Failed to log telemetry: %s", e)
@@ -98,7 +103,7 @@ class AnalyticsLogger:
             
         try:
             # Query Firebase collection
-            docs = self.db.collection("signal_telemetry").order_by(
+            docs = self.db.collection(self.signal_collection).order_by(
                 "timestamp", direction=firestore.Query.DESCENDING
             ).limit(limit).stream()
             
@@ -114,7 +119,7 @@ class AnalyticsLogger:
             
         try:
             # Query the existing Trades collection (managed by TradeJournal)
-            docs = self.db.collection("trades").where("status", "!=", "OPEN").stream()
+            docs = self.db.collection(self.trades_collection).where("status", "!=", "OPEN").stream()
             
             # Aggregate stats in memory
             stats = {}
