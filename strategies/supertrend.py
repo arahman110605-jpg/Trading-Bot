@@ -100,7 +100,7 @@ class SupertrendStrategy(BaseStrategy):
         if prev_dir == -1 and curr_dir == 1:
             # SL = Supertrend lower band (natural support level)
             sl  = round(float(st_df["supertrend"].iloc[-1]), 2)
-            sl  = min(sl, entry * 0.99)   # Safety: SL never above entry
+            sl  = min(sl, entry * 0.998)  # Safety: SL at least 0.2% away
             tgt = round(entry + (entry - sl) * self.rr, 2)
             st_val = round(float(st_df["supertrend"].iloc[-1]), 2)
             return Signal(
@@ -118,7 +118,7 @@ class SupertrendStrategy(BaseStrategy):
         if prev_dir == 1 and curr_dir == -1:
             # SL = Supertrend upper band (natural resistance level)
             sl  = round(float(st_df["supertrend"].iloc[-1]), 2)
-            sl  = max(sl, entry * 1.01)   # Safety: SL never below entry
+            sl  = max(sl, entry * 1.002)  # Safety: SL at least 0.2% away
             tgt = round(entry - (sl - entry) * self.rr, 2)
             st_val = round(float(st_df["supertrend"].iloc[-1]), 2)
             return Signal(
