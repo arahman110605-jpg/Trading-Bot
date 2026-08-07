@@ -69,6 +69,10 @@ class ORBStrategy(BaseStrategy):
         if orb_range < entry * 0.002:
             return NO_SIGNAL(symbol, self.name)
 
+        # Maximum range filter: ORB range must not be too wide (max 1.5% of price)
+        if orb_range > entry * 0.015:
+            return NO_SIGNAL(symbol, self.name)
+
         # Volume filter: breakout candle volume must be above average
         vol_avg = df["volume"].rolling(20).mean().iloc[-1]
         vol_ok  = df["volume"].iloc[-1] >= vol_avg * config.VOLUME_FILTER_MULT

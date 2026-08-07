@@ -62,7 +62,7 @@ RISK_PER_TRADE_PCT = 1.5    # Max % of capital to risk per trade (1.5%)
 MAX_DAILY_LOSS_PCT = 2.0    # Stop bot if daily loss exceeds this %
 MAX_OPEN_POSITIONS = 3      # Maximum simultaneous open positions
 MAX_TRADES_PER_DAY = 5      # Maximum total executed trades per day to prevent overtrading
-REWARD_TO_RISK_RATIO = 2.0  # Minimum R:R ratio for trade entry
+REWARD_TO_RISK_RATIO = 1.5  # Minimum R:R ratio for trade entry
 
 # Auto square-off time (IST, 24h format)
 SQUARE_OFF_HOUR   = 15

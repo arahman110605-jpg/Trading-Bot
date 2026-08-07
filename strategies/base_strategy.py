@@ -107,8 +107,8 @@ class BaseStrategy(ABC):
         direction: str,
         entry: float,
         atr: float,
-        atr_sl_mult: float = 1.5,
-        rr: float = 2.0,
+        atr_sl_mult: float = 1.2,
+        rr: float = 1.5,
     ):
         """Compute stop-loss and target from ATR."""
         sl_dist = atr * atr_sl_mult
