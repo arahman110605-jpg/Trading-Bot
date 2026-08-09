@@ -175,6 +175,14 @@ class AngelClient:
 
         return pd.DataFrame()
 
+    INDEX_TOKENS = {
+        "NIFTY":       "99926000",
+        "NIFTY 50":    "99926000",
+        "BANKNIFTY":   "99926009",
+        "NIFTY BANK":  "99926009",
+        "INDIA VIX":   "99926017",
+    }
+
     def get_ltp(self, symbol: str, exchange: str = "NSE") -> Optional[float]:
         """Get Last Traded Price."""
         if self.demo_feed:
@@ -187,8 +195,10 @@ class AngelClient:
         if not token:
             return None
 
+        tradingsymbol = symbol if symbol in self.INDEX_TOKENS else f"{symbol}-EQ"
+
         try:
-            res = self.smart_api.ltpData(exchange, f"{symbol}-EQ", token)
+            res = self.smart_api.ltpData(exchange, tradingsymbol, token)
             if res.get("status") and res.get("data"):
                 return float(res["data"]["ltp"])
             else:
@@ -198,7 +208,7 @@ class AngelClient:
                     self._login()
                     time.sleep(1.0)
                     # Retry once
-                    res = self.smart_api.ltpData(exchange, f"{symbol}-EQ", token)
+                    res = self.smart_api.ltpData(exchange, tradingsymbol, token)
                     if res.get("status") and res.get("data"):
                         return float(res["data"]["ltp"])
         except Exception as e:
@@ -207,7 +217,7 @@ class AngelClient:
                 self._login()
                 time.sleep(1.0)
                 try:
-                    res = self.smart_api.ltpData(exchange, f"{symbol}-EQ", token)
+                    res = self.smart_api.ltpData(exchange, tradingsymbol, token)
                     if res.get("status") and res.get("data"):
                         return float(res["data"]["ltp"])
                 except:
@@ -280,6 +290,8 @@ class AngelClient:
 
     def _get_symbol_token(self, symbol: str, exchange: str = "NSE") -> str:
         """Lookup token for symbol dynamically."""
+        if symbol in self.INDEX_TOKENS:
+            return self.INDEX_TOKENS[symbol]
         if not self._token_map:
             return ""
         return self._token_map.get(symbol, "")
