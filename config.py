@@ -134,7 +134,7 @@ SUPERTREND_MULTIPLIER = 3.0
 # DASHBOARD
 # ─────────────────────────────────────────────
 DASHBOARD_HOST = "0.0.0.0"
-DASHBOARD_PORT = 5000
+DASHBOARD_PORT = int(os.getenv("PORT", 5000))
 DASHBOARD_DEBUG = False
 
 # ─────────────────────────────────────────────
