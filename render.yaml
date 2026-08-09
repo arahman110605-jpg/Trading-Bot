@@ -19,3 +19,7 @@ services:
         value: "9440"
       - key: ANGEL_TOTP_SECRET
         value: "ZWIRJNNMNNTPDPXYBECPQXWZVE"
+      - key: MULTI_BOT_MODE
+        value: "true"
+      - key: OPTIONS_TRADING_ENABLED
+        value: "true"

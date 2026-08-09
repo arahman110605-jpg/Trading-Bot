@@ -159,7 +159,7 @@ DATABASE_PATH = "data/trades.db"
 # MULTI-BOT ARCHITECTURE
 # ─────────────────────────────────────────────
 # Enable multi-bot mode (8 bots, shared Market Data Hub)
-MULTI_BOT_MODE = os.getenv("MULTI_BOT_MODE", "false").lower() == "true"
+MULTI_BOT_MODE = os.getenv("MULTI_BOT_MODE", "true").lower() == "true"
 
 # Unique ID for this bot instance (set via env var when running multiple bots)
 BOT_ID = os.getenv("BOT_ID", "default")
@@ -179,8 +179,8 @@ CONSENSUS_HIGH_CONF = 0.85
 # ─────────────────────────────────────────────
 # OPTIONS TRADING SETTINGS
 # ─────────────────────────────────────────────
-# Options are always paper mode until explicitly enabled
-OPTIONS_TRADING_ENABLED = os.getenv("OPTIONS_TRADING_ENABLED", "false").lower() == "true"
+# Options enabled by default in multi-bot mode
+OPTIONS_TRADING_ENABLED = os.getenv("OPTIONS_TRADING_ENABLED", "true").lower() == "true"
 
 # India VIX maximum for options selling strategies (Straddle, Iron Condor)
 # High VIX = dangerous to sell options (unlimited risk amplified)
