@@ -30,9 +30,9 @@ class RiskManager:
     Also enforces daily loss limits and auto square-off time.
     """
 
-    def __init__(self, journal: TradeJournal):
+    def __init__(self, journal: TradeJournal, capital: float = None):
         self.journal   = journal
-        self.initial_capital = config.CAPITAL
+        self.initial_capital = capital if capital is not None else config.CAPITAL
         self.max_risk_per_trade = config.RISK_PER_TRADE_PCT / 100
         self.max_daily_loss     = getattr(config, "MAX_DAILY_LOSS_PCT", 2.0) / 100
         self.max_open_positions = config.MAX_OPEN_POSITIONS

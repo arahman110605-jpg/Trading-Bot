@@ -41,7 +41,7 @@ TREND_ONLY = {"ema_crossover", "supertrend", "orb"}
 class EquityBotRunner:
     """Runs equity strategies for a single bot using shared hub data."""
 
-    def __init__(self, bot_cfg: Dict[str, Any], hub: MarketDataHub, on_update: Optional[Callable] = None):
+    def __init__(self, bot_cfg: Dict[str, Any], hub: MarketDataHub, broker_client=None, journal=None, on_update: Optional[Callable] = None):
         self.bot_id  = bot_cfg["bot_id"]
         self.cfg     = bot_cfg
         self.hub     = hub
@@ -51,9 +51,13 @@ class EquityBotRunner:
         # Inject bot_id into environment so AnalyticsLogger picks it up
         os.environ["BOT_ID"] = self.bot_id
 
+        from utils.trade_journal import TradeJournal
+        self.journal   = journal or TradeJournal()
         self.analytics = AnalyticsLogger()
-        self.risk_mgr  = RiskManager(capital=bot_cfg.get("capital", config.CAPITAL))
-        self.order_mgr = OrderManager(mode=config.TRADING_MODE)
+        self.risk_mgr  = RiskManager(journal=self.journal, capital=bot_cfg.get("capital", config.CAPITAL))
+        
+        client = broker_client or getattr(hub, "_client", None)
+        self.order_mgr = OrderManager(kite=client, risk=self.risk_mgr, journal=self.journal)
 
         # Instantiate only the enabled strategies
         enabled = bot_cfg.get("strategies", [])
