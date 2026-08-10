@@ -22,6 +22,11 @@ from utils.logger import get_logger
 log = get_logger("OptionsRunner")
 
 
+import pytz
+
+IST = pytz.timezone("Asia/Kolkata")
+
+
 class OptionsRunner:
     """Executes a single options strategy using the shared hub's data."""
 
@@ -57,44 +62,53 @@ class OptionsRunner:
         interval_sec = INTERVAL_SECONDS.get(config.CANDLE_INTERVAL, 300)
 
         while self._running:
-            now = datetime.now()
+            try:
+                now = datetime.now(IST)
 
-            # Market hours
-            if not (9 <= now.hour < 15 or (now.hour == 15 and now.minute <= 30)):
-                time.sleep(30)
-                continue
+                # Skip weekends
+                if now.weekday() >= 5:
+                    time.sleep(30)
+                    continue
 
-            # Build hub snapshot for options strategies
-            hub_snapshot = {
-                "atm_strikes":      {k: self.hub.get_atm_strike(k) for k in ["NIFTY", "BANKNIFTY"]},
-                "index_ltp":        {k: self.hub.get_index_ltp(k) for k in ["NIFTY", "BANKNIFTY"]},
-                "options":          self.hub.get_options_snapshot(),
-                "vix":              self.hub.get_vix(),
-                "consensus_signal": self._get_consensus_direction(),
-                "consensus_symbol": "NIFTY",
-            }
+                # Market hours (9:15 AM - 3:30 PM IST)
+                if not (9 <= now.hour < 15 or (now.hour == 15 and now.minute <= 30)):
+                    time.sleep(30)
+                    continue
 
-            # Check exit conditions for active position
-            if self._active_signal:
-                self._check_exit(hub_snapshot)
+                # Build hub snapshot for options strategies
+                hub_snapshot = {
+                    "atm_strikes":      {k: self.hub.get_atm_strike(k) for k in ["NIFTY", "BANKNIFTY"]},
+                    "index_ltp":        {k: self.hub.get_index_ltp(k) for k in ["NIFTY", "BANKNIFTY"]},
+                    "options":          self.hub.get_options_snapshot(),
+                    "vix":              self.hub.get_vix(),
+                    "consensus_signal": self._get_consensus_direction(),
+                    "consensus_symbol": "NIFTY",
+                }
 
-            # Try to enter a new position if none active
-            if not self._active_signal:
-                try:
-                    sig = self.strategy.generate_signal(hub_snapshot)
-                    if sig:
-                        self._active_signal = sig
-                        self._trades_today += 1
-                        log.info("%s: OPTIONS SIGNAL | %s %s | Premium=%.1f | SL=%.1f | Target=%.1f",
-                                 self.bot_id, sig.direction, sig.index, sig.total_premium,
-                                 sig.sl_premium, sig.target_premium)
-                        # Log to Firestore
-                        self._log_signal(sig)
-                except Exception as e:
-                    log.error("%s: Strategy error: %s", self.bot_id, e)
+                # Check exit conditions for active position
+                if self._active_signal:
+                    self._check_exit(hub_snapshot)
 
-            if self.on_update:
-                self.on_update()
+                # Try to enter a new position if none active
+                if not self._active_signal:
+                    try:
+                        sig = self.strategy.generate_signal(hub_snapshot)
+                        if sig:
+                            self._active_signal = sig
+                            self._trades_today += 1
+                            log.info("%s: OPTIONS SIGNAL | %s %s | Premium=%.1f | SL=%.1f | Target=%.1f",
+                                     self.bot_id, sig.direction, sig.index, sig.total_premium,
+                                     sig.sl_premium, sig.target_premium)
+                            # Log to Firestore
+                            self._log_signal(sig)
+                    except Exception as e:
+                        log.error("%s: Strategy error: %s", self.bot_id, e)
+
+                if self.on_update:
+                    self.on_update()
+
+            except Exception as e:
+                log.error("%s: Error in options loop: %s", self.bot_id, e, exc_info=True)
 
             time.sleep(interval_sec)
 

@@ -87,81 +87,83 @@ class EquityBotRunner:
         interval_sec = INTERVAL_SECONDS.get(config.CANDLE_INTERVAL, 300)
 
         while self._running:
-            now = datetime.now()
-
-            # Market hours check (9:15 AM – 3:30 PM IST)
-            if not (9 <= now.hour < 15 or (now.hour == 15 and now.minute <= 30)):
-                time.sleep(30)
-                continue
-
-            # Wait until hub has fresh data
-            last_refresh = self.hub.last_refresh_time()
-            if last_refresh is None:
-                time.sleep(5)
-                continue
-
-            equity_data = self.hub.get_all_equity()
-            if not equity_data:
-                time.sleep(10)
-                continue
-
-            # Per-symbol evaluation
-            candidate_signals: List[Signal] = []
-            consensus_min = self.cfg.get("consensus_min_signals", 1)
-            adx_threshold = self.cfg.get("adx_threshold", config.ADX_TREND_THRESHOLD)
-
-            for symbol, df in equity_data.items():
-                if df.empty or len(df) < 20:
+            try:
+                # Market hours check (IST 9:15 AM - 3:15 PM)
+                if not self.risk_mgr.is_market_open():
+                    time.sleep(30)
                     continue
 
-                adx = _compute_adx(df)
-                trending = adx >= adx_threshold
+                # Wait until hub has fresh data
+                last_refresh = self.hub.last_refresh_time()
+                if last_refresh is None:
+                    time.sleep(5)
+                    continue
 
-                sym_signals: List[Signal] = []
-                for strat in self.strategies:
-                    if strat.name in TREND_ONLY and not trending:
+                equity_data = self.hub.get_all_equity()
+                if not equity_data:
+                    time.sleep(10)
+                    continue
+
+                # Per-symbol evaluation
+                candidate_signals: List[Signal] = []
+                consensus_min = self.cfg.get("consensus_min_signals", 1)
+                adx_threshold = self.cfg.get("adx_threshold", config.ADX_TREND_THRESHOLD)
+
+                for symbol, df in equity_data.items():
+                    if df.empty or len(df) < 20:
                         continue
-                    try:
-                        sig = strat.generate_signal(symbol, df)
-                        if sig and sig.is_actionable:
-                            sym_signals.append(sig)
-                    except Exception as e:
-                        log.error("%s: Strategy %s error on %s: %s", self.bot_id, strat.name, symbol, e)
 
-                # Consensus filter
-                buy_sigs  = [s for s in sym_signals if s.direction == "BUY"]
-                sell_sigs = [s for s in sym_signals if s.direction == "SELL"]
+                    adx = _compute_adx(df)
+                    trending = adx >= adx_threshold
 
-                if len(buy_sigs) >= consensus_min:
-                    best = max(buy_sigs, key=lambda s: s.confidence)
-                    candidate_signals.append(best)
-                elif len(sell_sigs) >= consensus_min:
-                    best = max(sell_sigs, key=lambda s: s.confidence)
-                    candidate_signals.append(best)
+                    sym_signals: List[Signal] = []
+                    for strat in self.strategies:
+                        if strat.name in TREND_ONLY and not trending:
+                            continue
+                        try:
+                            sig = strat.generate_signal(symbol, df)
+                            if sig and sig.is_actionable:
+                                sym_signals.append(sig)
+                        except Exception as e:
+                            log.error("%s: Strategy %s error on %s: %s", self.bot_id, strat.name, symbol, e)
 
-            # Execute best signal
-            if candidate_signals:
-                best = max(candidate_signals, key=lambda s: s.confidence)
-                max_trades = self.cfg.get("max_trades_per_day", config.MAX_TRADES_PER_DAY)
-                if self._trades_today < max_trades:
-                    valid, reason = self.risk_mgr.validate_signal(best)
-                    if valid:
-                        executed = self.order_mgr.execute_signal(best)
-                        if executed:
-                            self._trades_today += 1
-                            log.info("%s: TRADE EXECUTED | %s %s @ %.2f",
-                                     self.bot_id, best.direction, best.symbol, best.entry_price)
-                    self.analytics.log_signal_telemetry(
-                        symbol=best.symbol, strategy=best.strategy,
-                        direction=best.direction, confidence=best.confidence,
-                        entry_price=best.entry_price, stop_loss=best.stop_loss,
-                        target=best.target, rr_ratio=getattr(best, 'rr_ratio', 0),
-                        was_executed=valid, rejection_reason="" if valid else reason,
-                        notes=getattr(best, 'notes', ''),
-                    )
+                    # Consensus filter
+                    buy_sigs  = [s for s in sym_signals if s.direction == "BUY"]
+                    sell_sigs = [s for s in sym_signals if s.direction == "SELL"]
 
-            if self.on_update:
-                self.on_update()
+                    if len(buy_sigs) >= consensus_min:
+                        best = max(buy_sigs, key=lambda s: s.confidence)
+                        candidate_signals.append(best)
+                    elif len(sell_sigs) >= consensus_min:
+                        best = max(sell_sigs, key=lambda s: s.confidence)
+                        candidate_signals.append(best)
+
+                # Execute best signal
+                if candidate_signals:
+                    best = max(candidate_signals, key=lambda s: s.confidence)
+                    max_trades = self.cfg.get("max_trades_per_day", config.MAX_TRADES_PER_DAY)
+                    if self._trades_today < max_trades:
+                        valid, reason = self.risk_mgr.validate_signal(best)
+                        if valid:
+                            executed = self.order_mgr.execute_signal(best)
+                            if executed:
+                                self._trades_today += 1
+                                log.info("%s: TRADE EXECUTED | %s %s @ %.2f",
+                                         self.bot_id, best.direction, best.symbol, best.entry_price)
+                        self.analytics.log_signal_telemetry(
+                            symbol=best.symbol, strategy=best.strategy,
+                            direction=best.direction, confidence=best.confidence,
+                            entry_price=best.entry_price, stop_loss=best.stop_loss,
+                            target=best.target, rr_ratio=getattr(best, 'rr_ratio', 0),
+                            was_executed=valid, rejection_reason="" if valid else reason,
+                            notes=getattr(best, 'notes', ''),
+                        )
+
+                if self.on_update:
+                    self.on_update()
+
+            except Exception as e:
+                log.error("%s: Error in bot loop: %s", self.bot_id, e, exc_info=True)
 
             time.sleep(interval_sec)
 

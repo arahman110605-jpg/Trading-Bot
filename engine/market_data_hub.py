@@ -87,6 +87,11 @@ class MarketDataHub:
         with self._lock:
             return dict(self._options_cache)
 
+    def last_refresh_time(self) -> Optional[datetime]:
+        """Return timestamp of the last equity data refresh."""
+        with self._lock:
+            return self._last_equity_refresh
+
     # ── Refresh logic ─────────────────────────────────────────────────────────
 
     def refresh_equity(self):
