@@ -207,7 +207,11 @@ class TradeJournal:
     def get_open_trades(self) -> List[Dict]:
         today = date.today().isoformat()
         if self.use_firebase:
-            docs = self.db.collection('trades').where('trade_date', '==', today).where('status', '==', 'OPEN').get()
+            try:
+                from google.cloud.firestore import FieldFilter
+                docs = self.db.collection('trades').where(filter=FieldFilter('trade_date', '==', today)).where(filter=FieldFilter('status', '==', 'OPEN')).get()
+            except Exception:
+                docs = self.db.collection('trades').where('trade_date', '==', today).where('status', '==', 'OPEN').get()
             return [doc.to_dict() for doc in docs]
         else:
             with self._conn() as conn:
