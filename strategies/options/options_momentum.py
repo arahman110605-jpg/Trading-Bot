@@ -21,6 +21,10 @@ from typing import Dict, Optional
 from strategies.options.base_options_strategy import BaseOptionsStrategy, OptionsSignal
 from utils.logger import get_logger
 
+import pytz
+
+IST = pytz.timezone("Asia/Kolkata")
+
 log = get_logger("OptionsMomentumStrategy")
 
 
@@ -37,8 +41,8 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
             log.debug("%s: No consensus equity signal — skipping options entry.", self.bot_id)
             return None
 
-        # Time filter: only buy options before 1:30 PM (heavy time decay after that)
-        now = datetime.now()
+        # Time filter: only buy options before 1:30 PM IST (heavy time decay after that)
+        now = datetime.now(IST)
         entry_window_end = self.bot_config.get("entry_window_end", "13:30")
         end_h, end_m = map(int, entry_window_end.split(":"))
         if now.hour > end_h or (now.hour == end_h and now.minute > end_m):

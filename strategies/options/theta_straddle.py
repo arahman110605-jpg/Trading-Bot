@@ -18,6 +18,10 @@ from typing import Dict, Optional
 from strategies.options.base_options_strategy import BaseOptionsStrategy, OptionsSignal
 from utils.logger import get_logger
 
+import pytz
+
+IST = pytz.timezone("Asia/Kolkata")
+
 log = get_logger("ThetaStraddleStrategy")
 
 
@@ -33,11 +37,11 @@ class ThetaStraddleStrategy(BaseOptionsStrategy):
         if not self.is_vix_safe(vix, max_vix):
             return None
 
-        # Time filter: only enter around 9:20 AM
-        now = datetime.now()
+        # Time filter: only enter around 9:20 AM IST
+        now = datetime.now(IST)
         entry_time = self.bot_config.get("entry_time", "09:20")
         entry_h, entry_m = map(int, entry_time.split(":"))
-        if not (now.hour == entry_h and abs(now.minute - entry_m) <= 5):
+        if not (now.hour == entry_h and abs(now.minute - entry_m) <= 10):
             log.debug("%s: Outside entry window (entry=%s, now=%02d:%02d)",
                       self.bot_id, entry_time, now.hour, now.minute)
             return None

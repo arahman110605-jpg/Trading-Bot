@@ -43,11 +43,24 @@ class MarketDataHub:
         self._atm_strikes: Dict[str, int] = {}
         self._index_ltp: Dict[str, float] = {}
         self._vix: Optional[float] = None
+        self._consensus_direction: Optional[str] = None
+        self._consensus_symbol: Optional[str] = None
         self._lock = threading.RLock()
         self._last_equity_refresh: Optional[datetime] = None
         self._last_options_refresh: Optional[datetime] = None
         self._running = False
         log.info("MarketDataHub: Initialised. Ready to serve %d bots.", 8)
+
+    # ── Consensus Signal API ───────────────────────────────────────────────
+
+    def set_consensus_signal(self, direction: str, symbol: str):
+        with self._lock:
+            self._consensus_direction = direction
+            self._consensus_symbol = symbol
+
+    def get_consensus_signal(self):
+        with self._lock:
+            return self._consensus_direction, self._consensus_symbol
 
     # ── Public read API ───────────────────────────────────────────────────────
 
@@ -135,8 +148,8 @@ class MarketDataHub:
 
                 log.debug("%s spot=%.1f ATM=%d", index, spot, atm)
 
-                # Fetch CE and PE for ATM-2 to ATM+2 strikes
-                for offset in range(-2, 3):
+                # Fetch CE and PE for ATM-4 to ATM+4 strikes (covers Iron Condor wings +/-200)
+                for offset in range(-4, 5):
                     strike = atm + (offset * interval)
                     for opt_type in ("CE", "PE"):
                         try:
@@ -180,10 +193,8 @@ class MarketDataHub:
         try:
             token_map = getattr(self._client, "_token_map", {})
             today = date.today()
-            # Find next Thursday (weekly expiry)
+            # Find current or next Thursday (weekly expiry)
             days_ahead = (3 - today.weekday()) % 7
-            if days_ahead == 0:
-                days_ahead = 7
             expiry = today + timedelta(days=days_ahead)
 
             month_short = expiry.strftime("%b").upper()

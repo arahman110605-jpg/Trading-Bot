@@ -3627,3 +3627,23 @@
 2026-08-07 10:47:41 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
 2026-08-07 10:47:50 | INFO     | TradingBot.AngelClient | Loaded 2439 NSE -EQ tokens.
 2026-08-07 13:56:29 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-07 17:35:25 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-08 10:09:22 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-09 09:39:13 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialising shared Angel One connection...
+2026-08-09 09:39:13 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-09 09:39:13 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-09 09:39:13 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-09 09:39:13 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-09 09:39:22 | INFO     | TradingBot.AngelClient | Loaded 2450 NSE -EQ tokens.
+2026-08-09 09:39:22 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve 8 bots.
+2026-08-09 09:39:22 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-09 09:39:22 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-09 09:39:22 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-09 09:39:22 | INFO     | TradingBot.EquityBotRunner | test: EquityBotRunner ready | strategies=['ema_crossover'] | capital=100000
+2026-08-10 15:56:13 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialising shared Angel One connection...
+2026-08-10 15:56:13 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-10 15:56:13 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-10 15:56:13 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-10 15:56:13 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-10 15:56:22 | INFO     | TradingBot.AngelClient | Loaded 2450 NSE -EQ tokens.
+2026-08-10 15:56:22 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve 8 bots.

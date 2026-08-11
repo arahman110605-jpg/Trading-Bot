@@ -151,11 +151,11 @@ class OptionsRunner:
                          self.bot_id, current_ltp, sig.target_premium, pnl)
                 self._close_position(pnl, "TARGET_HIT")
 
-        # Force exit at 3:00 PM
-        now = datetime.now()
+        # Force exit at 3:00 PM IST
+        now = datetime.now(IST)
         exit_time = self.cfg.get("exit_time", "15:00")
         exit_h, exit_m = map(int, exit_time.split(":"))
-        if now.hour >= exit_h and now.minute >= exit_m:
+        if now.hour > exit_h or (now.hour == exit_h and now.minute >= exit_m):
             log.info("%s: EOD EXIT — squaring off options position.", self.bot_id)
             self._close_position(0.0, "EOD_SQUAREOFF")
 
@@ -166,10 +166,9 @@ class OptionsRunner:
         self._active_signal = None
 
     def _get_consensus_direction(self) -> Optional[str]:
-        """Read the latest direction from Bot 05 (consensus) if configured."""
-        # This will be wired up via a shared state object in the full implementation
-        # For now, returns None (options momentum waits for equity consensus)
-        return None
+        """Read the latest direction from Bot 05 (consensus) via shared MarketDataHub."""
+        direction, _ = self.hub.get_consensus_signal()
+        return direction
 
     def _log_signal(self, sig: OptionsSignal):
         try:

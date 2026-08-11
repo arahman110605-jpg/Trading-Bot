@@ -84,11 +84,16 @@ class AngelClient:
             req = urllib.request.urlopen(url)
             data = json.loads(req.read().decode("utf-8"))
             for item in data:
-                if item.get("exch_seg") == "NSE" and str(item.get("symbol", "")).endswith("-EQ"):
+                exch = item.get("exch_seg")
+                sym  = str(item.get("symbol", ""))
+                tok  = str(item.get("token", ""))
+                if exch == "NSE" and sym.endswith("-EQ"):
                     name = item.get("name", "")
                     if name:
-                        self._token_map[name] = str(item.get("token", ""))
-            log.info("Loaded %d NSE -EQ tokens.", len(self._token_map))
+                        self._token_map[name] = tok
+                elif exch == "NFO" and sym and tok:
+                    self._token_map[sym] = tok
+            log.info("Loaded %d NSE and NFO tokens.", len(self._token_map))
         except Exception as e:
             log.error("Failed to fetch dynamic token map: %s", e)
 

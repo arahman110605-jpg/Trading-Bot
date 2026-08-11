@@ -22,6 +22,10 @@ from typing import Dict, Optional
 from strategies.options.base_options_strategy import BaseOptionsStrategy, OptionsSignal
 from utils.logger import get_logger
 
+import pytz
+
+IST = pytz.timezone("Asia/Kolkata")
+
 log = get_logger("IronCondorStrategy")
 
 
@@ -37,16 +41,16 @@ class IronCondorStrategy(BaseOptionsStrategy):
         if not self.is_vix_safe(vix, max_vix):
             return None
 
-        # Day filter: only enter on Monday or Tuesday
-        now = datetime.now()
+        # Day filter: only enter on Monday or Tuesday (IST)
+        now = datetime.now(IST)
         allowed_days = self.bot_config.get("entry_days", ["Monday", "Tuesday"])
         current_day = now.strftime("%A")
         if current_day not in allowed_days:
             log.debug("%s: Not an entry day (%s). Iron Condor skipped.", self.bot_id, current_day)
             return None
 
-        # Only enter once per day (morning session)
-        if now.hour > 11:
+        # Only enter once per day (morning session before 11:30 AM IST)
+        if now.hour > 11 or (now.hour == 11 and now.minute > 30):
             log.debug("%s: Past entry window for Iron Condor.", self.bot_id)
             return None
 

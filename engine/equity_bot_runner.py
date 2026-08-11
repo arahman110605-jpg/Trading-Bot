@@ -141,6 +141,8 @@ class EquityBotRunner:
                 # Execute best signal
                 if candidate_signals:
                     best = max(candidate_signals, key=lambda s: s.confidence)
+                    if "consensus" in self.bot_id:
+                        self.hub.set_consensus_signal(best.direction, best.symbol)
                     max_trades = self.cfg.get("max_trades_per_day", config.MAX_TRADES_PER_DAY)
                     if self._trades_today < max_trades:
                         valid, reason = self.risk_mgr.validate_signal(best)
