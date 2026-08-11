@@ -61,7 +61,7 @@ class MultiBotManager:
             return []
 
     def start(self):
-        """Start the hub refresh loop, wait for initial data, then launch all bots."""
+        """Start the hub refresh loop and launch all bots asynchronously in background."""
         log.info("MultiBotManager: Starting shared MarketDataHub...")
         self._running = True
 
@@ -70,19 +70,23 @@ class MultiBotManager:
         interval = INTERVAL_SECONDS.get(config.CANDLE_INTERVAL, 300)
         self.hub.start_refresh_loop(equity_interval_sec=interval)
 
-        # Wait for initial data before bots start
-        if not self.hub.wait_for_initial_data(timeout_sec=180):
-            log.error("MultiBotManager: Initial data timeout — bots may start with empty cache.")
+        def _async_launch():
+            # Wait for initial data in background thread so Flask server starts instantly
+            if not self.hub.wait_for_initial_data(timeout_sec=180):
+                log.error("MultiBotManager: Initial data timeout — bots starting with empty cache.")
 
-        # Launch equity and options bots
-        for bot_cfg in self.bot_configs:
-            bot_type = bot_cfg.get("type", "equity")
-            if bot_type == "equity":
-                self._launch_equity_bot(bot_cfg)
-            elif bot_type == "options":
-                self._launch_options_bot(bot_cfg)
+            # Launch equity and options bots
+            for bot_cfg in self.bot_configs:
+                bot_type = bot_cfg.get("type", "equity")
+                if bot_type == "equity":
+                    self._launch_equity_bot(bot_cfg)
+                elif bot_type == "options":
+                    self._launch_options_bot(bot_cfg)
 
-        log.info("MultiBotManager: All %d bots launched.", len(self._threads))
+            log.info("MultiBotManager: All %d bots launched.", len(self._threads))
+
+        t = threading.Thread(target=_async_launch, name="MultiBotManager-Launch", daemon=True)
+        t.start()
 
     def _launch_equity_bot(self, bot_cfg: Dict):
         """Create and launch an equity StrategyRunner thread."""
