@@ -154,3 +154,12 @@ class MultiBotManager:
         for runner in self._options_runners:
             statuses.append(runner.get_status())
         return statuses
+
+    def get_signal_log(self) -> List[Dict]:
+        """Aggregate recent signal logs across all bot runners."""
+        all_signals = []
+        for runner in self._equity_runners:
+            if hasattr(runner, "get_signal_log"):
+                all_signals.extend(runner.get_signal_log())
+        all_signals.sort(key=lambda s: s.get("time", ""), reverse=True)
+        return all_signals[:50]

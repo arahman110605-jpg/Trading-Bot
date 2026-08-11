@@ -57,7 +57,12 @@ def _build_state() -> dict:
     """Collect all dashboard data into one dict."""
     stats    = _journal.get_todays_stats() if _journal else {}
     trades   = _journal.get_todays_trades() if _journal else []
-    signals  = _runner.get_signal_log() if _runner and hasattr(_runner, "get_signal_log") else []
+    if _runner and hasattr(_runner, "get_signal_log"):
+        signals = _runner.get_signal_log()
+    elif _multi_manager and hasattr(_multi_manager, "get_signal_log"):
+        signals = _multi_manager.get_signal_log()
+    else:
+        signals = []
     positions = _orders.get_open_positions() if _orders else []
     total_pnl = _journal.get_total_pnl() if _journal else 0.0
 

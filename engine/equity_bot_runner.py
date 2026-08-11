@@ -74,9 +74,34 @@ class EquityBotRunner:
         self._daily_pnl    = 0.0
         self._open_positions: List[Dict] = []
         self._consensus_signals: List[Signal] = []   # shared across scan cycles
+        self._signal_log: List[Dict] = []
+        self._signal_lock = threading.Lock()
 
         log.info("%s: EquityBotRunner ready | strategies=%s | capital=%d",
                  self.bot_id, enabled, bot_cfg.get("capital", config.CAPITAL))
+
+    def _record_signal(self, signal: Signal):
+        """Keep last 50 signals for dashboard display (thread-safe)."""
+        entry = {
+            "time":      datetime.now().strftime("%H:%M:%S"),
+            "bot_id":    self.bot_id,
+            "symbol":    signal.symbol,
+            "direction": signal.direction,
+            "strategy":  signal.strategy,
+            "entry":     signal.entry_price,
+            "sl":        signal.stop_loss,
+            "target":    signal.target,
+            "rr":        getattr(signal, 'rr_ratio', 1.5),
+            "conf":      f"{signal.confidence:.0%}",
+            "notes":     signal.notes,
+        }
+        with self._signal_lock:
+            self._signal_log.insert(0, entry)
+            self._signal_log = self._signal_log[:50]
+
+    def get_signal_log(self) -> List[Dict]:
+        with self._signal_lock:
+            return list(self._signal_log)
 
     def run(self):
         """Main bot loop — waits for hub to refresh then evaluates signals."""
@@ -124,6 +149,7 @@ class EquityBotRunner:
                             sig = strat.generate_signal(symbol, df)
                             if sig and sig.is_actionable:
                                 sym_signals.append(sig)
+                                self._record_signal(sig)
                         except Exception as e:
                             log.error("%s: Strategy %s error on %s: %s", self.bot_id, strat.name, symbol, e)
 
