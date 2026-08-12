@@ -1,5 +1,5 @@
 """
-strategy_runner.py — Multi-symbol strategy runner loop for Crypto Trading Bot.
+strategy_runner.py — Multi-symbol strategy runner loop for Binance & Delta Crypto Options Bot.
 """
 
 import time
@@ -7,6 +7,7 @@ import threading
 from typing import List, Dict, Any
 import pandas as pd
 from binance_crypto_bot.broker.paper_crypto_broker import PaperCryptoBroker
+from binance_crypto_bot.broker.paper_delta_broker import PaperDeltaBroker
 from binance_crypto_bot.broker.binance_client import BinanceClient
 from binance_crypto_bot.engine.risk_manager import CryptoRiskManager
 from binance_crypto_bot.engine.order_executor import CryptoOrderExecutor
@@ -25,7 +26,7 @@ class CryptoStrategyRunner:
         
         self.risk_manager = CryptoRiskManager()
         self.executor = CryptoOrderExecutor(broker)
-        self.binance_feeder = BinanceClient(is_futures=False, testnet=False)  # For live data fetching
+        self.binance_feeder = BinanceClient(is_futures=False, testnet=False)
 
         # State tracking for Dashboard
         self.latest_signals: List[Dict[str, Any]] = []
@@ -38,16 +39,14 @@ class CryptoStrategyRunner:
         self.running = True
         self.paused = False
 
-        # Set risk manager initial balance
         acc = self.broker.get_account_balance()
-        self.risk_manager.set_starting_equity(acc.get("wallet_balance", 1000.0))
+        self.risk_manager.set_starting_equity(acc.get("wallet_balance", 60.0))
 
         self._thread = threading.Thread(target=self._run_loop, daemon=True)
         self._thread.start()
         logger.info(f"Crypto Strategy Runner started for symbols: {self.symbols}")
 
     def stop(self):
-        """Stop the loop thread."""
         self.running = False
         logger.info("Crypto Strategy Runner stopped.")
 
@@ -60,14 +59,15 @@ class CryptoStrategyRunner:
         logger.info("Crypto Strategy Runner resumed.")
 
     def _fetch_klines_fallback(self, symbol: str) -> pd.DataFrame:
-        """Fetch real kline candles or generate fallback candle data for paper mode."""
-        df = self.binance_feeder.get_klines(symbol, interval=self.interval, limit=100)
+        """Fetch kline candles or generate fallback data."""
+        # Convert BTC to BTCUSDT if needed for feeder
+        feed_sym = f"{symbol}USDT" if not symbol.endswith("USDT") else symbol
+        df = self.binance_feeder.get_klines(feed_sym, interval=self.interval, limit=100)
         if not df.empty:
             return df
 
-        # Generate synthetic candles if offline / no internet connection
         import numpy as np
-        logger.warning(f"Generating synthetic candle feed for {symbol} paper test")
+        logger.warning(f"Generating synthetic candle feed for {symbol} test")
         now = pd.Timestamp.now()
         times = [now - pd.Timedelta(minutes=5*i) for i in range(100)][::-1]
         
@@ -89,7 +89,6 @@ class CryptoStrategyRunner:
             if not self.paused:
                 try:
                     for symbol in self.symbols:
-                        # 1. Fetch current Kline data
                         df = self._fetch_klines_fallback(symbol)
                         if df.empty:
                             continue
@@ -97,22 +96,22 @@ class CryptoStrategyRunner:
                         current_price = float(df.iloc[-1]["close"])
                         self.market_prices[symbol] = current_price
 
-                        # 2. Update paper broker positions with current price
-                        if isinstance(self.broker, PaperCryptoBroker):
+                        # Update Paper Brokers
+                        if hasattr(self.broker, "update_prices"):
                             self.broker.update_prices({symbol: current_price})
 
-                        # 3. Evaluate strategies for signal generation
+                        # Evaluate strategies
                         for strategy in self.strategies:
                             signal = strategy.generate_signal(df)
-                            signal["symbol"] = symbol
+                            signal["underlying"] = symbol
 
-                            if signal.get("action") in ["BUY", "SELL"]:
-                                logger.info(f"Signal Generated: {symbol} [{signal['action']}] by {strategy.name} | Price: ${current_price:.2f}")
+                            action = signal.get("action", "HOLD")
+                            if action in ["BUY", "SELL", "BUY_CALL", "BUY_PUT", "SHORT_STRADDLE", "BULL_PUT_SPREAD"]:
+                                logger.info(f"Signal Generated: {symbol} [{action}] by {strategy.name} | Spot: ${current_price:.2f}")
 
-                                # Add to latest signals log
                                 self.latest_signals.insert(0, {
-                                    "symbol": symbol,
-                                    "action": signal["action"],
+                                    "symbol": signal.get("symbol", symbol),
+                                    "action": action,
                                     "strategy": strategy.name,
                                     "price": current_price,
                                     "reason": signal.get("reason", ""),
@@ -120,12 +119,15 @@ class CryptoStrategyRunner:
                                 })
                                 self.latest_signals = self.latest_signals[:20]
 
-                                # Validate with Risk Manager
                                 acc = self.broker.get_account_balance()
-                                current_equity = acc.get("total_equity", acc.get("wallet_balance", 1000.0))
+                                current_equity = acc.get("total_equity", acc.get("wallet_balance", 60.0))
                                 
-                                if self.risk_manager.validate_signal(signal, current_equity):
-                                    qty = self.risk_manager.calculate_position_size(current_price, acc.get("available", 1000.0))
+                                # For options, size contracts
+                                if isinstance(self.broker, PaperDeltaBroker):
+                                    qty = 1.0  # 1 contract
+                                    self.executor.execute_trade(symbol, signal, qty)
+                                elif self.risk_manager.validate_signal(signal, current_equity):
+                                    qty = self.risk_manager.calculate_position_size(current_price, acc.get("available", 60.0))
                                     if qty > 0:
                                         self.executor.execute_trade(symbol, signal, qty)
                 except Exception as e:

@@ -96,6 +96,7 @@ class TradeJournal:
         strategy: str,
         order_id: str = "",
         mode: str = config.TRADING_MODE,
+        bot_id: str = "",
     ) -> Union[int, str]:
         """Record a new trade entry. Returns the trade ID (str for Firebase, int for SQLite)."""
         today = date.today().isoformat()
@@ -119,7 +120,7 @@ class TradeJournal:
             "order_id": order_id,
             "exit_order_id": "",
             "mode": mode,
-            "notes": ""
+            "notes": bot_id
         }
 
         if self.use_firebase:
@@ -133,11 +134,11 @@ class TradeJournal:
                     """INSERT INTO trades
                        (trade_date, symbol, exchange, direction, quantity,
                         entry_price, stop_loss, target, strategy,
-                        status, entry_time, order_id, mode)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                        status, entry_time, order_id, mode, notes)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     (today, symbol, exchange, direction, quantity,
                      entry_price, stop_loss, target, strategy,
-                     "OPEN", now, order_id, mode),
+                     "OPEN", now, order_id, mode, bot_id),
                 )
                 trade_id = cur.lastrowid
                 
@@ -204,7 +205,7 @@ class TradeJournal:
 
     # ── Read ───────────────────────────────────────────────────────────────
 
-    def get_open_trades(self) -> List[Dict]:
+    def get_open_trades(self, bot_id: str = None) -> List[Dict]:
         today = date.today().isoformat()
         if self.use_firebase:
             try:
@@ -212,13 +213,17 @@ class TradeJournal:
                 docs = self.db.collection('trades').where(filter=FieldFilter('trade_date', '==', today)).where(filter=FieldFilter('status', '==', 'OPEN')).get()
             except Exception:
                 docs = self.db.collection('trades').where('trade_date', '==', today).where('status', '==', 'OPEN').get()
-            return [doc.to_dict() for doc in docs]
+            trades = [doc.to_dict() for doc in docs]
         else:
             with self._conn() as conn:
                 rows = conn.execute(
                     "SELECT * FROM trades WHERE trade_date=? AND status='OPEN'", (today,)
                 ).fetchall()
-            return [dict(r) for r in rows]
+            trades = [dict(r) for r in rows]
+
+        if bot_id:
+            trades = [t for t in trades if t.get('notes') == bot_id]
+        return trades
 
     def get_todays_trades(self) -> List[Dict]:
         today = date.today().isoformat()

@@ -167,3 +167,14 @@ class MultiBotManager:
                 all_signals.extend(runner.get_signal_log())
         all_signals.sort(key=lambda s: s.get("time", ""), reverse=True)
         return all_signals[:50]
+
+    def get_all_open_positions(self) -> List[Dict]:
+        """Aggregate all open positions across all bots."""
+        positions = []
+        for runner in self._equity_runners:
+            if hasattr(runner, "order_mgr"):
+                positions.extend(runner.order_mgr.get_open_positions())
+        for runner in self._options_runners:
+            if hasattr(runner, "order_mgr"):
+                positions.extend(runner.order_mgr.get_open_positions())
+        return positions

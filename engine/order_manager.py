@@ -84,15 +84,16 @@ class OpenPosition:
 class OrderManager:
     """Central order and position manager."""
 
-    def __init__(self, kite, risk: RiskManager, journal: TradeJournal):
+    def __init__(self, kite, risk: RiskManager, journal: TradeJournal, bot_id: str = ""):
         self.kite    = kite
         self.risk    = risk
         self.journal = journal
+        self.bot_id  = bot_id
         self.open_positions: Dict[str, OpenPosition] = {}  # symbol → position
         self._lock = threading.Lock()
 
         # Hydrate open positions from journal (for state recovery after restarts)
-        open_trades = self.journal.get_open_trades()
+        open_trades = self.journal.get_open_trades(bot_id=self.bot_id)
         for t in open_trades:
             self.open_positions[t["symbol"]] = OpenPosition(
                 trade_id=t.get("id") or t.get("trade_id"), # Handle SQLite and Firebase
@@ -169,6 +170,7 @@ class OrderManager:
             target=actual_tgt,
             strategy=signal.strategy,
             order_id=order_id,
+            bot_id=self.bot_id,
         )
 
         # 6. Track position

@@ -58,7 +58,7 @@ class EquityBotRunner:
         self.risk_mgr  = RiskManager(journal=self.journal, capital=bot_cfg.get("capital", config.CAPITAL))
         
         client = broker_client or getattr(hub, "_client", None)
-        self.order_mgr = OrderManager(kite=client, risk=self.risk_mgr, journal=self.journal)
+        self.order_mgr = OrderManager(kite=client, risk=self.risk_mgr, journal=self.journal, bot_id=self.bot_id)
 
         # Instantiate only the enabled strategies
         enabled = bot_cfg.get("strategies", [])
@@ -129,6 +129,14 @@ class EquityBotRunner:
                 if not equity_data:
                     time.sleep(10)
                     continue
+
+                # Update trailing SL and Target for open positions
+                for pos in self.order_mgr.get_open_positions():
+                    sym = pos["symbol"]
+                    df = equity_data.get(sym)
+                    if df is not None and not df.empty:
+                        ltp = df.iloc[-1]['close']
+                        self.order_mgr.update_position_price(sym, ltp)
 
                 # Per-symbol evaluation
                 candidate_signals: List[Signal] = []
@@ -204,7 +212,8 @@ class EquityBotRunner:
             "bot_id":       self.bot_id,
             "name":         self.cfg.get("name", self.bot_id),
             "type":         "equity",
-            "trades_today": self._trades_today,
+            "total_trades": self._trades_today,
+            "open_positions_count": len(self.order_mgr.get_open_positions()),
             "pnl":          self._daily_pnl,
             "strategies":   self.cfg.get("strategies", []),
             "capital":      self.cfg.get("capital", 100000),

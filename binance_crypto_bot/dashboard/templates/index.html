@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binance Crypto & Web3 Trading Bot</title>
+    <title>Delta Exchange & Binance Crypto Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -14,8 +14,8 @@
             <div class="logo">
                 <span class="crypto-icon">⚡</span>
                 <div>
-                    <h1>Binance Crypto & Web3 Trading Bot</h1>
-                    <p class="subtitle">Spot, Futures & Web3 DEX Algorithmic Execution</p>
+                    <h1>Delta Exchange & Binance Crypto Bot</h1>
+                    <p class="subtitle">Crypto Options, Spot & Futures Algorithmic Execution</p>
                 </div>
             </div>
             <div class="controls">
@@ -48,7 +48,7 @@
 
         <!-- Tickers Bar -->
         <div class="card ticker-bar">
-            <h3>Live Market Feed</h3>
+            <h3>Live Spot & Options Feed</h3>
             <div id="tickerFeed" class="ticker-items">
                 <!-- Populated dynamically -->
             </div>
@@ -58,21 +58,43 @@
         <div class="main-grid">
             <!-- Active Positions -->
             <div class="card panel">
-                <h3>Active Crypto Positions</h3>
+                <h3>Active Option Contracts</h3>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
-                                <th>Symbol</th>
-                                <th>Side</th>
-                                <th>Size</th>
-                                <th>Entry Price</th>
-                                <th>Current Price</th>
+                                <th>Contract / Symbol</th>
+                                <th>Type / Side</th>
+                                <th>Strike / Size</th>
+                                <th>Entry Premium</th>
+                                <th>Current Premium</th>
+                                <th>Delta / Theta</th>
                                 <th>Unrealized P&L</th>
                             </tr>
                         </thead>
                         <tbody id="positionsTableBody">
-                            <tr><td colspan="6" class="text-center">No open positions</td></tr>
+                            <tr><td colspan="7" class="text-center">No open positions</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 style="margin-top: 20px;">Completed Scalps & Closed Trade History</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Contract / Symbol</th>
+                                <th>Type</th>
+                                <th>Entry Premium</th>
+                                <th>Exit Premium</th>
+                                <th>Fee</th>
+                                <th>Net P&L</th>
+                                <th>Exit Reason</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tradeHistoryTableBody">
+                            <tr><td colspan="8" class="text-center">No completed trades yet</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -80,7 +102,7 @@
 
             <!-- Signal & Trade Log -->
             <div class="card panel">
-                <h3>Latest Signals & Trades</h3>
+                <h3>Latest Signals & Option Trades</h3>
                 <div id="signalsList" class="signals-list">
                     <div class="empty-state">Listening for market signals...</div>
                 </div>

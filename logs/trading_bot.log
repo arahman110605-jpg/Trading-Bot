@@ -3770,3 +3770,243 @@
 2026-08-11 10:35:34 | INFO     | TradingBot.Candlestick | Candlestick BUY: Hammer on INFY (conf=70%)
 2026-08-11 10:35:46 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Stopping all bots...
 2026-08-11 10:35:46 | INFO     | TradingBot.MultiBotManager | MultiBotManager: All bots stopped.
+2026-08-11 19:46:27 | INFO     | TradingBot.Main | Starting Trading Bot | mode=PAPER | date=2026-08-11
+2026-08-11 19:46:31 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-11 19:46:31 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-11 19:46:31 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-11 19:46:31 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-11 19:46:46 | INFO     | TradingBot.AngelClient | Loaded 36417 NSE and NFO tokens.
+2026-08-11 19:46:47 | INFO     | TradingBot.Main | Broker active: Angel One (SmartAPI - FREE)
+2026-08-11 19:46:51 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:46:51 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:46:51 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:46:51 | INFO     | TradingBot.Main | MULTI-BOT MODE enabled — launching 8 bots with shared MarketDataHub
+2026-08-11 19:46:51 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialising shared Angel One connection...
+2026-08-11 19:46:51 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-11 19:46:51 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-11 19:46:51 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-11 19:46:51 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-11 19:47:02 | INFO     | TradingBot.AngelClient | Loaded 36417 NSE and NFO tokens.
+2026-08-11 19:47:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve 8 bots.
+2026-08-11 19:47:02 | INFO     | TradingBot.MultiBotManager | Loaded 8 bot configs from D:\trading bot\bots\bot_manifest.json
+2026-08-11 19:47:02 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Loaded 8 bot configs from manifest.
+2026-08-11 19:47:02 | INFO     | TradingBot.Dashboard | Dashboard initialised and connected to engine (multi_bot=True).
+2026-08-11 19:47:02 | INFO     | TradingBot.Dashboard | Dashboard starting at http://localhost:5000
+2026-08-11 19:47:02 | INFO     | TradingBot.Main | Dashboard running at http://localhost:5000 (Multi-Bot Arena)
+2026-08-11 19:47:02 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Starting shared MarketDataHub...
+2026-08-11 19:47:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refresh loop started (interval=300s).
+2026-08-11 19:47:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 19:47:02 | INFO     | TradingBot.Main | All 8 bots running. Press Ctrl+C to stop.
+2026-08-11 19:47:09 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 19:47:09 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 19:47:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 19:47:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initial data ready (8.0s)
+2026-08-11 19:47:10 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:47:10 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_01_trend: EquityBotRunner ready | strategies=['ema_crossover', 'supertrend'] | capital=100000
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_01_trend: Starting equity bot loop...
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_01_trend] thread.
+2026-08-11 19:47:10 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:47:10 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_02_orb: EquityBotRunner ready | strategies=['orb'] | capital=100000
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_02_orb: Starting equity bot loop...
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_02_orb] thread.
+2026-08-11 19:47:10 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:47:10 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_03_mean_rev: EquityBotRunner ready | strategies=['rsi', 'vwap'] | capital=100000
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_03_mean_rev: Starting equity bot loop...
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_03_mean_rev] thread.
+2026-08-11 19:47:10 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:47:10 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_04_pattern: EquityBotRunner ready | strategies=['candlestick', 'rsi'] | capital=100000
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_04_pattern: Starting equity bot loop...
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_04_pattern] thread.
+2026-08-11 19:47:10 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:47:10 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_05_consensus: EquityBotRunner ready | strategies=['ema_crossover', 'rsi', 'vwap', 'supertrend', 'candlestick', 'orb'] | capital=100000
+2026-08-11 19:47:10 | INFO     | TradingBot.EquityBotRunner | bot_05_consensus: Starting equity bot loop...
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_05_consensus] thread.
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.OptionsRunner | bot_06_theta: OptionsRunner ready | strategy=theta_straddle
+2026-08-11 19:47:10 | INFO     | TradingBot.OptionsRunner | bot_06_theta: Options bot loop started.
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched options bot [bot_06_theta] with strategy [theta_straddle].
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.OptionsRunner | bot_07_condor: OptionsRunner ready | strategy=iron_condor
+2026-08-11 19:47:10 | INFO     | TradingBot.OptionsRunner | bot_07_condor: Options bot loop started.
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched options bot [bot_07_condor] with strategy [iron_condor].
+2026-08-11 19:47:10 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:47:10 | INFO     | TradingBot.OptionsRunner | bot_08_momentum: OptionsRunner ready | strategy=options_momentum
+2026-08-11 19:47:10 | INFO     | TradingBot.OptionsRunner | bot_08_momentum: Options bot loop started.
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched options bot [bot_08_momentum] with strategy [options_momentum].
+2026-08-11 19:47:10 | INFO     | TradingBot.MultiBotManager | MultiBotManager: All 8 bots launched.
+2026-08-11 19:51:25 | INFO     | TradingBot.Main | Starting Trading Bot | mode=PAPER | date=2026-08-11
+2026-08-11 19:51:27 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-11 19:51:27 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-11 19:51:27 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-11 19:51:27 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-11 19:51:37 | INFO     | TradingBot.AngelClient | Loaded 36417 NSE and NFO tokens.
+2026-08-11 19:51:37 | INFO     | TradingBot.Main | Broker active: Angel One (SmartAPI - FREE)
+2026-08-11 19:51:37 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:51:37 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:51:37 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:51:37 | INFO     | TradingBot.Main | MULTI-BOT MODE enabled — launching 8 bots with shared MarketDataHub
+2026-08-11 19:51:37 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialising shared Angel One connection...
+2026-08-11 19:51:37 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-11 19:51:37 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-11 19:51:37 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-11 19:51:37 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-11 19:51:48 | INFO     | TradingBot.AngelClient | Loaded 36417 NSE and NFO tokens.
+2026-08-11 19:51:48 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve 8 bots.
+2026-08-11 19:51:48 | INFO     | TradingBot.MultiBotManager | Loaded 8 bot configs from D:\trading bot\bots\bot_manifest.json
+2026-08-11 19:51:48 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Loaded 8 bot configs from manifest.
+2026-08-11 19:51:48 | INFO     | TradingBot.Dashboard | Dashboard initialised and connected to engine (multi_bot=True).
+2026-08-11 19:51:48 | INFO     | TradingBot.Dashboard | Dashboard starting at http://localhost:5000
+2026-08-11 19:51:48 | INFO     | TradingBot.Main | Dashboard running at http://localhost:5000 (Multi-Bot Arena)
+2026-08-11 19:51:48 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Starting shared MarketDataHub...
+2026-08-11 19:51:48 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refresh loop started (interval=300s).
+2026-08-11 19:51:48 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 19:51:48 | INFO     | TradingBot.Main | All 8 bots running. Press Ctrl+C to stop.
+2026-08-11 19:51:56 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 19:51:56 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 19:51:56 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 19:51:56 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initial data ready (8.0s)
+2026-08-11 19:51:56 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:51:56 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_01_trend: EquityBotRunner ready | strategies=['ema_crossover', 'supertrend'] | capital=100000
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_01_trend: Starting equity bot loop...
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_01_trend] thread.
+2026-08-11 19:51:56 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:51:56 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_02_orb: EquityBotRunner ready | strategies=['orb'] | capital=100000
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_02_orb: Starting equity bot loop...
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_02_orb] thread.
+2026-08-11 19:51:56 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:51:56 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_03_mean_rev: EquityBotRunner ready | strategies=['rsi', 'vwap'] | capital=100000
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_03_mean_rev: Starting equity bot loop...
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_03_mean_rev] thread.
+2026-08-11 19:51:56 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:51:56 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_04_pattern: EquityBotRunner ready | strategies=['candlestick', 'rsi'] | capital=100000
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_04_pattern: Starting equity bot loop...
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_04_pattern] thread.
+2026-08-11 19:51:56 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.5% | max_daily_loss=2.0%
+2026-08-11 19:51:56 | INFO     | TradingBot.OrderManager | Recovered 1 open positions from trade journal.
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_05_consensus: EquityBotRunner ready | strategies=['ema_crossover', 'rsi', 'vwap', 'supertrend', 'candlestick', 'orb'] | capital=100000
+2026-08-11 19:51:56 | INFO     | TradingBot.EquityBotRunner | bot_05_consensus: Starting equity bot loop...
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched equity bot [bot_05_consensus] thread.
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.OptionsRunner | bot_06_theta: OptionsRunner ready | strategy=theta_straddle
+2026-08-11 19:51:56 | INFO     | TradingBot.OptionsRunner | bot_06_theta: Options bot loop started.
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched options bot [bot_06_theta] with strategy [theta_straddle].
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.OptionsRunner | bot_07_condor: OptionsRunner ready | strategy=iron_condor
+2026-08-11 19:51:56 | INFO     | TradingBot.OptionsRunner | bot_07_condor: Options bot loop started.
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched options bot [bot_07_condor] with strategy [iron_condor].
+2026-08-11 19:51:56 | WARNING  | TradingBot.AnalyticsLogger | AnalyticsLogger: Firebase not configured! Analytics will NOT be saved.
+2026-08-11 19:51:56 | INFO     | TradingBot.OptionsRunner | bot_08_momentum: OptionsRunner ready | strategy=options_momentum
+2026-08-11 19:51:56 | INFO     | TradingBot.OptionsRunner | bot_08_momentum: Options bot loop started.
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: Launched options bot [bot_08_momentum] with strategy [options_momentum].
+2026-08-11 19:51:56 | INFO     | TradingBot.MultiBotManager | MultiBotManager: All 8 bots launched.
+2026-08-11 19:52:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 19:52:17 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 19:52:17 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 19:52:17 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 19:56:56 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 19:57:03 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 19:57:03 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 19:57:04 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 19:57:17 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 19:57:24 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 19:57:24 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 19:57:25 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:02:04 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:02:11 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:02:11 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:02:11 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:02:25 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:02:32 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:02:32 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:02:32 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:07:11 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:07:19 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:07:19 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:07:19 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:07:32 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:07:39 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:07:39 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:07:40 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:12:19 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:12:26 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:12:26 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:12:27 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:12:40 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:12:47 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:12:47 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:12:47 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:17:27 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:17:34 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:17:34 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:17:34 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:17:47 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:17:54 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:17:54 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:17:55 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:22:34 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:22:41 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:22:41 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:22:42 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:22:55 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:23:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:23:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:23:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:27:42 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:27:49 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:27:49 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:27:49 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:28:02 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:28:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:28:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:28:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:32:49 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:32:57 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:32:57 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:32:57 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:33:10 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:33:17 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:33:17 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:33:18 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:37:57 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:38:05 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for TATASTEEL: HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Read timed out. (read timeout=7)
+2026-08-11 20:38:11 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (14/15 OK).
+2026-08-11 20:38:11 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:38:12 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:38:18 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:41:43 | ERROR    | TradingBot.AngelClient | Failed to fetch historical data for ITC: HTTPSConnectionPool(host='apiconnect.angelone.in', port=443): Max retries exceeded with url: /rest/secure/angelbroking/historical/v1/getCandleData (Caused by ConnectTimeoutError(<HTTPSConnection(host='apiconnect.angelone.in', port=443) at 0x164652679d0>, 'Connection to apiconnect.angelone.in timed out. (connect timeout=7)'))
+2026-08-11 20:41:45 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (14/15 OK).
+2026-08-11 20:41:45 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:41:45 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-11 20:46:25 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing equity data (15 symbols)...
+2026-08-11 20:46:33 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
+2026-08-11 20:46:33 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
+2026-08-11 20:46:34 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
