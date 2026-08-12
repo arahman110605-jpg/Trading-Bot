@@ -26,6 +26,13 @@ if sys.platform == "win32":
         sys.stderr.reconfigure(encoding="utf-8")
     except AttributeError:
         pass  # Python < 3.7 fallback
+else:
+    # Set timezone to IST for Render/Docker Linux environments
+    os.environ["TZ"] = "Asia/Kolkata"
+    try:
+        time.tzset()
+    except AttributeError:
+        pass
 
 # ── Logging setup first ───────────────────────────────────────────────────────
 os.makedirs("logs", exist_ok=True)

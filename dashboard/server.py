@@ -63,7 +63,11 @@ def _build_state() -> dict:
         signals = _multi_manager.get_signal_log()
     else:
         signals = []
-    positions = _orders.get_open_positions() if _orders else []
+    if _multi_manager and hasattr(_multi_manager, "get_all_open_positions"):
+        positions = _multi_manager.get_all_open_positions()
+    else:
+        positions = _orders.get_open_positions() if _orders else []
+
     total_pnl = _journal.get_total_pnl() if _journal else 0.0
 
     arena_data = _multi_manager.get_all_status() if _multi_manager else []
