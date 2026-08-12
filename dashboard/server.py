@@ -207,12 +207,20 @@ def on_ping():
 def run_dashboard(host=config.DASHBOARD_HOST, port=config.DASHBOARD_PORT):
     """Start the dashboard server (blocking)."""
     log.info("Dashboard starting at http://localhost:%d", port)
-    socketio.run(
-        app,
-        host=host,
-        port=port,
-        debug=config.DASHBOARD_DEBUG,
-        use_reloader=False,
-        allow_unsafe_werkzeug=True,
-        log_output=False,
-    )
+    try:
+        socketio.run(
+            app,
+            host=host,
+            port=port,
+            debug=config.DASHBOARD_DEBUG,
+            use_reloader=False,
+            allow_unsafe_werkzeug=True,
+            log_output=False,
+        )
+    except Exception as e:
+        import traceback
+        log.error("FATAL ERROR IN DASHBOARD THREAD:")
+        traceback.print_exc()
+        # Keep thread alive to avoid sudden death behavior
+        import time
+        time.sleep(600)

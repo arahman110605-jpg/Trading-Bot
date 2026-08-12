@@ -263,4 +263,19 @@ def print_banner(multi_bot: bool = False):
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        import traceback
+        import time
+        print("\n" + "="*50)
+        print("FATAL ERROR CRASHED MAIN THREAD:")
+        print("="*50)
+        traceback.print_exc()
+        print("="*50)
+        print("Sleeping for 10 minutes before exiting to prevent rapid crash loops on Render...")
+        try:
+            time.sleep(600)
+        except:
+            pass
+        sys.exit(1)
