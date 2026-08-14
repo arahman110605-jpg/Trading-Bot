@@ -225,22 +225,25 @@ class TradeJournal:
             trades = [t for t in trades if t.get('notes') == bot_id]
         return trades
 
-    def get_todays_trades(self) -> List[Dict]:
+    def get_todays_trades(self, bot_id: str = None) -> List[Dict]:
         today = date.today().isoformat()
         if self.use_firebase:
             docs = self.db.collection('trades').where('trade_date', '==', today).get()
             trades = [doc.to_dict() for doc in docs]
             trades.sort(key=lambda x: x.get('entry_time', ''), reverse=True)
-            return trades
         else:
             with self._conn() as conn:
                 rows = conn.execute(
                     "SELECT * FROM trades WHERE trade_date=? ORDER BY entry_time DESC", (today,)
                 ).fetchall()
-            return [dict(r) for r in rows]
+            trades = [dict(r) for r in rows]
 
-    def get_todays_pnl(self) -> float:
-        trades = self.get_todays_trades()
+        if bot_id:
+            trades = [t for t in trades if t.get('notes') == bot_id]
+        return trades
+
+    def get_todays_pnl(self, bot_id: str = None) -> float:
+        trades = self.get_todays_trades(bot_id=bot_id)
         return round(sum(t.get('pnl', 0) for t in trades if t.get('status') != 'OPEN'), 2)
 
     def get_total_pnl(self) -> float:

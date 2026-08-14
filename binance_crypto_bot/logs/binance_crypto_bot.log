@@ -14852,3 +14852,1099 @@
 2026-08-12 14:39:52 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $63848.82
 2026-08-12 14:39:57 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $63848.82
 2026-08-12 14:39:57 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $63848.82
+2026-08-12 14:49:44 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-BTC-64000-140826-DELTA-PAPER-1786524833602 @ $1.77 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital.
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC']
+2026-08-12 14:57:14 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-12 15:22:19 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64044.07
+2026-08-12 15:22:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64044.07
+2026-08-12 15:22:19 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.73 | Strike: $64000 | Delta: -0.4789
+2026-08-12 15:22:24 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64042.01
+2026-08-12 15:22:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64042.01
+2026-08-12 15:22:29 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64038.00
+2026-08-12 15:22:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64038.00
+2026-08-12 15:22:34 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64034.01
+2026-08-12 15:22:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64034.01
+2026-08-12 15:22:39 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64034.00
+2026-08-12 15:22:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64034.00
+2026-08-12 15:22:45 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64034.00
+2026-08-12 15:22:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64034.00
+2026-08-12 15:22:50 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64034.01
+2026-08-12 15:22:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64034.01
+2026-08-12 15:22:55 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64043.19
+2026-08-12 15:22:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64043.19
+2026-08-12 15:23:00 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64043.18
+2026-08-12 15:23:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64043.18
+2026-08-12 15:23:05 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64043.19
+2026-08-12 15:23:05 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64043.19
+2026-08-12 15:25:05 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64059.90
+2026-08-12 15:25:05 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64059.90
+2026-08-12 15:25:10 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64059.91
+2026-08-12 15:25:10 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64059.91
+2026-08-12 15:25:15 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64059.91
+2026-08-12 15:25:15 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64059.91
+2026-08-12 15:25:20 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64059.91
+2026-08-12 15:25:20 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64059.91
+2026-08-12 15:25:25 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64059.90
+2026-08-12 15:25:25 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64059.90
+2026-08-12 15:25:30 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64061.99
+2026-08-12 15:25:30 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64061.99
+2026-08-12 15:25:36 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64062.00
+2026-08-12 15:25:36 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64062.00
+2026-08-12 15:25:41 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64065.05
+2026-08-12 15:25:41 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64065.05
+2026-08-12 15:25:46 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64065.06
+2026-08-12 15:25:46 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64065.06
+2026-08-12 15:25:51 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64065.05
+2026-08-12 15:25:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64065.05
+2026-08-12 15:25:56 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64065.05
+2026-08-12 15:25:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64065.05
+2026-08-12 15:26:02 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 15:26:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 15:26:07 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64067.99
+2026-08-12 15:26:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64067.99
+2026-08-12 15:26:12 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 15:26:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 15:26:17 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64077.99
+2026-08-12 15:26:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64077.99
+2026-08-12 15:26:22 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64079.99
+2026-08-12 15:26:22 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64079.99
+2026-08-12 15:26:28 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64081.98
+2026-08-12 15:26:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64081.98
+2026-08-12 15:32:31 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-BTC-64000-140826-DELTA-PAPER-1786528339219 @ $1.66 | Net P&L: $-0.10 (Option Stop Loss Triggered)
+2026-08-12 15:35:28 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64118.45
+2026-08-12 15:35:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64118.45
+2026-08-12 15:35:28 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4722
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC']
+2026-08-12 15:35:51 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-12 15:35:56 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64119.67
+2026-08-12 15:35:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64119.67
+2026-08-12 15:35:56 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4721
+2026-08-12 15:39:14 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:14 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:14 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:19 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:19 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:24 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:24 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:29 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:29 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:34 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:34 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:39 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.20
+2026-08-12 15:39:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.20
+2026-08-12 15:39:39 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:45 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:45 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:50 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.20
+2026-08-12 15:39:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.20
+2026-08-12 15:39:50 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:39:55 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64116.19
+2026-08-12 15:39:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64116.19
+2026-08-12 15:39:55 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.69 | Strike: $64000 | Delta: -0.4724
+2026-08-12 15:42:10 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64157.34
+2026-08-12 15:42:10 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64157.34
+2026-08-12 15:42:15 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64159.87
+2026-08-12 15:42:15 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64159.87
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH']
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64158.01
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64158.01
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.5313
+2026-08-12 15:42:23 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786529543575 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 15:42:28 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.01
+2026-08-12 15:42:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.01
+2026-08-12 15:42:28 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.5311
+2026-08-12 15:42:29 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786529548940 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 15:42:39 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64154.68
+2026-08-12 15:42:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64154.68
+2026-08-12 15:42:39 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.531
+2026-08-12 15:42:39 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786529559682 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 15:42:45 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64154.10
+2026-08-12 15:42:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64154.10
+2026-08-12 15:42:45 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.531
+2026-08-12 15:42:45 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786529565053 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH']
+2026-08-12 15:45:47 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-12 15:55:03 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.72
+2026-08-12 15:55:03 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.72
+2026-08-12 15:55:03 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4446
+2026-08-12 15:55:08 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530303298 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:08 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.72
+2026-08-12 15:55:08 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.72
+2026-08-12 15:55:08 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4446
+2026-08-12 15:55:13 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530308671 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:14 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.72
+2026-08-12 15:55:14 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.72
+2026-08-12 15:55:14 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4446
+2026-08-12 15:55:19 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530314036 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:19 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.95
+2026-08-12 15:55:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.95
+2026-08-12 15:55:19 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4439
+2026-08-12 15:55:24 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530319416 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:24 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1913.10
+2026-08-12 15:55:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1913.10
+2026-08-12 15:55:24 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4435
+2026-08-12 15:55:29 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530324786 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:30 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.48
+2026-08-12 15:55:30 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.48
+2026-08-12 15:55:30 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4453
+2026-08-12 15:55:35 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530330147 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:35 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.16
+2026-08-12 15:55:35 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.16
+2026-08-12 15:55:35 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4463
+2026-08-12 15:55:40 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530335556 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:40 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.84
+2026-08-12 15:55:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.84
+2026-08-12 15:55:40 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4472
+2026-08-12 15:55:46 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530340935 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:46 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.71
+2026-08-12 15:55:46 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.71
+2026-08-12 15:55:46 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4476
+2026-08-12 15:55:51 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530346449 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:51 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.72
+2026-08-12 15:55:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.72
+2026-08-12 15:55:51 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4476
+2026-08-12 15:55:56 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530351800 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:55:57 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.81
+2026-08-12 15:55:57 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.81
+2026-08-12 15:55:57 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4473
+2026-08-12 15:56:02 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530357178 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:02 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.67
+2026-08-12 15:56:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.67
+2026-08-12 15:56:02 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4477
+2026-08-12 15:56:07 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530362543 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:07 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.67
+2026-08-12 15:56:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.67
+2026-08-12 15:56:07 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4477
+2026-08-12 15:56:13 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530367903 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:13 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.68
+2026-08-12 15:56:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.68
+2026-08-12 15:56:13 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4477
+2026-08-12 15:56:18 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530373278 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.80
+2026-08-12 15:56:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.80
+2026-08-12 15:56:18 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4474
+2026-08-12 15:56:23 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530378646 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:24 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.79
+2026-08-12 15:56:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.79
+2026-08-12 15:56:24 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4474
+2026-08-12 15:56:29 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530384010 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:29 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.07
+2026-08-12 15:56:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.07
+2026-08-12 15:56:29 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4465
+2026-08-12 15:56:34 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530389368 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.07
+2026-08-12 15:56:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.07
+2026-08-12 15:56:34 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4465
+2026-08-12 15:56:39 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530394723 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:40 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.07
+2026-08-12 15:56:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.07
+2026-08-12 15:56:40 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4465
+2026-08-12 15:56:45 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530400093 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:45 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.08
+2026-08-12 15:56:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.08
+2026-08-12 15:56:45 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4465
+2026-08-12 15:56:50 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530405444 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:50 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.93
+2026-08-12 15:56:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.93
+2026-08-12 15:56:50 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.447
+2026-08-12 15:56:55 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530410810 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:56:56 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.94
+2026-08-12 15:56:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.94
+2026-08-12 15:56:56 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4469
+2026-08-12 15:57:01 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530416171 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:01 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.94
+2026-08-12 15:57:01 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.94
+2026-08-12 15:57:01 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4469
+2026-08-12 15:57:06 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530421592 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:06 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1912.46
+2026-08-12 15:57:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1912.46
+2026-08-12 15:57:06 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4454
+2026-08-12 15:57:12 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530426957 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:12 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.87
+2026-08-12 15:57:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.87
+2026-08-12 15:57:12 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4471
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530432323 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64059.99
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64059.99
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.72 | Strike: $64000 | Delta: -0.4775
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.62
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.62
+2026-08-12 15:57:17 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4479
+2026-08-12 15:57:22 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530437713 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:22 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64060.00
+2026-08-12 15:57:22 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64060.00
+2026-08-12 15:57:23 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.57
+2026-08-12 15:57:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.57
+2026-08-12 15:57:23 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.448
+2026-08-12 15:57:28 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530443070 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:28 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.57
+2026-08-12 15:57:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.57
+2026-08-12 15:57:28 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.448
+2026-08-12 15:57:33 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530448453 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:33 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.66
+2026-08-12 15:57:33 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.66
+2026-08-12 15:57:33 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4478
+2026-08-12 15:57:38 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530453822 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:39 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.70
+2026-08-12 15:57:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.70
+2026-08-12 15:57:39 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4477
+2026-08-12 15:57:44 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530459182 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:44 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.69
+2026-08-12 15:57:44 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.69
+2026-08-12 15:57:44 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4477
+2026-08-12 15:57:49 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530464546 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:49 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.70
+2026-08-12 15:57:49 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.70
+2026-08-12 15:57:49 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4477
+2026-08-12 15:57:55 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530469941 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:57:55 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.78
+2026-08-12 15:57:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.78
+2026-08-12 15:57:55 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4474
+2026-08-12 15:58:00 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530475302 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:58:00 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.79
+2026-08-12 15:58:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.79
+2026-08-12 15:58:00 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4474
+2026-08-12 15:58:05 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530480658 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:58:06 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.75
+2026-08-12 15:58:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.75
+2026-08-12 15:58:06 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4475
+2026-08-12 15:58:11 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530486016 @ $0.05 | Net P&L: $-1.45 (Option Stop Loss Triggered)
+2026-08-12 15:58:11 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.76
+2026-08-12 15:58:11 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.76
+2026-08-12 15:58:11 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $1.50 | Strike: $1900 | Delta: -0.4475
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - ============================================================
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH']
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.43
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.43
+2026-08-12 15:58:27 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $4.66 | Strike: $1900 | Delta: -0.4485
+2026-08-12 15:58:33 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] P-ETH-1900-140826 @ $5.19 (+11.4%) | Trailing SL to Breakeven ($4.66)
+2026-08-12 15:58:33 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530507876 @ $4.66 | Net P&L: $-0.00 (Breakeven Trailing SL)
+2026-08-12 15:58:33 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.40
+2026-08-12 15:58:33 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.40
+2026-08-12 15:58:33 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $4.66 | Strike: $1900 | Delta: -0.4486
+2026-08-12 15:58:38 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] P-ETH-1900-140826 @ $5.19 (+11.4%) | Trailing SL to Breakeven ($4.66)
+2026-08-12 15:58:38 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 15:58:38 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.30
+2026-08-12 15:58:43 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530513245 @ $4.66 | Net P&L: $-0.00 (Breakeven Trailing SL)
+2026-08-12 15:58:43 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.31
+2026-08-12 15:58:43 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.31
+2026-08-12 15:58:43 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $4.66 | Strike: $1900 | Delta: -0.4488
+2026-08-12 15:58:49 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] P-ETH-1900-140826 @ $5.19 (+11.4%) | Trailing SL to Breakeven ($4.66)
+2026-08-12 15:58:49 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 15:58:49 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.30
+2026-08-12 15:58:54 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 15:58:54 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.30
+2026-08-12 15:59:00 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530523997 @ $4.66 | Net P&L: $-0.00 (Breakeven Trailing SL)
+2026-08-12 15:59:00 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.31
+2026-08-12 15:59:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.31
+2026-08-12 15:59:00 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $4.66 | Strike: $1900 | Delta: -0.4488
+2026-08-12 15:59:05 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] P-ETH-1900-140826 @ $5.19 (+11.4%) | Trailing SL to Breakeven ($4.66)
+2026-08-12 15:59:06 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 15:59:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.30
+2026-08-12 15:59:11 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 15:59:11 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1911.30
+2026-08-12 15:59:17 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.92
+2026-08-12 15:59:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.92
+2026-08-12 15:59:22 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.92
+2026-08-12 15:59:22 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.92
+2026-08-12 15:59:27 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 15:59:27 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.93
+2026-08-12 15:59:33 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 15:59:33 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.93
+2026-08-12 15:59:38 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 15:59:38 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.93
+2026-08-12 15:59:43 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.84
+2026-08-12 15:59:43 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.84
+2026-08-12 15:59:49 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.84
+2026-08-12 15:59:49 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.84
+2026-08-12 15:59:54 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.84
+2026-08-12 15:59:54 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.84
+2026-08-12 16:00:00 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1910.85
+2026-08-12 16:00:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1910.85
+2026-08-12 16:00:05 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 16:00:05 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 16:00:05 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-64000-140826 @ Premium $1.72 | Strike: $64000 | Delta: -0.4768
+2026-08-12 16:00:10 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 16:00:10 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 16:00:16 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 16:00:16 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 16:00:21 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 16:00:21 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 16:00:26 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 16:00:26 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 16:00:32 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $64068.00
+2026-08-12 16:00:32 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $64068.00
+2026-08-12 16:01:42 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786530540081 @ $4.66 | Net P&L: $-0.00 (Breakeven Trailing SL)
+2026-08-12 16:13:05 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64159.26
+2026-08-12 16:13:05 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64159.26
+2026-08-12 16:13:10 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64160.88
+2026-08-12 16:13:10 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64160.88
+2026-08-12 16:13:15 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64160.88
+2026-08-12 16:13:15 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64160.88
+2026-08-12 16:13:21 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64160.89
+2026-08-12 16:13:21 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64160.89
+2026-08-12 16:18:22 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:22 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:18:27 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.12
+2026-08-12 16:18:27 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.12
+2026-08-12 16:18:32 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:32 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:18:38 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:38 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:18:43 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:43 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:18:49 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:49 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:18:54 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:54 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:18:59 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64156.13
+2026-08-12 16:18:59 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64156.13
+2026-08-12 16:19:05 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.72
+2026-08-12 16:19:05 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.72
+2026-08-12 16:19:05 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $4.78 | Strike: $1900 | Delta: -0.4566
+2026-08-12 16:19:10 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.95
+2026-08-12 16:19:10 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.95
+2026-08-12 16:19:16 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.62
+2026-08-12 16:19:16 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.62
+2026-08-12 16:19:21 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.14
+2026-08-12 16:19:21 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.14
+2026-08-12 16:19:26 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.09
+2026-08-12 16:19:26 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.09
+2026-08-12 16:19:32 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.29
+2026-08-12 16:19:32 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.29
+2026-08-12 16:19:37 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.31
+2026-08-12 16:19:37 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.31
+2026-08-12 16:19:42 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.33
+2026-08-12 16:19:42 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.33
+2026-08-12 16:19:48 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.34
+2026-08-12 16:19:48 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.34
+2026-08-12 16:19:53 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.49
+2026-08-12 16:19:53 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.49
+2026-08-12 16:19:59 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1908.57
+2026-08-12 16:19:59 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1908.57
+2026-08-12 16:30:07 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64185.99
+2026-08-12 16:30:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64185.99
+2026-08-12 16:30:13 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.61
+2026-08-12 16:30:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.61
+2026-08-12 16:30:13 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.61
+2026-08-12 16:30:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.61
+2026-08-12 16:30:18 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.61
+2026-08-12 16:30:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.61
+2026-08-12 16:30:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.66
+2026-08-12 16:30:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.66
+2026-08-12 16:30:24 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.61
+2026-08-12 16:30:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.61
+2026-08-12 16:30:24 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.85
+2026-08-12 16:30:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.85
+2026-08-12 16:30:29 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.61
+2026-08-12 16:30:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.61
+2026-08-12 16:30:29 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.62
+2026-08-12 16:30:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.62
+2026-08-12 16:30:34 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.61
+2026-08-12 16:30:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.61
+2026-08-12 16:30:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.59
+2026-08-12 16:30:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.59
+2026-08-12 16:30:40 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.60
+2026-08-12 16:30:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.60
+2026-08-12 16:30:40 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.75
+2026-08-12 16:30:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.75
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-BTC-64000-140826-DELTA-PAPER-1786530605319 @ $1.65 | Net P&L: $-0.10 (Option Stop Loss Triggered)
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.00
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.00
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532445523 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.04
+2026-08-12 16:30:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.04
+2026-08-12 16:30:50 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64199.99
+2026-08-12 16:30:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64199.99
+2026-08-12 16:30:50 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:30:51 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532450887 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:30:51 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.04
+2026-08-12 16:30:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.04
+2026-08-12 16:30:56 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.00
+2026-08-12 16:30:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.00
+2026-08-12 16:30:56 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:30:56 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532456260 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:30:56 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.11
+2026-08-12 16:30:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.11
+2026-08-12 16:31:01 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64203.75
+2026-08-12 16:31:01 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64203.75
+2026-08-12 16:31:01 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5354
+2026-08-12 16:31:01 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532461630 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:01 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.37
+2026-08-12 16:31:01 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.37
+2026-08-12 16:31:06 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64203.74
+2026-08-12 16:31:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64203.74
+2026-08-12 16:31:06 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5354
+2026-08-12 16:31:07 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532466998 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:07 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.37
+2026-08-12 16:31:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.37
+2026-08-12 16:31:12 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64205.71
+2026-08-12 16:31:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64205.71
+2026-08-12 16:31:12 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5356
+2026-08-12 16:31:12 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532472373 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:12 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.37
+2026-08-12 16:31:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.37
+2026-08-12 16:31:17 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64210.89
+2026-08-12 16:31:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64210.89
+2026-08-12 16:31:17 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.90 | Strike: $64000 | Delta: 0.536
+2026-08-12 16:31:17 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532477746 @ $1.79 | Net P&L: $-0.14 (Option Stop Loss Triggered)
+2026-08-12 16:31:17 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.37
+2026-08-12 16:31:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.37
+2026-08-12 16:31:23 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.01
+2026-08-12 16:31:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.01
+2026-08-12 16:31:23 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:31:23 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532483107 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:23 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.85
+2026-08-12 16:31:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.85
+2026-08-12 16:31:28 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.00
+2026-08-12 16:31:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.00
+2026-08-12 16:31:28 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:31:28 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532488478 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:28 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.75
+2026-08-12 16:31:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.75
+2026-08-12 16:31:33 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.01
+2026-08-12 16:31:33 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.01
+2026-08-12 16:31:33 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:31:34 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532493842 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.74
+2026-08-12 16:31:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.74
+2026-08-12 16:31:39 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64198.71
+2026-08-12 16:31:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64198.71
+2026-08-12 16:31:39 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5349
+2026-08-12 16:31:39 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532499217 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:39 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.74
+2026-08-12 16:31:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.74
+2026-08-12 16:31:44 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64198.53
+2026-08-12 16:31:44 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64198.53
+2026-08-12 16:31:44 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5349
+2026-08-12 16:31:44 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532504587 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:44 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.49
+2026-08-12 16:31:44 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.49
+2026-08-12 16:31:49 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64198.52
+2026-08-12 16:31:49 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64198.52
+2026-08-12 16:31:49 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5349
+2026-08-12 16:31:50 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532509948 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:50 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.51
+2026-08-12 16:31:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.51
+2026-08-12 16:31:55 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64197.23
+2026-08-12 16:31:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64197.23
+2026-08-12 16:31:55 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5348
+2026-08-12 16:31:55 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532515305 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:31:55 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.72
+2026-08-12 16:31:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.72
+2026-08-12 16:32:00 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64196.74
+2026-08-12 16:32:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64196.74
+2026-08-12 16:32:00 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5348
+2026-08-12 16:32:00 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532520659 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:32:00 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.73
+2026-08-12 16:32:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.73
+2026-08-12 16:32:06 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64177.12
+2026-08-12 16:32:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64177.12
+2026-08-12 16:32:06 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.88 | Strike: $64000 | Delta: 0.533
+2026-08-12 16:32:06 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532526010 @ $1.79 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 16:32:06 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.55
+2026-08-12 16:32:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.55
+2026-08-12 16:32:11 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64170.58
+2026-08-12 16:32:11 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64170.58
+2026-08-12 16:32:11 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.88 | Strike: $64000 | Delta: 0.5324
+2026-08-12 16:32:11 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532531372 @ $1.79 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 16:32:16 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64170.57
+2026-08-12 16:32:16 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64170.57
+2026-08-12 16:32:16 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.88 | Strike: $64000 | Delta: 0.5324
+2026-08-12 16:32:16 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532536728 @ $1.79 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 16:32:22 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64170.58
+2026-08-12 16:32:22 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64170.58
+2026-08-12 16:32:22 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.88 | Strike: $64000 | Delta: 0.5324
+2026-08-12 16:32:22 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532542097 @ $1.79 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 16:32:27 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64164.56
+2026-08-12 16:32:27 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64164.56
+2026-08-12 16:32:27 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.5319
+2026-08-12 16:32:27 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786532547456 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 16:42:02 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.59
+2026-08-12 16:42:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.59
+2026-08-12 16:42:07 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.90
+2026-08-12 16:42:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.90
+2026-08-12 16:42:12 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.98
+2026-08-12 16:42:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.98
+2026-08-12 16:42:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.98
+2026-08-12 16:42:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.98
+2026-08-12 16:42:23 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.98
+2026-08-12 16:42:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.98
+2026-08-12 16:42:28 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.98
+2026-08-12 16:42:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.98
+2026-08-12 16:42:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.89
+2026-08-12 16:42:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.89
+2026-08-12 16:42:39 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.54
+2026-08-12 16:42:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.54
+2026-08-12 16:42:44 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.42
+2026-08-12 16:42:44 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.42
+2026-08-12 16:47:41 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.00
+2026-08-12 16:47:41 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.00
+2026-08-12 16:47:51 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.64
+2026-08-12 16:47:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.64
+2026-08-12 16:47:57 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.65
+2026-08-12 16:47:57 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.65
+2026-08-12 16:48:02 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.77
+2026-08-12 16:48:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.77
+2026-08-12 16:48:07 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.78
+2026-08-12 16:48:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.78
+2026-08-12 16:48:13 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.95
+2026-08-12 16:48:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.95
+2026-08-12 16:48:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.70
+2026-08-12 16:48:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.70
+2026-08-12 16:48:24 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.66
+2026-08-12 16:48:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.66
+2026-08-12 16:48:29 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.25
+2026-08-12 16:48:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.25
+2026-08-12 16:48:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1909.99
+2026-08-12 16:48:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1909.99
+2026-08-12 16:48:40 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1909.91
+2026-08-12 16:48:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1909.91
+2026-08-12 16:48:45 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.25
+2026-08-12 16:48:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.25
+2026-08-12 16:48:50 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.38
+2026-08-12 16:48:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.38
+2026-08-12 16:48:56 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.89
+2026-08-12 16:48:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.89
+2026-08-12 16:49:01 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.94
+2026-08-12 16:49:01 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.94
+2026-08-12 16:49:06 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.92
+2026-08-12 16:49:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.92
+2026-08-12 16:49:12 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.89
+2026-08-12 16:49:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.89
+2026-08-12 16:49:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.89
+2026-08-12 16:49:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.89
+2026-08-12 16:49:23 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.97
+2026-08-12 16:49:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.97
+2026-08-12 16:49:28 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.97
+2026-08-12 16:49:28 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.97
+2026-08-12 16:49:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.97
+2026-08-12 16:49:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.97
+2026-08-12 16:49:39 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.97
+2026-08-12 16:49:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.97
+2026-08-12 16:49:44 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:49:44 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:49:50 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.92
+2026-08-12 16:49:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.92
+2026-08-12 16:49:55 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.92
+2026-08-12 16:49:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.92
+2026-08-12 16:50:01 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.92
+2026-08-12 16:50:01 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.92
+2026-08-12 16:50:06 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.22
+2026-08-12 16:50:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.22
+2026-08-12 16:50:11 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.22
+2026-08-12 16:50:11 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.22
+2026-08-12 16:50:17 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 16:50:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.30
+2026-08-12 16:50:22 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.30
+2026-08-12 16:50:22 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.30
+2026-08-12 16:50:27 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.38
+2026-08-12 16:50:27 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.38
+2026-08-12 16:50:33 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.17
+2026-08-12 16:50:33 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.17
+2026-08-12 16:50:38 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.16
+2026-08-12 16:50:38 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.16
+2026-08-12 16:50:44 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.16
+2026-08-12 16:50:44 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.16
+2026-08-12 16:50:49 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.16
+2026-08-12 16:50:49 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.16
+2026-08-12 16:50:54 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:50:54 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:00 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:51:00 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:05 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:51:05 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:11 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.94
+2026-08-12 16:51:11 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.94
+2026-08-12 16:51:16 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.94
+2026-08-12 16:51:16 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.94
+2026-08-12 16:51:21 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:51:21 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:27 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:51:27 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:32 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:51:32 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:37 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.93
+2026-08-12 16:51:37 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.93
+2026-08-12 16:51:43 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1910.86
+2026-08-12 16:51:43 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1910.86
+2026-08-12 16:51:48 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.15
+2026-08-12 16:51:48 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.15
+2026-08-12 16:51:54 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.22
+2026-08-12 16:51:54 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.22
+2026-08-12 16:51:59 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.27
+2026-08-12 16:51:59 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.27
+2026-08-12 16:52:04 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.27
+2026-08-12 16:52:04 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.27
+2026-08-12 16:52:10 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.28
+2026-08-12 16:52:10 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.28
+2026-08-12 16:52:15 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.27
+2026-08-12 16:52:15 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.27
+2026-08-12 16:52:20 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.28
+2026-08-12 16:52:20 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.28
+2026-08-12 16:52:26 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.27
+2026-08-12 16:52:26 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.27
+2026-08-12 16:52:31 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.27
+2026-08-12 16:52:31 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.27
+2026-08-12 16:52:36 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.14
+2026-08-12 16:52:36 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.14
+2026-08-12 16:52:42 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.14
+2026-08-12 16:52:42 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.14
+2026-08-12 16:52:47 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.15
+2026-08-12 16:52:47 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.15
+2026-08-12 16:52:53 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.15
+2026-08-12 16:52:53 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.15
+2026-08-12 16:52:58 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.14
+2026-08-12 16:52:58 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.14
+2026-08-12 16:53:03 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.32
+2026-08-12 16:53:03 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.32
+2026-08-12 16:53:09 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.41
+2026-08-12 16:53:09 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.41
+2026-08-12 16:53:14 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.47
+2026-08-12 16:53:14 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.47
+2026-08-12 16:53:19 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64168.00
+2026-08-12 16:53:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64168.00
+2026-08-12 16:53:19 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.5322
+2026-08-12 16:53:19 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533799757 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 16:53:19 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.80
+2026-08-12 16:53:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.80
+2026-08-12 16:53:25 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64168.73
+2026-08-12 16:53:25 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64168.73
+2026-08-12 16:53:25 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.87 | Strike: $64000 | Delta: 0.5323
+2026-08-12 16:53:25 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533805125 @ $1.79 | Net P&L: $-0.11 (Option Stop Loss Triggered)
+2026-08-12 16:53:25 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.80
+2026-08-12 16:53:25 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.80
+2026-08-12 16:53:30 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.01
+2026-08-12 16:53:30 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.01
+2026-08-12 16:53:30 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:53:30 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533810486 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:53:30 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1912.22
+2026-08-12 16:53:30 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1912.22
+2026-08-12 16:53:35 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.00
+2026-08-12 16:53:35 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.00
+2026-08-12 16:53:35 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:53:36 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533815853 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:53:36 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1912.28
+2026-08-12 16:53:36 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1912.28
+2026-08-12 16:53:41 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.00
+2026-08-12 16:53:41 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.00
+2026-08-12 16:53:41 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:53:41 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533821208 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:53:41 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1912.28
+2026-08-12 16:53:41 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1912.28
+2026-08-12 16:53:46 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.01
+2026-08-12 16:53:46 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.01
+2026-08-12 16:53:46 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:53:46 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533826566 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:53:46 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1912.28
+2026-08-12 16:53:46 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1912.28
+2026-08-12 16:53:51 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64200.00
+2026-08-12 16:53:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64200.00
+2026-08-12 16:53:51 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5351
+2026-08-12 16:53:52 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533831919 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:53:52 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1912.17
+2026-08-12 16:53:52 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1912.17
+2026-08-12 16:53:57 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:53:57 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:53:57 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:53:57 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533837273 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:53:57 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.90
+2026-08-12 16:53:57 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.90
+2026-08-12 16:54:02 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:54:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:54:02 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:02 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533842643 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:02 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.90
+2026-08-12 16:54:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.90
+2026-08-12 16:54:08 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.23
+2026-08-12 16:54:08 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.23
+2026-08-12 16:54:08 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:08 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533848023 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:08 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.90
+2026-08-12 16:54:08 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.90
+2026-08-12 16:54:13 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.23
+2026-08-12 16:54:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.23
+2026-08-12 16:54:13 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:13 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533853377 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:13 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.90
+2026-08-12 16:54:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.90
+2026-08-12 16:54:18 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:54:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:54:18 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:18 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533858743 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.90
+2026-08-12 16:54:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.90
+2026-08-12 16:54:24 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:54:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:54:24 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:24 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533864105 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:24 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.97
+2026-08-12 16:54:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.97
+2026-08-12 16:54:29 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:54:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:54:29 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:29 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533869468 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:29 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.97
+2026-08-12 16:54:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.97
+2026-08-12 16:54:34 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:54:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:54:34 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:35 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533874842 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:35 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.98
+2026-08-12 16:54:35 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.98
+2026-08-12 16:54:40 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.22
+2026-08-12 16:54:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.22
+2026-08-12 16:54:40 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:40 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533880216 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:40 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.97
+2026-08-12 16:54:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.97
+2026-08-12 16:54:45 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64190.23
+2026-08-12 16:54:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64190.23
+2026-08-12 16:54:45 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.89 | Strike: $64000 | Delta: 0.5342
+2026-08-12 16:54:45 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533885575 @ $1.79 | Net P&L: $-0.13 (Option Stop Loss Triggered)
+2026-08-12 16:54:45 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.97
+2026-08-12 16:54:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.97
+2026-08-12 16:54:50 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64181.36
+2026-08-12 16:54:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64181.36
+2026-08-12 16:54:50 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.88 | Strike: $64000 | Delta: 0.5334
+2026-08-12 16:54:51 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533890939 @ $1.79 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 16:54:51 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.82
+2026-08-12 16:54:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.82
+2026-08-12 16:54:56 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $64181.36
+2026-08-12 16:54:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $64181.36
+2026-08-12 16:54:56 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-64000-140826 @ Premium $1.88 | Strike: $64000 | Delta: 0.5334
+2026-08-12 16:54:56 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-64000-140826-DELTA-PAPER-1786533896303 @ $1.79 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-12 16:54:56 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1911.83
+2026-08-12 16:54:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1911.83
+2026-08-12 20:01:35 - BinanceCryptoBot - ERROR - Binance API Request Error (/api/v3/klines): HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+2026-08-12 20:01:35 - BinanceCryptoBot - WARNING - Failed to fetch klines for BTCUSDT: {'error': "HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)"}
+2026-08-12 20:01:35 - BinanceCryptoBot - WARNING - Generating synthetic candle feed for BTC test
+2026-08-12 20:01:36 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] P-ETH-1900-140826 @ $5.67 (+18.6%) | Trailing SL to Breakeven ($4.78)
+2026-08-12 20:02:30 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1894.05
+2026-08-12 20:02:30 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1894.05
+2026-08-12 20:04:41 - BinanceCryptoBot - ERROR - Binance API Request Error (/api/v3/klines): HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+2026-08-12 20:04:41 - BinanceCryptoBot - WARNING - Failed to fetch klines for ETHUSDT: {'error': "HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)"}
+2026-08-12 20:04:41 - BinanceCryptoBot - WARNING - Generating synthetic candle feed for ETH test
+2026-08-12 20:04:41 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786531745360 @ $0.00 | Net P&L: $-4.78 (Breakeven Trailing SL)
+2026-08-12 20:10:02 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.77
+2026-08-12 20:10:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.77
+2026-08-12 20:10:02 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-ETH-1900-140826 @ Premium $4.84 | Strike: $1900 | Delta: 0.4891
+2026-08-12 20:10:07 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] C-ETH-1900-140826 @ $5.30 (+9.5%) | Trailing SL to Breakeven ($4.84)
+2026-08-12 20:10:07 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-ETH-1900-140826-DELTA-PAPER-1786545602269 @ $4.84 | Net P&L: $-0.00 (Breakeven Trailing SL)
+2026-08-12 20:10:07 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.91
+2026-08-12 20:10:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.91
+2026-08-12 20:10:07 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-ETH-1900-140826 @ Premium $4.84 | Strike: $1900 | Delta: 0.4895
+2026-08-12 20:10:12 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] C-ETH-1900-140826 @ $5.30 (+9.5%) | Trailing SL to Breakeven ($4.84)
+2026-08-12 20:10:13 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1891.10
+2026-08-12 20:10:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1891.10
+2026-08-12 20:10:18 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-ETH-1900-140826-DELTA-PAPER-1786545607648 @ $4.83 | Net P&L: $-0.01 (Breakeven Trailing SL)
+2026-08-12 20:10:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.64
+2026-08-12 20:10:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.64
+2026-08-12 20:10:18 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-ETH-1900-140826 @ Premium $4.83 | Strike: $1900 | Delta: 0.4887
+2026-08-12 20:10:23 - BinanceCryptoBot - INFO - [PAPER OPTION TP1 HIT] C-ETH-1900-140826 @ $5.30 (+9.7%) | Trailing SL to Breakeven ($4.83)
+2026-08-12 20:10:23 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.96
+2026-08-12 20:10:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.96
+2026-08-12 20:10:29 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.95
+2026-08-12 20:10:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.95
+2026-08-12 20:10:34 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.87
+2026-08-12 20:10:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.87
+2026-08-12 20:10:39 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1890.96
+2026-08-12 20:10:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1890.96
+2026-08-12 20:10:45 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1891.25
+2026-08-12 20:10:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1891.25
+2026-08-12 20:10:50 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_CALL] by Delta Option Scalper | Spot: $1891.01
+2026-08-12 20:10:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for ETH @ $1891.01
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH']
+2026-08-13 09:30:07 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-13 09:30:23 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.97
+2026-08-13 09:30:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.97
+2026-08-13 09:30:23 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-63500-140826 @ Premium $1.67 | Strike: $63500 | Delta: -0.4699
+2026-08-13 09:30:29 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.97
+2026-08-13 09:30:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.97
+2026-08-13 09:30:34 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.96
+2026-08-13 09:30:34 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.96
+2026-08-13 09:30:39 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63640.69
+2026-08-13 09:30:39 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63640.69
+2026-08-13 09:30:45 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63640.69
+2026-08-13 09:30:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63640.69
+2026-08-13 09:30:50 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63640.69
+2026-08-13 09:30:50 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63640.69
+2026-08-13 09:30:55 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63640.69
+2026-08-13 09:30:55 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63640.69
+2026-08-13 09:31:01 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63640.68
+2026-08-13 09:31:01 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63640.68
+2026-08-13 09:31:06 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63640.56
+2026-08-13 09:31:06 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63640.56
+2026-08-13 09:31:11 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.97
+2026-08-13 09:31:11 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.97
+2026-08-13 09:31:17 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.97
+2026-08-13 09:31:17 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.97
+2026-08-13 09:34:14 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.82
+2026-08-13 09:34:14 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.82
+2026-08-13 09:34:19 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.01
+2026-08-13 09:34:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.01
+2026-08-13 09:34:25 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.00
+2026-08-13 09:34:25 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.00
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH']
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.00
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.00
+2026-08-13 09:34:36 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-63500-140826 @ Premium $1.67 | Strike: $63500 | Delta: -0.47
+2026-08-13 09:34:41 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.00
+2026-08-13 09:34:41 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.00
+2026-08-13 09:34:47 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63642.00
+2026-08-13 09:34:47 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63642.00
+2026-08-13 09:34:52 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63641.99
+2026-08-13 09:34:52 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63641.99
+2026-08-13 09:34:58 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.00
+2026-08-13 09:34:58 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.00
+2026-08-13 09:34:58 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5224
+2026-08-13 09:35:03 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593898652 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:04 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1886.88
+2026-08-13 09:35:04 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1886.88
+2026-08-13 09:35:04 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.85 | Strike: $1900 | Delta: -0.5228
+2026-08-13 09:35:09 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593904008 @ $5.19 | Net P&L: $-0.66 (Option Stop Loss Triggered)
+2026-08-13 09:35:09 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1886.88
+2026-08-13 09:35:09 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1886.88
+2026-08-13 09:35:09 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.85 | Strike: $1900 | Delta: -0.5228
+2026-08-13 09:35:14 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593909371 @ $5.19 | Net P&L: $-0.66 (Option Stop Loss Triggered)
+2026-08-13 09:35:14 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1886.88
+2026-08-13 09:35:14 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1886.88
+2026-08-13 09:35:14 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.85 | Strike: $1900 | Delta: -0.5228
+2026-08-13 09:35:19 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593914732 @ $5.19 | Net P&L: $-0.66 (Option Stop Loss Triggered)
+2026-08-13 09:35:20 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1886.87
+2026-08-13 09:35:20 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1886.87
+2026-08-13 09:35:20 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.85 | Strike: $1900 | Delta: -0.5228
+2026-08-13 09:35:25 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593920089 @ $5.19 | Net P&L: $-0.66 (Option Stop Loss Triggered)
+2026-08-13 09:35:25 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.08
+2026-08-13 09:35:25 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.08
+2026-08-13 09:35:25 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:35:30 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593925440 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:30 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.09
+2026-08-13 09:35:30 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.09
+2026-08-13 09:35:30 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5221
+2026-08-13 09:35:35 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593930805 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:36 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:35:36 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:35:36 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:35:41 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593936184 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:41 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.07
+2026-08-13 09:35:41 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.07
+2026-08-13 09:35:41 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:35:46 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593941547 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:46 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.07
+2026-08-13 09:35:46 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.07
+2026-08-13 09:35:46 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:35:52 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593946919 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:52 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.07
+2026-08-13 09:35:52 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.07
+2026-08-13 09:35:52 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:35:57 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593952285 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:35:57 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.07
+2026-08-13 09:35:57 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.07
+2026-08-13 09:35:57 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:02 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593957653 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:03 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.07
+2026-08-13 09:36:03 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.07
+2026-08-13 09:36:03 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:08 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593963018 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:08 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:36:08 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:36:08 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:13 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593968375 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:13 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:36:13 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:36:13 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:18 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593973749 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:19 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:36:19 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:36:19 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:24 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593979117 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:24 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:36:24 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:36:24 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:29 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593984480 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:29 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.05
+2026-08-13 09:36:29 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.05
+2026-08-13 09:36:29 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5223
+2026-08-13 09:36:35 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593989842 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:35 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:36:35 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:36:35 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:40 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786593995204 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:40 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.05
+2026-08-13 09:36:40 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.05
+2026-08-13 09:36:40 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5223
+2026-08-13 09:36:45 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594000575 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:45 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.06
+2026-08-13 09:36:45 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.06
+2026-08-13 09:36:45 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5222
+2026-08-13 09:36:51 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594005946 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:51 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.16
+2026-08-13 09:36:51 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.16
+2026-08-13 09:36:51 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5219
+2026-08-13 09:36:56 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594011309 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:36:56 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.16
+2026-08-13 09:36:56 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.16
+2026-08-13 09:36:56 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.84 | Strike: $1900 | Delta: -0.5219
+2026-08-13 09:37:01 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594016675 @ $5.19 | Net P&L: $-0.65 (Option Stop Loss Triggered)
+2026-08-13 09:37:02 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.20
+2026-08-13 09:37:02 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.20
+2026-08-13 09:37:02 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.83 | Strike: $1900 | Delta: -0.5218
+2026-08-13 09:37:07 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594022050 @ $5.19 | Net P&L: $-0.64 (Option Stop Loss Triggered)
+2026-08-13 09:37:07 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.24
+2026-08-13 09:37:07 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.24
+2026-08-13 09:37:07 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.83 | Strike: $1900 | Delta: -0.5217
+2026-08-13 09:37:12 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594027413 @ $5.19 | Net P&L: $-0.64 (Option Stop Loss Triggered)
+2026-08-13 09:37:12 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.24
+2026-08-13 09:37:12 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.24
+2026-08-13 09:37:12 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.83 | Strike: $1900 | Delta: -0.5217
+2026-08-13 09:37:17 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594032786 @ $5.19 | Net P&L: $-0.64 (Option Stop Loss Triggered)
+2026-08-13 09:37:18 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.25
+2026-08-13 09:37:18 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.25
+2026-08-13 09:37:18 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.83 | Strike: $1900 | Delta: -0.5217
+2026-08-13 09:37:23 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594038151 @ $5.19 | Net P&L: $-0.64 (Option Stop Loss Triggered)
+2026-08-13 09:37:23 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.48
+2026-08-13 09:37:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.48
+2026-08-13 09:37:23 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.82 | Strike: $1900 | Delta: -0.521
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH']
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - Signal Generated: ETH [BUY_PUT] by Delta Option Scalper | Spot: $1887.61
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for ETH @ $1887.61
+2026-08-13 09:37:32 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-ETH-1900-140826 @ Premium $5.81 | Strike: $1900 | Delta: -0.5206
+2026-08-13 09:37:37 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] PUT P-ETH-1900-140826-DELTA-PAPER-1786594052449 @ $5.19 | Net P&L: $-0.62 (Option Stop Loss Triggered)
+2026-08-13 09:44:20 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_CALL] by Delta Option Scalper | Spot: $63671.99
+2026-08-13 09:44:20 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_CALL order for BTC @ $63671.99
+2026-08-13 09:44:20 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x C-BTC-63500-140826 @ Premium $1.86 | Strike: $63500 | Delta: 0.5327
+2026-08-13 09:44:20 - BinanceCryptoBot - INFO - [PAPER OPTION CLOSED] CALL C-BTC-63500-140826-DELTA-PAPER-1786594460135 @ $1.77 | Net P&L: $-0.12 (Option Stop Loss Triggered)
+2026-08-13 09:47:23 - BinanceCryptoBot - INFO - Signal Generated: BTC [BUY_PUT] by Delta Option Scalper | Spot: $63636.27
+2026-08-13 09:47:23 - BinanceCryptoBot - INFO - [EXECUTOR] Triggering BUY_PUT order for BTC @ $63636.27
+2026-08-13 09:47:23 - BinanceCryptoBot - INFO - [PAPER OPTION FILLED] BUY 1x P-BTC-63500-140826 @ Premium $1.67 | Strike: $63500 | Delta: -0.4705
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH'] with AI Overseer Agent active
+2026-08-13 09:49:39 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-13 09:49:40 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-63500-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.08%)
+2026-08-13 09:49:40 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.08%)
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - ============================================================
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10).
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH'] with AI Overseer Agent active
+2026-08-13 09:50:58 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-13 09:51:09 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-63500-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.02%)
+2026-08-13 09:51:09 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.02%)
+2026-08-13 09:52:08 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.07%)
+2026-08-13 09:52:08 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.07%)
+2026-08-13 09:54:11 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-63500-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.04%)
+2026-08-13 09:54:11 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.04%)
+2026-08-13 09:57:15 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.02%)
+2026-08-13 09:57:15 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.02%)
+2026-08-13 10:00:44 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.02%)
+2026-08-13 10:00:44 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.02%)
+2026-08-13 10:03:46 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.10%)
+2026-08-13 10:03:46 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.10%)
+2026-08-13 10:05:23 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-BTC-63500-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.02%)
+2026-08-13 10:05:23 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_CALL] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.02%)
+2026-08-13 10:06:49 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.09%)
+2026-08-13 10:06:49 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.09%)
+2026-08-13 10:08:25 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-BTC-63500-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.14%)
+2026-08-13 10:08:25 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_CALL] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.14%)
+2026-08-13 10:09:51 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.05%)
+2026-08-13 10:09:51 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Positive 5m candle momentum (+0.05%)
+2026-08-13 10:30:02 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-63500-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.00%)
+2026-08-13 10:30:02 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.00%)
+2026-08-13 10:33:05 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-63500-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.01%)
+2026-08-13 10:33:05 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.01%)
+2026-08-13 10:35:09 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.05%)
+2026-08-13 10:35:09 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.05%)
+2026-08-13 10:59:58 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.00%)
+2026-08-13 10:59:58 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.00%)
+2026-08-13 11:03:01 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.08%)
+2026-08-13 11:03:01 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) -> Negative 5m candle momentum (-0.08%)
+2026-08-13 11:04:59 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-64000-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.00%)
+2026-08-13 11:04:59 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.00%)
+2026-08-13 11:08:02 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-BTC-64000-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.01%)
+2026-08-13 11:08:02 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] BTC [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.01%)
+2026-08-13 11:21:05 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.02%)
+2026-08-13 11:21:05 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (-0.02%)
+2026-08-13 11:25:01 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.0 | AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.00%)
+2026-08-13 11:25:01 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) -> Weak 5m candle momentum (0.00%)
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - ============================================================
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: DELTA_OPTIONS | Capital: $60.0
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - ============================================================
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $60.00 USDT capital (Max Concurrent Positions: 10 | Maker Fee: 0.02%).
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - Crypto Strategy Runner started for symbols: ['BTC', 'ETH'] with AI Overseer Agent active
+2026-08-14 11:00:50 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002
+2026-08-14 11:00:51 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.00 | AI Vetoed (0% Confidence < 70% Threshold) → Weak 5m momentum (0.00%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); C/P ratio (0.54) does not confirm direction
+2026-08-14 11:00:51 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (0% Confidence < 70% Threshold) → Weak 5m momentum (0.00%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); C/P ratio (0.54) does not confirm direction
+2026-08-14 11:08:17 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.55 | AI Vetoed (55% Confidence < 70% Threshold) → Positive 5m momentum (+0.07%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); Bullish C/P ratio (0.59 > 0.55) confirms call entry
+2026-08-14 11:08:17 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (55% Confidence < 70% Threshold) → Positive 5m momentum (+0.07%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); Bullish C/P ratio (0.59 > 0.55) confirms call entry
+2026-08-14 11:13:19 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_CALL C-ETH-1900-140826 | Score: 0.20 | AI Vetoed (20% Confidence < 70% Threshold) → Weak 5m momentum (0.02%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); Bullish C/P ratio (0.58 > 0.55) confirms call entry
+2026-08-14 11:13:19 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_CALL] Vetoed: AI Vetoed (20% Confidence < 70% Threshold) → Weak 5m momentum (0.02%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); Bullish C/P ratio (0.58 > 0.55) confirms call entry
+2026-08-14 11:30:17 - BinanceCryptoBot - INFO - [AI OVERSEER] VETO BUY_PUT P-ETH-1900-140826 | Score: 0.35 | AI Vetoed (35% Confidence < 70% Threshold) → Negative 5m momentum (-0.05%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); C/P ratio (0.48) does not confirm direction
+2026-08-14 11:30:17 - BinanceCryptoBot - WARNING - [TRADE VETOED BY AI OVERSEER] ETH [BUY_PUT] Vetoed: AI Vetoed (35% Confidence < 70% Threshold) → Negative 5m momentum (-0.05%); EMA not aligned with trade direction; MACD Histogram against trade direction (0.000); C/P ratio (0.48) does not confirm direction
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - ============================================================
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - [BOT] Starting Delta Exchange & Binance Crypto Bot
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - Mode: PAPER | Broker: MULTI | Capital: $1000.0
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - ============================================================
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - [MULTI-STRATEGY] Initializing 3-strategy engine with $1,000 paper capital
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO -   Strategy A: ETH Spot Scalper  — $600 | TP +1.5% | SL -0.8%
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO -   Strategy D: Option Seller     — $300 | Sell far-OTM on ADX < 18
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO -   Strategy B: Option Buyer      — $100 reserve | High-conviction spikes only
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - Paper Spot Broker initialized with $600.00 USDT (Max Positions: 4 | Fee: 0.10%)
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - Paper Delta Options Broker initialized with $300.00 USDT capital (Max Concurrent Positions: 5 | Maker Fee: 0.02%).
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - [MULTI-RUNNER] Started — Symbols: ['BTC', 'ETH'] | Spot: $600.0 | Options: $300.0
+2026-08-14 11:56:11 - BinanceCryptoBot - INFO - 🌐 Launching Dashboard at http://localhost:5002

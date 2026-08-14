@@ -71,8 +71,8 @@ class EquityBotRunner:
             else:
                 log.warning("%s: Unknown strategy name [%s]", self.bot_id, name)
 
-        self._trades_today = 0
-        self._daily_pnl    = 0.0
+        self._trades_today = len(self.journal.get_todays_trades(bot_id=self.bot_id))
+        self._daily_pnl    = self.journal.get_todays_pnl(bot_id=self.bot_id)
         self._open_positions: List[Dict] = []
         self._consensus_signals: List[Signal] = []   # shared across scan cycles
         self._signal_log: List[Dict] = []
@@ -214,7 +214,7 @@ class EquityBotRunner:
             "type":         "equity",
             "total_trades": self._trades_today,
             "open_positions_count": len(self.order_mgr.get_open_positions()),
-            "pnl":          self._daily_pnl,
+            "pnl":          self.journal.get_todays_pnl(bot_id=self.bot_id),
             "strategies":   self.cfg.get("strategies", []),
             "capital":      self.cfg.get("capital", 100000),
         }

@@ -53,6 +53,30 @@ def calculate_bollinger_bands(df: pd.DataFrame, period: int = 20, std_dev: float
     lower = middle - (rolling_std * std_dev)
     return upper, middle, lower
 
+def calculate_adx(df: pd.DataFrame, period: int = 14) -> pd.Series:
+    """Calculate Average Directional Index (ADX) to measure trend strength."""
+    df = df.copy()
+    high, low, close = df["high"], df["low"], df["close"]
+    
+    up_move = high - high.shift(1)
+    down_move = low.shift(1) - low
+    
+    plus_dm = np.where((up_move > down_move) & (up_move > 0), up_move, 0.0)
+    minus_dm = np.where((down_move > up_move) & (down_move > 0), down_move, 0.0)
+    
+    tr1 = high - low
+    tr2 = (high - close.shift(1)).abs()
+    tr3 = (low - close.shift(1)).abs()
+    tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+    
+    atr = tr.rolling(window=period).mean()
+    plus_di = 100 * (pd.Series(plus_dm).rolling(window=period).mean() / atr.replace(0, np.nan))
+    minus_di = 100 * (pd.Series(minus_dm).rolling(window=period).mean() / atr.replace(0, np.nan))
+    
+    dx = 100 * ((plus_di - minus_di).abs() / (plus_di + minus_di).replace(0, np.nan))
+    adx = dx.rolling(window=period).mean().fillna(15.0)
+    return adx
+
 def calculate_grid_levels(current_price: float, lower_bound: float, upper_bound: float, num_grids: int = 10) -> List[float]:
     """Calculate Grid price levels for Quantitative Grid Trading."""
     if num_grids < 2 or lower_bound >= upper_bound:

@@ -6,6 +6,34 @@
     <title>Delta Exchange & Binance Crypto Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .sub-balance-row {
+            display: flex; gap: 12px; margin-top: 8px;
+        }
+        .sub-balance-chip {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 13px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .sub-label { color: var(--text-secondary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .strategy-badge {
+            display: inline-block;
+            padding: 2px 8px; border-radius: 4px;
+            font-size: 10px; font-weight: 700; letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+        .badge-spot    { background: rgba(0,200,150,0.15); color: #00c896; border: 1px solid rgba(0,200,150,0.3); }
+        .badge-options { background: rgba(99,102,241,0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
+        .badge-sell    { background: rgba(251,146,60,0.15); color: #fb923c; border: 1px solid rgba(251,146,60,0.3); }
+        .section-divider { border: none; border-top: 1px solid var(--border); margin: 18px 0 12px; }
+        .pos-broker-tag {
+            font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
     <div class="app-container">
@@ -14,11 +42,12 @@
             <div class="logo">
                 <span class="crypto-icon">⚡</span>
                 <div>
-                    <h1>Delta Exchange & Binance Crypto Bot</h1>
-                    <p class="subtitle">Crypto Options, Spot & Futures Algorithmic Execution</p>
+                    <h1>Delta Exchange &amp; Binance Crypto Bot</h1>
+                    <p class="subtitle">Multi-Strategy: Spot Scalping · Option Selling · Option Buying</p>
                 </div>
             </div>
             <div class="controls">
+                <span id="peakWindowBadge" class="badge" style="display:none; background: linear-gradient(135deg, #ff416c, #ff4b2b); color: white; margin-right: 8px; font-weight: 600;">🔥 US Peak Window Active (6:00-9:00 PM IST)</span>
                 <span id="botStatusBadge" class="badge badge-running">RUNNING</span>
                 <button id="pauseBtn" class="btn btn-warning" onclick="pauseBot()">Pause Bot</button>
                 <button id="resumeBtn" class="btn btn-success" onclick="resumeBot()">Resume Bot</button>
@@ -29,15 +58,25 @@
         <!-- Metric Cards -->
         <div class="metrics-grid">
             <div class="card metric-card">
-                <span class="card-label">Wallet Balance</span>
+                <span class="card-label">Total Portfolio</span>
                 <h2 id="walletBalance">$0.00 <span class="currency">USDT</span></h2>
+                <div class="sub-balance-row">
+                    <div class="sub-balance-chip">
+                        <span class="strategy-badge badge-spot">SPOT</span>
+                        <span id="spotBalance" style="font-size:13px; font-weight:600;">$700.00</span>
+                    </div>
+                    <div class="sub-balance-chip">
+                        <span class="strategy-badge badge-options">OPT</span>
+                        <span id="optionsBalance" style="font-size:13px; font-weight:600;">$300.00</span>
+                    </div>
+                </div>
             </div>
             <div class="card metric-card">
                 <span class="card-label">Total Equity</span>
                 <h2 id="totalEquity">$0.00 <span class="currency">USDT</span></h2>
             </div>
             <div class="card metric-card">
-                <span class="card-label">Unrealized P&L</span>
+                <span class="card-label">Unrealized P&amp;L</span>
                 <h2 id="unrealizedPnl" class="neutral">$0.00</h2>
             </div>
             <div class="card metric-card">
@@ -47,64 +86,93 @@
         </div>
 
         <!-- Tickers Bar -->
-        <div class="card ticker-bar">
-            <h3>Live Spot & Options Feed</h3>
-            <div id="tickerFeed" class="ticker-items">
-                <!-- Populated dynamically -->
+        <div class="card" style="padding: 16px 20px;">
+            <span class="card-label">Live Spot &amp; Options Feed</span>
+            <div id="tickerFeed" class="ticker-feed" style="margin-top: 8px;">Loading...</div>
+        </div>
+
+        <!-- Strategy Legend -->
+        <div class="card" style="padding: 14px 20px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+            <span class="card-label" style="margin-right: 4px;">Active Strategies:</span>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="strategy-badge badge-spot">A · SPOT</span>
+                <span style="font-size: 12px; color: var(--text-secondary);">ETH Spot Scalper — $700 | TP +1.5% | SL -0.8% | ADX &gt; 22</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="strategy-badge badge-sell">D · SELL</span>
+                <span style="font-size: 12px; color: var(--text-secondary);">Option Seller — $300 | Far-OTM | Collect premium | ADX &lt; 18</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="strategy-badge badge-options">B · BUY</span>
+                <span style="font-size: 12px; color: var(--text-secondary);">Option Buyer — Reserve | High-conviction spikes only | ADX &gt; 25</span>
             </div>
         </div>
 
-        <!-- Main Content Layout -->
-        <div class="main-grid">
-            <!-- Active Positions -->
-            <div class="card panel">
-                <h3>Active Option Contracts</h3>
-                <div class="table-container">
-                    <table>
+        <div class="two-column-grid">
+            <!-- Positions Table -->
+            <div class="card panel" style="grid-column: 1 / -1;">
+                <h3>Active Positions — All Strategies</h3>
+                <div class="table-wrapper">
+                    <table class="data-table">
                         <thead>
                             <tr>
+                                <th>Broker</th>
                                 <th>Contract / Symbol</th>
                                 <th>Type / Side</th>
-                                <th>Strike / Size</th>
-                                <th>Entry Premium</th>
-                                <th>Current Premium</th>
+                                <th>Size / Strike</th>
+                                <th>Entry Price</th>
+                                <th>Current Price</th>
                                 <th>Delta / Theta</th>
-                                <th>Unrealized P&L</th>
+                                <th>Unrealized P&amp;L</th>
                             </tr>
                         </thead>
                         <tbody id="positionsTableBody">
-                            <tr><td colspan="7" class="text-center">No open positions</td></tr>
+                            <tr><td colspan="8" class="text-center">No open positions</td></tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3 style="margin-top: 20px;">Completed Scalps & Closed Trade History</h3>
-                <div class="table-container">
-                    <table>
+                <hr class="section-divider">
+
+                <h3 style="margin-top:0;">Closed Trade History — All Strategies</h3>
+                <div class="table-wrapper">
+                    <table class="data-table">
                         <thead>
                             <tr>
-                                <th>Contract / Symbol</th>
+                                <th>Broker</th>
+                                <th>Symbol</th>
                                 <th>Type</th>
-                                <th>Entry Premium</th>
-                                <th>Exit Premium</th>
+                                <th>Entry</th>
+                                <th>Exit</th>
                                 <th>Fee</th>
-                                <th>Net P&L</th>
+                                <th>Net P&amp;L</th>
                                 <th>Exit Reason</th>
                                 <th>Time</th>
                             </tr>
                         </thead>
                         <tbody id="tradeHistoryTableBody">
-                            <tr><td colspan="8" class="text-center">No completed trades yet</td></tr>
+                            <tr><td colspan="9" class="text-center">No completed trades yet</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- Signal & Trade Log -->
+            <!-- Signal Feed -->
             <div class="card panel">
-                <h3>Latest Signals & Option Trades</h3>
+                <h3>Latest Signals &amp; Trades</h3>
                 <div id="signalsList" class="signals-list">
                     <div class="empty-state">Listening for market signals...</div>
+                </div>
+            </div>
+
+            <!-- AI Overseer -->
+            <div class="card panel">
+                <h3 style="display:flex; align-items:center; gap:8px;">
+                    <span>🤖 AI Overseer — Decision Feed</span>
+                    <span style="font-size:11px; font-weight:400; color:var(--text-secondary); margin-left:auto;">70% Threshold · 4 Factors</span>
+                </h3>
+                <div id="aiDecisionFeed" style="max-height: 380px; overflow-y: auto; border-radius: 8px; border: 1px solid var(--border);">
+                    <div class="empty-state" style="padding:20px; text-align:center; color:var(--text-secondary);">AI evaluating signals...</div>
                 </div>
             </div>
         </div>

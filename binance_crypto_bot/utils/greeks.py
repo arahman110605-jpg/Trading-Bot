@@ -19,17 +19,11 @@ def calculate_black_scholes(
     strike_price: float,
     time_to_expiry_years: float,
     volatility: float = 0.50,
-    risk_free_rate: float = 0.03
+    risk_free_rate: float = 0.03,
+    underlying: str = "BTC"
 ) -> Dict[str, float]:
     """
     Calculate theoretical option price and Greeks (Delta, Gamma, Theta, Vega).
-    
-    :param option_type: "CALL" or "PUT"
-    :param spot_price: Current underlying spot price (e.g. $60,000)
-    :param strike_price: Option strike price (e.g. $60,000)
-    :param time_to_expiry_years: Time to expiry in years (e.g. 7 days / 365 = 0.0191)
-    :param volatility: Implied Volatility (IV) e.g. 0.50 = 50%
-    :param risk_free_rate: Risk-free rate (default 3% or 0.03)
     """
     S = max(spot_price, 0.01)
     K = max(strike_price, 0.01)
@@ -37,19 +31,22 @@ def calculate_black_scholes(
     v = max(volatility, 0.01)
     r = risk_free_rate
 
+    # Delta Exchange contract multipliers: BTC = 0.001, ETH = 0.1
+    mult = 0.1 if "ETH" in underlying.upper() else 0.001
+
     d1 = (math.log(S / K) + (r + 0.5 * v * v) * T) / (v * math.sqrt(T))
     d2 = d1 - v * math.sqrt(T)
 
     opt_type = option_type.upper()
 
     if opt_type in ["CALL", "C"]:
-        price = (S * norm_cdf(d1) - K * math.exp(-r * T) * norm_cdf(d2)) * 0.001
+        price = (S * norm_cdf(d1) - K * math.exp(-r * T) * norm_cdf(d2)) * mult
         delta = norm_cdf(d1)
-        theta = ((- (S * norm_pdf(d1) * v) / (2 * math.sqrt(T)) - r * K * math.exp(-r * T) * norm_cdf(d2)) / 365.0) * 0.001
+        theta = ((- (S * norm_pdf(d1) * v) / (2 * math.sqrt(T)) - r * K * math.exp(-r * T) * norm_cdf(d2)) / 365.0) * mult
     else:  # PUT
-        price = (K * math.exp(-r * T) * norm_cdf(-d2) - S * norm_cdf(-d1)) * 0.001
+        price = (K * math.exp(-r * T) * norm_cdf(-d2) - S * norm_cdf(-d1)) * mult
         delta = norm_cdf(d1) - 1.0
-        theta = ((- (S * norm_pdf(d1) * v) / (2 * math.sqrt(T)) + r * K * math.exp(-r * T) * norm_cdf(-d2)) / 365.0) * 0.001
+        theta = ((- (S * norm_pdf(d1) * v) / (2 * math.sqrt(T)) + r * K * math.exp(-r * T) * norm_cdf(-d2)) / 365.0) * mult
 
     gamma = norm_pdf(d1) / (S * v * math.sqrt(T))
     vega = (S * norm_pdf(d1) * math.sqrt(T)) / 100.0  # Per 1% IV change
