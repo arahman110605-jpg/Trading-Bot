@@ -108,11 +108,13 @@ class BaseStrategy(ABC):
         entry: float,
         atr: float,
         atr_sl_mult: float = 1.2,
-        rr: float = 1.5,
+        rr: float = None,
     ):
-        """Compute stop-loss and target from ATR."""
+        """Compute stop-loss and target from ATR with guaranteed minimum 2:1 R:R."""
+        import config
+        ratio = rr if rr is not None else getattr(config, "REWARD_TO_RISK_RATIO", 2.0)
         sl_dist = atr * atr_sl_mult
-        tgt_dist = sl_dist * rr
+        tgt_dist = sl_dist * ratio
         if direction == "BUY":
             return entry - sl_dist, entry + tgt_dist
         else:

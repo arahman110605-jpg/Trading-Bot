@@ -58,11 +58,13 @@ DEFAULT_EXCHANGE = "NSE"
 # RISK MANAGEMENT
 # ─────────────────────────────────────────────
 CAPITAL = 100_000           # Total capital in INR (update this)
-RISK_PER_TRADE_PCT = 1.5    # Max % of capital to risk per trade (1.5%)
-MAX_DAILY_LOSS_PCT = 2.0    # Stop bot if daily loss exceeds this %
+RISK_PER_TRADE_PCT = 1.0    # Max % of capital to risk per trade (1.0% = ₹1,000 max loss per trade)
+MAX_DAILY_LOSS_PCT = 2.0    # Stop bot if daily loss exceeds this % (2.0% = ₹2,000 max daily loss)
 MAX_OPEN_POSITIONS = 3      # Maximum simultaneous open positions
 MAX_TRADES_PER_DAY = 5      # Maximum total executed trades per day to prevent overtrading
-REWARD_TO_RISK_RATIO = 1.5  # Minimum R:R ratio for trade entry
+REWARD_TO_RISK_RATIO = 2.0  # Minimum R:R ratio for trade entry (Target = 2x Risk)
+OPENING_LOCKOUT_MINUTES = 15 # No trades between 09:15 and 09:30 AM
+INDEX_TREND_FILTER_ENABLED = True # Only buy when NIFTY is bullish, only sell when NIFTY is bearish
 
 # Auto square-off time (IST, 24h format)
 SQUARE_OFF_HOUR   = 15

@@ -178,23 +178,35 @@ class EquityBotRunner:
                     best = max(candidate_signals, key=lambda s: s.confidence)
                     if "consensus" in self.bot_id:
                         self.hub.set_consensus_signal(best.direction, best.symbol)
-                    max_trades = self.cfg.get("max_trades_per_day", config.MAX_TRADES_PER_DAY)
-                    if self._trades_today < max_trades:
-                        valid, reason = self.risk_mgr.validate_signal(best)
-                        if valid:
-                            executed = self.order_mgr.execute_signal(best)
-                            if executed:
-                                self._trades_today += 1
-                                log.info("%s: TRADE EXECUTED | %s %s @ %.2f",
-                                         self.bot_id, best.direction, best.symbol, best.entry_price)
-                        self.analytics.log_signal_telemetry(
-                            symbol=best.symbol, strategy=best.strategy,
-                            direction=best.direction, confidence=best.confidence,
-                            entry_price=best.entry_price, stop_loss=best.stop_loss,
-                            target=best.target, rr_ratio=getattr(best, 'rr_ratio', 0),
-                            was_executed=valid, rejection_reason="" if valid else reason,
-                            notes=getattr(best, 'notes', ''),
-                        )
+
+                    # Market Breadth / Macro trend alignment check
+                    if getattr(config, "INDEX_TREND_FILTER_ENABLED", True):
+                        mkt_trend = self.hub.get_market_trend()
+                        if mkt_trend == "BEARISH" and best.direction == "BUY":
+                            log.info("%s: Market filter BLOCKED BUY on %s (Market is %s)", self.bot_id, best.symbol, mkt_trend)
+                            best = None
+                        elif mkt_trend == "BULLISH" and best.direction == "SELL":
+                            log.info("%s: Market filter BLOCKED SELL on %s (Market is %s)", self.bot_id, best.symbol, mkt_trend)
+                            best = None
+
+                    if best:
+                        max_trades = self.cfg.get("max_trades_per_day", config.MAX_TRADES_PER_DAY)
+                        if self._trades_today < max_trades:
+                            valid, reason = self.risk_mgr.validate_signal(best)
+                            if valid:
+                                executed = self.order_mgr.execute_signal(best)
+                                if executed:
+                                    self._trades_today += 1
+                                    log.info("%s: TRADE EXECUTED | %s %s @ %.2f",
+                                             self.bot_id, best.direction, best.symbol, best.entry_price)
+                            self.analytics.log_signal_telemetry(
+                                symbol=best.symbol, strategy=best.strategy,
+                                direction=best.direction, confidence=best.confidence,
+                                entry_price=best.entry_price, stop_loss=best.stop_loss,
+                                target=best.target, rr_ratio=getattr(best, 'rr_ratio', 0),
+                                was_executed=valid, rejection_reason="" if valid else reason,
+                                notes=getattr(best, 'notes', ''),
+                            )
 
                 if self.on_update:
                     self.on_update()

@@ -206,36 +206,48 @@ class OrderManager:
         risk = pos.risk  # Original risk distance
 
         # ── Trailing SL Logic ─────────────────────────────────────────────────
-        # When profit reaches 50% of target distance → move SL to breakeven
-        # When profit reaches 75% of target distance → move SL to 50% of target
+        # +1.0R profit -> Move SL to Breakeven (+0.0R)
+        # +1.5R profit -> Move SL to Lock Profit (+0.75R)
+        # +1.8R profit -> Move SL to Lock Profit (+1.2R)
         if pos.direction == "BUY":
-            profit = ltp - pos.entry_price
-            half_target  = pos.entry_price + (risk * 1.0)   # 1:1 R:R level
-            three_q_tgt  = pos.entry_price + (risk * 1.5)   # 1.5:1 level
+            one_r_level   = pos.entry_price + (risk * 1.0)
+            one_half_r    = pos.entry_price + (risk * 1.5)
+            one_eight_r   = pos.entry_price + (risk * 1.8)
 
-            if not pos.breakeven_set and ltp >= half_target:
+            if not pos.breakeven_set and ltp >= one_r_level:
                 pos.trailing_sl = pos.entry_price  # Move SL to breakeven
                 pos.breakeven_set = True
-                log.info("Trailing SL: Moved to BREAKEVEN for %s @ %.2f", symbol, pos.entry_price)
-            elif pos.breakeven_set and ltp >= three_q_tgt:
-                new_tsl = pos.entry_price + (risk * 0.5)
+                log.info("Trailing SL: Moved to BREAKEVEN for %s @ %.2f (LTP=%.2f)", symbol, pos.entry_price, ltp)
+            elif pos.breakeven_set and ltp >= one_eight_r:
+                new_tsl = round(pos.entry_price + (risk * 1.2), 2)
                 if new_tsl > pos.trailing_sl:
                     pos.trailing_sl = new_tsl
-                    log.info("Trailing SL: Moved to %.2f for %s", new_tsl, symbol)
+                    log.info("Trailing SL: Locked +1.2R Profit @ %.2f for %s", new_tsl, symbol)
+            elif pos.breakeven_set and ltp >= one_half_r:
+                new_tsl = round(pos.entry_price + (risk * 0.75), 2)
+                if new_tsl > pos.trailing_sl:
+                    pos.trailing_sl = new_tsl
+                    log.info("Trailing SL: Locked +0.75R Profit @ %.2f for %s", new_tsl, symbol)
 
         else:  # SELL position
-            half_target = pos.entry_price - (risk * 1.0)
-            three_q_tgt = pos.entry_price - (risk * 1.5)
+            one_r_level   = pos.entry_price - (risk * 1.0)
+            one_half_r    = pos.entry_price - (risk * 1.5)
+            one_eight_r   = pos.entry_price - (risk * 1.8)
 
-            if not pos.breakeven_set and ltp <= half_target:
+            if not pos.breakeven_set and ltp <= one_r_level:
                 pos.trailing_sl = pos.entry_price
                 pos.breakeven_set = True
-                log.info("Trailing SL: Moved to BREAKEVEN for %s @ %.2f", symbol, pos.entry_price)
-            elif pos.breakeven_set and ltp <= three_q_tgt:
-                new_tsl = pos.entry_price - (risk * 0.5)
+                log.info("Trailing SL: Moved to BREAKEVEN for %s @ %.2f (LTP=%.2f)", symbol, pos.entry_price, ltp)
+            elif pos.breakeven_set and ltp <= one_eight_r:
+                new_tsl = round(pos.entry_price - (risk * 1.2), 2)
                 if new_tsl < pos.trailing_sl:
                     pos.trailing_sl = new_tsl
-                    log.info("Trailing SL: Moved to %.2f for %s", new_tsl, symbol)
+                    log.info("Trailing SL: Locked +1.2R Profit @ %.2f for %s", new_tsl, symbol)
+            elif pos.breakeven_set and ltp <= one_half_r:
+                new_tsl = round(pos.entry_price - (risk * 0.75), 2)
+                if new_tsl < pos.trailing_sl:
+                    pos.trailing_sl = new_tsl
+                    log.info("Trailing SL: Locked +0.75R Profit @ %.2f for %s", new_tsl, symbol)
 
         # ── Check Trailing SL Hit ─────────────────────────────────────────────
         sl_hit = False

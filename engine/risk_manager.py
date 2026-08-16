@@ -92,6 +92,13 @@ class RiskManager:
         if not self.is_market_open():
             return False, "Market is closed"
 
+        now = _now_ist()
+
+        # Opening volatility lockout (09:15 AM – 09:30 AM)
+        lockout_mins = getattr(config, "OPENING_LOCKOUT_MINUTES", 15)
+        if now.hour == 9 and now.minute < (15 + lockout_mins):
+            return False, f"Opening volatility buffer (09:15–09:{15+lockout_mins:02d}) — no new entries allowed"
+
         if self._daily_loss_hit:
             return False, "Daily loss limit hit — bot paused"
 
@@ -177,20 +184,20 @@ class RiskManager:
         risk_amount = current_capital * self.max_risk_per_trade
         risk_per_share = abs(signal.entry_price - signal.stop_loss)
 
-        if risk_per_share <= 0:
-            log.warning("Risk per share is 0 for %s — skipping", signal.symbol)
-            return 0
+        # Minimum risk per share sanity check (at least 0.2% of stock price to prevent accidental huge sizing)
+        min_risk_per_share = signal.entry_price * 0.002
+        effective_risk_per_share = max(risk_per_share, min_risk_per_share)
 
-        qty = int(risk_amount / risk_per_share)
+        qty = int(risk_amount / effective_risk_per_share)
         qty = max(1, qty)
 
-        # Safety: don't put more than 20% of capital in one trade
-        max_qty = int((current_capital * 0.20) / signal.entry_price)
+        # Safety: don't put more than 25% of capital in one single stock position
+        max_qty = int((current_capital * 0.25) / signal.entry_price)
         qty = min(qty, max(1, max_qty))
 
         log.info(
-            "Position size | %s | qty=%d | risk=INR %.2f | risk/share=%.2f",
-            signal.symbol, qty, risk_amount, risk_per_share
+            "Position size | %s | qty=%d | planned_risk=INR %.2f | risk/share=%.2f | cap_alloc=INR %.2f",
+            signal.symbol, qty, qty * risk_per_share, risk_per_share, qty * signal.entry_price
         )
         return qty
 

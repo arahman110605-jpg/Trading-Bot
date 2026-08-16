@@ -100,6 +100,31 @@ class MarketDataHub:
         with self._lock:
             return dict(self._options_cache)
 
+    def get_market_trend(self) -> str:
+        """
+        Determine broader market regime across watchlist breadth (% above 20 EMA).
+        Returns 'BULLISH', 'BEARISH', or 'NEUTRAL'.
+        """
+        with self._lock:
+            bullish_count = 0
+            bearish_count = 0
+            for df in self._equity_cache.values():
+                if df is not None and len(df) >= 20:
+                    ema20 = df["close"].ewm(span=20, adjust=False).mean().iloc[-1]
+                    close = df["close"].iloc[-1]
+                    if close > ema20:
+                        bullish_count += 1
+                    else:
+                        bearish_count += 1
+            total = bullish_count + bearish_count
+            if total >= 5:
+                ratio = bullish_count / total
+                if ratio >= 0.60:
+                    return "BULLISH"
+                elif ratio <= 0.40:
+                    return "BEARISH"
+            return "NEUTRAL"
+
     def last_refresh_time(self) -> Optional[datetime]:
         """Return timestamp of the last equity data refresh."""
         with self._lock:
