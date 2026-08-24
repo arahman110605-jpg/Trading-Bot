@@ -4020,3 +4020,29 @@
 2026-08-24 20:11:34 | INFO     | TradingBot.OrderManager | [PROFIT PROTECTION] [NIFTY] (R=+1.25) -> SL locked at 24030.00 (+0.3R green buffer)
 2026-08-24 20:11:34 | INFO     | TradingBot.OrderManager | [TREND RUN] [NIFTY] ACTIVE (R=+3.20, Thesis=100) -> Swing trailing enabled
 2026-08-24 20:11:34 | INFO     | TradingBot.OrderManager | [ASYMMETRIC EXPANSION] [NIFTY] (R=+3.20)! TP expanded to +6.0R (24600.00), SL tightened to 24270.00
+2026-08-24 20:17:48 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/test_trades.db
+2026-08-24 20:17:48 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.0% | max_daily_loss=2.0%
+2026-08-24 20:17:48 | INFO     | TradingBot.OrderManager | [PROFIT PROTECTION] [TATASTEEL] (R=+1.30) -> SL locked at 180.60 (+0.3R green buffer)
+2026-08-24 20:17:48 | INFO     | TradingBot.OrderManager | [TREND RUN] [TATASTEEL] ACTIVE (R=+3.50, Thesis=90) -> Swing trailing enabled
+2026-08-24 20:17:48 | INFO     | TradingBot.OrderManager | [ASYMMETRIC EXPANSION] [TATASTEEL] (R=+3.50)! TP expanded to +6.0R (192.00), SL tightened to 186.00
+2026-08-24 20:17:48 | INFO     | TradingBot.OrderManager | [SWING TRAILING] Trailed SL behind M5 swing low to 1527.99 for TATASTEEL
+2026-08-24 20:17:48 | WARNING  | TradingBot.OrderManager | STOP LOSS / TRAILING EXIT | TATASTEEL @ 187.00 | SL was 1527.99 | TRAILING_STOP (R=+3.50)
+2026-08-24 20:17:48 | WARNING  | TradingBot.TradeJournal | Trade id=101 not found for exit
+2026-08-24 20:17:48 | INFO     | TradingBot.OrderManager | Position closed | TATASTEEL | status=TRAILING_STOP (R=+3.50) | P&L=INR 700.00
+2026-08-24 20:18:00 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/test_trades.db
+2026-08-24 20:18:00 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.0% | max_daily_loss=2.0%
+2026-08-24 20:18:00 | INFO     | TradingBot.OrderManager | [PROFIT PROTECTION] [TATASTEEL] (R=+1.30) -> SL locked at 180.60 (+0.3R green buffer)
+2026-08-24 20:18:00 | INFO     | TradingBot.OrderManager | [TREND RUN] [TATASTEEL] ACTIVE (R=+3.50, Thesis=80) -> Swing trailing enabled
+2026-08-24 20:18:00 | INFO     | TradingBot.OrderManager | [ASYMMETRIC EXPANSION] [TATASTEEL] (R=+3.50)! TP expanded to +6.0R (192.00), SL tightened to 186.00
+2026-08-24 20:18:00 | INFO     | TradingBot.OrderManager | [SWING TRAILING] Trailed SL behind M5 swing low to 187.17 for TATASTEEL
+2026-08-24 20:18:00 | WARNING  | TradingBot.OrderManager | STOP LOSS / TRAILING EXIT | TATASTEEL @ 187.00 | SL was 187.17 | TRAILING_STOP (R=+3.50)
+2026-08-24 20:18:00 | WARNING  | TradingBot.TradeJournal | Trade id=101 not found for exit
+2026-08-24 20:18:00 | INFO     | TradingBot.OrderManager | Position closed | TATASTEEL | status=TRAILING_STOP (R=+3.50) | P&L=INR 700.00
+2026-08-24 20:18:00 | INFO     | TradingBot.OptionsMomentumStrategy | bot_02_fo: [OPTIONS MOMENTUM] BUY_CE NIFTY Strike=24750 (ATM=24800) | LTP=165.0 | SL=123.8 Target=330.0 | Trigger=BUY NIFTY
+2026-08-24 20:18:00 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialising shared Angel One connection...
+2026-08-24 20:18:00 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-24 20:18:00 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-24 20:18:00 | INFO     | TradingBot.AngelClient | ✓ Angel One authentication successful!
+2026-08-24 20:18:00 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-24 20:18:14 | INFO     | TradingBot.AngelClient | Loaded 38612 NSE and NFO tokens.
+2026-08-24 20:18:14 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve dual engines (Intraday + F&O).

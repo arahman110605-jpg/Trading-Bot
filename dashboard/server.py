@@ -71,6 +71,7 @@ def _build_state() -> dict:
     total_pnl = _journal.get_total_pnl() if _journal else 0.0
 
     arena_data = _multi_manager.get_all_status() if _multi_manager else []
+    bot_count = len(_multi_manager.bot_configs) if _multi_manager and hasattr(_multi_manager, 'bot_configs') and _multi_manager.bot_configs else 2
 
     return {
         "mode":           config.TRADING_MODE,
@@ -84,7 +85,7 @@ def _build_state() -> dict:
         "signals":        signals[:20],   # Last 20 signals
         "watchlist":      config.WATCHLIST,
         "strategies":     config.STRATEGIES,
-        "capital":        (config.CAPITAL * 8 if config.MULTI_BOT_MODE else config.CAPITAL) + total_pnl,
+        "capital":        (config.CAPITAL * bot_count if config.MULTI_BOT_MODE else config.CAPITAL) + total_pnl,
         "total_pnl":      total_pnl,
         "arena":          arena_data,
         "broker_connected": bool(_orders and getattr(_orders, 'kite', None) and getattr(_orders.kite, 'smart_api', None) is not None),

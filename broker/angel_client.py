@@ -65,7 +65,7 @@ class AngelClient:
             data = self.smart_api.generateSession(self.client_code, self.password, totp)
 
             if data.get("status"):
-                log.info("✓ Angel One authentication successful!")
+                log.info("[OK] Angel One authentication successful!")
                 # Extract auth token if needed
                 jwt_token = data["data"]["jwtToken"]
                 self.smart_api.getProfile(jwt_token)
