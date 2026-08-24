@@ -48,8 +48,7 @@ class MarketDataHub:
         self._lock = threading.RLock()
         self._last_equity_refresh: Optional[datetime] = None
         self._last_options_refresh: Optional[datetime] = None
-        self._running = False
-        log.info("MarketDataHub: Initialised. Ready to serve %d bots.", 8)
+        log.info("MarketDataHub: Initialised. Ready to serve dual engines (Intraday + F&O).")
 
     # ── Consensus Signal API ───────────────────────────────────────────────
 

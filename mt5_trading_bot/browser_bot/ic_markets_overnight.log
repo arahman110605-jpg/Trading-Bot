@@ -1611,3 +1611,11 @@
 2026-08-24 19:58:52,186 [INFO] [IC_TrendExpansionBot]: ===========================================================================
 2026-08-24 20:03:49,156 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
 2026-08-24 20:08:50,856 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 20:10:34,170 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 20:10:34,171 [INFO] [IC_TrendExpansionBot]:   IC MARKETS LIVE ENGINE WITH ASYMMETRIC TREND-EXPANSION & TIGHT-LOCK
+2026-08-24 20:10:34,171 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 20:10:34,173 [INFO] [IC_TrendExpansionBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $205.56 USD
+2026-08-24 20:10:34,173 [INFO] [IC_TrendExpansionBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 20:10:34,173 [INFO] [IC_TrendExpansionBot]:   ASYMMETRIC TREND EXPANSION: ACTIVE (TP expands to +6R on strong trends)
+2026-08-24 20:10:34,173 [INFO] [IC_TrendExpansionBot]:   TIGHT-LOCK PROFIT TRAILING: ACTIVE (Locks 80-90% of gains)
+2026-08-24 20:10:34,173 [INFO] [IC_TrendExpansionBot]: ===========================================================================
