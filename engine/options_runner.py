@@ -138,11 +138,31 @@ class OptionsRunner:
                 self._close_position(pnl, "TARGET_HIT")
 
         elif "buy" in sig.direction.lower():
-            # For bought options: check if premium hit SL or target
+            # For bought options: apply active multi-stage profit protection & asymmetric expansion
             current_ltp = ce_ltp if "ce" in sig.direction.lower() else pe_ltp
+            entry_p = sig.total_premium
+            gain_pct = ((current_ltp - entry_p) / entry_p) if entry_p > 0 else 0.0
+
+            # 1. Profit Protection: at +40% gain -> Lock entry + 10% green buffer
+            if gain_pct >= 0.40:
+                locked_sl = round(entry_p * 1.10, 2)
+                if locked_sl > sig.sl_premium:
+                    sig.sl_premium = locked_sl
+                    log.info("🛡️ [%s] Options Profit Protection: SL locked at %.2f (+10%% green buffer)", self.bot_id, locked_sl)
+
+            # 2. Asymmetric Expansion: at +100% gain -> Expand TP to +200% & Tighten SL to +60%
+            if gain_pct >= 1.00:
+                expanded_tp = round(entry_p * 3.00, 2)
+                tightened_sl = round(entry_p * 1.60, 2)
+                if expanded_tp > sig.target_premium:
+                    sig.target_premium = expanded_tp
+                    sig.sl_premium = max(sig.sl_premium, tightened_sl)
+                    log.info("💰💰 [%s] Options Asymmetric Expansion! Target expanded to %.2f (+200%%), SL tightened to %.2f",
+                             self.bot_id, expanded_tp, tightened_sl)
+
             if current_ltp <= sig.sl_premium:
                 pnl = (current_ltp - sig.total_premium) * sig.lot_size * sig.lots
-                log.warning("%s: SL HIT | LTP %.1f <= SL %.1f | PnL=%.0f",
+                log.warning("%s: SL / TRAILING HIT | LTP %.1f <= SL %.1f | PnL=%.0f",
                             self.bot_id, current_ltp, sig.sl_premium, pnl)
                 self._close_position(pnl, "SL_HIT")
             elif current_ltp >= sig.target_premium:

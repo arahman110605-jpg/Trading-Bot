@@ -51,6 +51,7 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
 
         # Use NIFTY as proxy for directional index options
         index = "NIFTY"
+        interval = 50 if index == "NIFTY" else 100
         opt_type = "CE" if consensus_direction == "BUY" else "PE"
 
         atm = hub_snapshot.get("atm_strikes", {}).get(index)
@@ -58,27 +59,36 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
             log.warning("%s: ATM strike unavailable for %s", self.bot_id, index)
             return None
 
+        # Select ITM Delta >= 0.60 strike (ATM-1 interval for CE, ATM+1 interval for PE)
+        itm_strike = (atm - interval) if opt_type == "CE" else (atm + interval)
         options = hub_snapshot.get("options", {})
-        entry_data = options.get(f"{index}_{atm}_{opt_type}", {})
+        
+        # Try ITM strike first; fallback to ATM if ITM not cached
+        entry_data = options.get(f"{index}_{itm_strike}_{opt_type}", {})
+        chosen_strike = itm_strike
+        if not entry_data.get("ltp"):
+            entry_data = options.get(f"{index}_{atm}_{opt_type}", {})
+            chosen_strike = atm
+
         ltp   = entry_data.get("ltp")
         token = entry_data.get("token", "")
 
         if not ltp:
-            log.warning("%s: LTP unavailable for %s %d %s", self.bot_id, index, atm, opt_type)
+            log.warning("%s: LTP unavailable for %s %d %s", self.bot_id, index, chosen_strike, opt_type)
             return None
 
-        sl_pct     = self.bot_config.get("sl_pct_of_premium", 30) / 100
+        sl_pct     = self.bot_config.get("sl_pct_of_premium", 25) / 100
         target_pct = self.bot_config.get("target_pct_of_premium", 100) / 100
 
         # BUY options: SL = entry * (1 - sl_pct), Target = entry * (1 + target_pct)
-        sl_price     = ltp * (1 - sl_pct)
-        target_price = ltp * (1 + target_pct)
+        sl_price     = round(ltp * (1 - sl_pct), 2)
+        target_price = round(ltp * (1 + target_pct), 2)
 
         lot_size = self.get_lot_size(index)
         direction_label = f"BUY_{opt_type}"
 
-        log.info("%s: OPTIONS MOMENTUM %s %s ATM=%d | LTP=%.1f | SL=%.1f Target=%.1f | Trigger=%s %s",
-                 self.bot_id, direction_label, index, atm, ltp, sl_price, target_price,
+        log.info("%s: [OPTIONS MOMENTUM] %s %s Strike=%d (ATM=%d) | LTP=%.1f | SL=%.1f Target=%.1f | Trigger=%s %s",
+                 self.bot_id, direction_label, index, chosen_strike, atm, ltp, sl_price, target_price,
                  consensus_direction, consensus_symbol)
 
         return OptionsSignal(
@@ -87,8 +97,8 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
             signal_type=direction_label.lower(),
             index=index,
             atm_strike=atm,
-            ce_strike=atm if opt_type == "CE" else 0,
-            pe_strike=atm if opt_type == "PE" else 0,
+            ce_strike=chosen_strike if opt_type == "CE" else 0,
+            pe_strike=chosen_strike if opt_type == "PE" else 0,
             ce_token=token if opt_type == "CE" else "",
             pe_token=token if opt_type == "PE" else "",
             ce_entry_price=ltp if opt_type == "CE" else 0.0,
@@ -100,5 +110,5 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
             lots=self.lots,
             direction=direction_label,
             confidence=0.85,
-            notes=f"Triggered by {consensus_direction} signal on {consensus_symbol}",
+            notes=f"Asymmetric ITM Momentum ({direction_label} {chosen_strike}) triggered by {consensus_direction} on {consensus_symbol}",
         )

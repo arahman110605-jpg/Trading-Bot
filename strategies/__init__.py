@@ -7,6 +7,7 @@ from strategies.vwap_strategy import VWAPStrategy
 from strategies.supertrend    import SupertrendStrategy
 from strategies.candlestick   import CandlestickStrategy
 from strategies.orb_strategy  import ORBStrategy
+from strategies.asymmetric_expansion import AsymmetricTrendExpansionStrategy
 
 __all__ = [
     "EMACrossoverStrategy",
@@ -15,4 +16,5 @@ __all__ = [
     "SupertrendStrategy",
     "CandlestickStrategy",
     "ORBStrategy",
+    "AsymmetricTrendExpansionStrategy",
 ]

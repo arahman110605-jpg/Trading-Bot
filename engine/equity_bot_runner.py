@@ -23,20 +23,22 @@ from strategies import (
     EMACrossoverStrategy, RSIStrategy, VWAPStrategy,
     SupertrendStrategy, CandlestickStrategy, ORBStrategy,
 )
+from strategies.asymmetric_expansion import AsymmetricTrendExpansionStrategy
 from strategies.base_strategy import Signal
 
 log = get_logger("EquityBotRunner")
 
 STRATEGY_MAP = {
-    "ema_crossover": EMACrossoverStrategy,
-    "rsi":           RSIStrategy,
-    "vwap":          VWAPStrategy,
-    "supertrend":    SupertrendStrategy,
-    "candlestick":   CandlestickStrategy,
-    "orb":           ORBStrategy,
+    "ema_crossover":        EMACrossoverStrategy,
+    "rsi":                  RSIStrategy,
+    "vwap":                 VWAPStrategy,
+    "supertrend":           SupertrendStrategy,
+    "candlestick":          CandlestickStrategy,
+    "orb":                  ORBStrategy,
+    "asymmetric_expansion": AsymmetricTrendExpansionStrategy,
 }
 
-TREND_ONLY = {"ema_crossover", "supertrend", "orb"}
+TREND_ONLY = {"ema_crossover", "supertrend", "orb", "asymmetric_expansion"}
 
 
 class EquityBotRunner:
@@ -130,13 +132,13 @@ class EquityBotRunner:
                     time.sleep(10)
                     continue
 
-                # Update trailing SL and Target for open positions
+                # Update trailing SL and Target for open positions with active state management
                 for pos in self.order_mgr.get_open_positions():
                     sym = pos["symbol"]
                     df = equity_data.get(sym)
                     if df is not None and not df.empty:
                         ltp = df.iloc[-1]['close']
-                        self.order_mgr.update_position_price(sym, ltp)
+                        self.order_mgr.update_position_price(sym, ltp, df_m5=df)
 
                 # Per-symbol evaluation
                 candidate_signals: List[Signal] = []

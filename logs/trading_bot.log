@@ -4010,3 +4010,13 @@
 2026-08-11 20:46:33 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Equity refreshed (15/15 OK).
 2026-08-11 20:46:33 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Refreshing options chain...
 2026-08-11 20:46:34 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Options refreshed. ATM={'NIFTY': 24450, 'BANKNIFTY': 57400} VIX=11.86
+2026-08-24 20:11:11 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/test_trades.db
+2026-08-24 20:11:11 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.0% | max_daily_loss=2.0%
+2026-08-24 20:11:11 | INFO     | TradingBot.OrderManager | 🛡️ [NIFTY] PROFIT_PROTECTION (R=+1.25) -> SL locked at 24030.00 (+0.3R green buffer)
+2026-08-24 20:11:11 | INFO     | TradingBot.OrderManager | 🚀 [NIFTY] TREND_RUN ACTIVE (R=+3.20, Thesis=100) -> Swing trailing enabled
+2026-08-24 20:11:11 | INFO     | TradingBot.OrderManager | 💰💰 [NIFTY] ASYMMETRIC EXPANSION (R=+3.20)! TP expanded to +6.0R (24600.00), SL tightened to 24270.00
+2026-08-24 20:11:34 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/test_trades.db
+2026-08-24 20:11:34 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.0% | max_daily_loss=2.0%
+2026-08-24 20:11:34 | INFO     | TradingBot.OrderManager | [PROFIT PROTECTION] [NIFTY] (R=+1.25) -> SL locked at 24030.00 (+0.3R green buffer)
+2026-08-24 20:11:34 | INFO     | TradingBot.OrderManager | [TREND RUN] [NIFTY] ACTIVE (R=+3.20, Thesis=100) -> Swing trailing enabled
+2026-08-24 20:11:34 | INFO     | TradingBot.OrderManager | [ASYMMETRIC EXPANSION] [NIFTY] (R=+3.20)! TP expanded to +6.0R (24600.00), SL tightened to 24270.00

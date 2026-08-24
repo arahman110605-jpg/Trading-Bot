@@ -1,0 +1,1613 @@
+2026-08-23 21:51:33,362 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-23 21:51:33,362 [INFO] [IC_OvernightBot]:   IC MARKETS 24/7 OVERNIGHT BOT ENGINE INITIALIZING...
+2026-08-23 21:51:33,362 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-23 21:51:35,631 [INFO] [IC_OvernightBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $200.00 USD | Leverage: 1:500
+2026-08-23 21:51:35,632 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-23 21:51:35,633 [INFO] [IC_OvernightBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-23 21:51:35,634 [INFO] [IC_OvernightBot]:   PAIRS: ['EURUSD', 'GBPUSD', 'USDJPY'] | BASE LOT: 0.02 | BASKET TP: $8.0
+2026-08-23 21:51:35,634 [INFO] [IC_OvernightBot]:   OVERNIGHT AUTO-MONITORING: ON | LOGGING: ic_markets_overnight.log
+2026-08-23 21:51:35,634 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-23 21:56:31,001 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:01:31,253 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:06:31,503 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:11:31,753 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:16:32,006 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:21:32,256 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:26:32,505 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:31:32,750 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:36:33,000 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:41:33,254 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:46:33,507 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:51:33,757 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 22:56:34,003 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:01:34,252 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:06:34,502 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:11:34,754 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:16:35,005 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:21:35,260 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:26:35,506 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:31:35,759 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:36:36,006 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:41:36,254 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:46:36,501 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:51:36,749 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-23 23:56:36,997 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:01:37,247 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:06:37,500 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:11:37,748 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:16:37,998 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:21:38,247 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:26:38,498 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:31:38,748 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:36:38,998 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:41:39,251 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:46:39,500 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:51:39,749 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 00:56:40,002 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:01:40,253 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:06:40,501 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:11:40,752 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:16:41,006 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:21:41,257 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:26:41,511 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:31:41,763 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:36:42,018 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:41:42,271 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:46:42,520 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:51:42,771 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 01:56:43,021 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:01:43,270 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:06:43,524 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:11:43,775 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:16:44,029 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:21:44,278 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:26:44,528 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:31:44,777 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:35:04,944 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:04,951 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:09,956 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:09,956 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:14,961 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:14,961 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:19,965 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:19,965 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:24,970 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:24,970 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:29,974 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:29,974 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:34,979 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:34,979 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:39,983 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:39,983 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:44,988 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:44,988 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:49,992 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:49,992 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:35:54,997 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:35:54,998 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:00,002 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:00,002 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:05,006 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:05,007 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:10,011 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:10,011 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:15,016 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:15,016 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:20,020 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:20,020 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:25,024 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:25,025 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:30,029 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:30,029 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:35,033 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:35,033 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:40,038 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:40,038 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:45,042 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:45,042 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:45,042 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:36:50,047 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:50,047 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:36:55,052 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:36:55,052 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:00,056 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:00,057 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:05,061 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:05,061 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:10,066 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:10,066 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:15,071 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:15,071 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:20,075 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:20,075 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:25,079 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:25,080 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:30,084 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:30,084 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:35,088 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:35,089 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:40,093 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:40,093 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:45,097 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:45,098 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:50,102 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:50,102 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:37:55,107 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:37:55,108 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:00,112 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:00,112 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:05,116 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:05,117 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:10,121 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:10,122 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:15,126 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:15,126 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:20,130 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:20,131 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:25,135 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:25,135 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:30,140 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:30,141 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:35,145 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:35,145 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:40,150 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:40,150 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:45,154 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:45,155 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:50,159 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:50,159 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:38:55,163 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:38:55,164 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:00,168 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:00,168 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:05,172 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:05,173 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:10,177 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:10,177 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:15,181 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:15,181 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:20,185 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:20,185 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:25,190 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:25,190 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:30,194 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:30,194 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:35,205 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:35,205 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:40,209 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:40,210 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:45,214 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:45,214 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:50,218 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:50,219 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:39:55,223 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:39:55,223 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:40:00,227 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:40:00,228 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:41:45,313 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:46:15,537 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:46:15,537 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:46:20,541 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 02:46:20,542 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 02:46:45,563 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:51:45,814 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 02:56:46,139 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:01:46,390 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:06:46,638 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:07:01,649 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:01,649 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:06,653 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:06,654 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:21,667 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:21,668 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:26,672 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:26,673 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:31,676 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:31,676 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:31,678 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:31,678 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:36,681 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:36,681 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:36,682 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:36,683 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:41,686 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:41,686 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:41,687 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:41,688 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:46,692 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:46,692 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:51,696 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:51,697 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:07:56,701 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:07:56,701 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:01,706 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:01,706 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:06,709 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:06,709 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:06,711 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:06,711 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:11,714 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:11,715 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:11,716 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:11,716 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:16,719 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:16,719 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:16,721 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:16,721 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:21,724 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:21,724 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:21,725 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:21,725 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:26,729 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:26,729 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:26,730 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:26,731 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:31,734 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:31,734 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:31,735 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:31,735 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:36,739 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:36,739 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:36,740 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:36,741 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:41,744 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:41,744 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:41,746 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:41,746 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:46,749 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:46,750 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:46,751 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:46,751 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:51,756 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:51,756 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:08:56,761 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:08:56,761 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:01,765 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:01,765 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:01,766 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:01,766 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:06,770 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:06,770 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:06,771 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:06,771 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:11,774 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:11,775 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:11,776 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:11,776 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:16,780 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:16,780 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:16,781 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:16,781 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:21,785 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:21,785 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:21,786 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:21,786 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:26,790 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:26,790 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:26,791 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:26,791 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:31,795 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:31,795 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:31,796 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:31,796 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:36,799 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:36,800 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:36,801 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:36,801 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:41,804 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:41,805 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:41,806 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:41,806 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:46,809 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:46,810 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:46,811 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:46,811 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:51,814 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:51,815 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:51,816 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:51,816 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:56,819 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:56,820 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:09:56,821 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:09:56,821 [ERROR] [IC_OvernightBot]: Order failed GBPUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:11:46,914 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:16:47,166 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:21:47,418 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:25:57,626 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:25:57,626 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:02,631 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:02,631 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:07,635 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:07,635 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:12,640 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:12,640 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:17,644 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:17,645 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:22,649 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:22,649 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:27,654 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:27,654 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:32,658 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:32,659 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:37,663 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:37,663 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:42,668 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:42,668 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:47,673 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:47,673 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:47,674 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:26:52,678 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:52,678 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:26:57,682 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:26:57,682 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:02,686 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:02,686 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:07,691 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:07,691 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:12,695 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:12,695 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:17,700 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:17,700 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:22,704 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:22,704 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:27,708 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:27,709 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:32,713 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:32,713 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:37,717 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:37,718 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:42,722 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:42,722 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:47,727 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:47,727 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:52,732 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:52,732 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:27:57,737 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:27:57,737 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:02,741 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:02,742 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:07,746 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:07,746 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:12,751 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:12,751 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:17,756 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:17,756 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:22,760 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:22,761 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:27,765 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:27,765 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:32,769 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:32,770 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:37,774 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:37,774 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:42,779 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:42,779 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:47,783 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:47,783 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:52,787 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:52,788 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:28:57,792 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:28:57,792 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:02,797 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:02,797 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:07,801 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:07,802 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:12,806 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:12,806 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:17,810 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:17,811 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:22,815 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:22,815 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:27,819 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:27,819 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:32,824 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:32,824 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:37,828 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:37,829 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:42,833 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:42,833 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:47,837 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:47,837 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:52,841 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:52,841 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:29:57,846 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:29:57,846 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:27,870 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:27,870 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:32,875 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:32,875 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:37,880 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:37,880 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:42,884 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:42,884 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:47,889 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:47,889 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:52,893 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:52,893 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:30:57,897 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:30:57,897 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:27,922 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:27,923 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:32,927 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:32,928 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:37,932 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:37,932 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:42,936 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:42,936 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:47,940 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:47,941 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:47,941 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:31:52,945 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:52,945 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:31:57,949 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:31:57,950 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:02,954 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:02,954 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:07,959 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:07,959 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:12,963 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:12,963 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:17,967 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:17,968 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:22,972 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:22,972 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:27,976 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:27,976 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:32,981 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:32,981 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:37,985 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:37,986 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:42,989 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:42,990 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:47,994 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:47,994 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:52,998 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:52,999 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:32:58,003 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:32:58,003 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:03,007 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:03,008 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:08,012 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:08,012 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:13,016 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:13,016 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:18,021 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:18,021 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:23,026 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:23,026 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:28,030 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:28,030 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:33,034 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:33,034 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:38,039 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:38,039 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:43,044 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:43,044 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:48,048 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:48,049 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:53,053 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:53,053 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:33:58,057 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:33:58,058 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:34:03,062 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:34:03,062 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:36:48,194 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:39:18,317 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:18,317 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:23,322 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:23,322 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:28,326 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:28,326 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:33,331 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:33,331 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:38,335 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:38,335 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:43,340 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:43,340 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:48,344 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:48,344 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:53,348 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:53,349 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:39:58,353 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 03:39:58,353 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 03:41:48,444 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:42:03,456 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:42:03,456 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:18,569 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:18,569 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:23,573 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:23,573 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:28,577 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:28,577 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:33,581 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:33,581 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:38,586 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:38,586 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:43,590 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:43,590 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:48,594 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:48,595 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:44:53,599 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 03:44:53,600 [ERROR] [IC_OvernightBot]: Order failed USDJPY BUY 0.02L: AutoTrading disabled by client
+2026-08-24 03:46:48,696 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:51:48,944 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 03:56:49,192 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:01:49,443 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:05:39,631 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:05:39,631 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:05:44,635 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:05:44,635 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:05:49,641 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:05:49,641 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:05:54,645 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:05:54,645 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:05:59,650 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:05:59,650 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:04,654 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:04,654 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:09,659 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:09,660 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:14,664 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:14,665 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:19,670 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:19,670 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:24,675 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:24,675 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:29,680 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:29,681 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:34,685 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:34,685 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:39,689 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:39,690 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:44,694 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:44,694 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:49,698 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:49,698 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:49,701 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:06:54,703 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:54,703 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:06:59,708 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:06:59,708 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:04,712 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:04,712 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:09,717 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:09,717 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:14,721 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:14,721 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:19,725 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:19,726 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:24,730 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:24,730 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:29,734 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:29,734 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:34,739 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:34,740 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:39,745 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:39,745 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:44,750 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:44,750 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:49,754 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:49,755 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:54,759 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:54,759 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:07:59,764 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:07:59,764 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:04,768 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:04,769 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:09,773 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:09,773 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:14,778 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:14,778 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:19,782 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:19,782 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:24,786 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:24,786 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:29,791 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:29,791 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:34,796 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:34,796 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:39,800 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:39,801 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:44,805 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:44,805 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:49,810 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:49,810 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:54,814 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:54,815 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:08:59,819 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:08:59,820 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:04,824 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:04,824 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:09,828 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:09,829 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:14,833 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:14,833 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:19,838 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:19,838 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:24,842 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:24,842 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:29,847 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:29,847 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:34,852 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:34,852 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:39,857 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:39,857 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:44,861 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:44,862 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:49,866 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:49,866 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:54,871 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:54,871 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:09:59,875 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 04:09:59,875 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 04:11:49,968 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:16:50,217 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:21:50,464 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:26:50,713 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:31:50,958 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:36:51,203 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:41:51,449 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:46:51,698 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:51:51,944 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 04:56:52,196 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:01:52,443 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:06:52,691 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:11:52,940 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:16:53,186 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:21:53,430 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:26:53,678 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:31:53,931 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:36:54,180 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:41:54,429 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:46:54,680 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:51:54,928 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 05:56:55,177 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:01:55,427 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:06:55,673 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:11:55,925 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:16:54,963 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:21:55,216 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:26:55,461 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:31:55,713 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:36:55,962 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:39:06,068 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:39:06,068 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:06,120 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:06,121 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:11,125 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:11,125 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:16,130 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:16,131 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:21,135 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:21,135 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:26,139 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:26,139 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:31,143 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:31,143 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:36,148 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:36,148 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:41,153 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:41,153 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:46,158 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:46,158 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:51,162 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:51,163 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:40:56,167 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:40:56,168 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:01,172 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 06:41:01,172 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:21,188 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:41:21,188 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:26,193 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:41:26,193 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:31,198 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:41:31,198 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:36,202 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:41:36,202 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:41,208 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:41:41,208 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:46,213 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:41:46,213 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:41:56,224 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:42:11,235 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:42:11,235 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:42:41,260 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:42:41,260 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:16,289 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:16,289 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:21,293 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:21,294 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:26,298 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:26,298 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:31,303 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:31,303 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:36,307 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:36,308 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:41,312 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:41,312 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:46,316 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:46,317 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:51,321 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:51,321 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:43:56,325 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:43:56,326 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:01,330 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:01,330 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:06,335 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:06,335 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:11,339 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:11,340 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:16,345 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:16,345 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:21,349 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:21,349 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:26,354 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:26,354 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:31,358 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:31,358 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:36,363 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:36,363 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:41,367 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:41,368 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:46,372 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:46,372 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:51,377 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:51,377 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:44:56,382 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:44:56,382 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:45:01,387 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 06:45:01,387 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 06:46:56,488 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:51:56,739 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 06:56:56,989 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:01:57,244 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:06:57,494 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:11:57,744 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:16:57,995 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:20:33,175 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:20:33,176 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:20:48,188 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:20:48,188 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:20:53,192 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:20:53,193 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:20:58,197 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:20:58,198 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:03,203 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:03,203 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:08,207 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:08,207 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:13,211 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:13,212 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:18,216 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:18,216 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:23,220 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:23,221 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:28,224 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:28,225 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:33,229 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:33,229 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:38,234 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:38,234 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:43,238 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:21:43,238 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:43,239 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:43,240 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:48,243 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:21:48,243 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:48,244 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:48,244 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:53,249 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:21:53,249 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:21:58,253 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:23:03,305 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:23:03,306 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:23:18,318 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:23:18,318 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:23:23,323 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:23:23,324 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:23:28,329 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:23:28,329 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:23:33,333 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:23:33,333 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:23:38,337 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:23:38,338 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:13,369 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:13,369 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:13,370 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:13,371 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:18,374 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:18,374 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:18,376 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:18,376 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:23,379 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:23,379 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:23,381 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:23,381 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:28,384 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:28,384 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:28,386 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:28,386 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:33,389 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:33,389 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:33,391 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:33,391 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:38,394 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:38,394 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:38,396 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:38,396 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:43,399 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:43,399 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:43,400 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:43,401 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:48,404 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:48,404 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:53,408 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:53,408 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:53,410 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:53,410 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:58,414 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 07:24:58,414 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 07:24:58,415 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 07:24:58,416 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 07:26:58,516 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:31:58,769 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:36:59,014 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:41:59,263 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:46:59,537 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:51:59,797 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 07:57:00,045 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:00:40,223 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:00:40,223 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:00:45,228 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:00:45,228 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:01:50,284 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:01:50,284 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:00,293 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:00,294 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:00,296 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:02:05,298 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:05,298 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:10,302 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:10,303 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:15,307 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:15,308 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:20,312 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:20,313 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:25,317 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:25,317 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:30,321 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:30,322 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:35,326 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:35,326 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:40,330 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:40,331 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:45,335 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:45,335 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:50,340 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:50,340 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:02:55,345 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:02:55,345 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:00,349 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:00,349 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:05,354 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:05,354 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:10,358 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:10,358 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:15,363 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:15,363 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:20,368 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:20,368 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:25,372 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:25,373 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:30,377 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:30,378 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:35,382 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:35,382 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:40,387 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:40,387 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:45,391 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:45,392 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:50,396 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:50,396 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:03:55,400 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:03:55,401 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:00,405 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:00,406 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:05,410 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:05,410 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:10,415 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:10,415 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:15,419 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:15,420 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:20,424 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:20,424 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:25,429 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:25,429 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:30,434 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:30,434 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:35,438 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:35,438 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:40,442 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:40,443 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:45,447 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:45,447 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:50,451 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:50,452 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:04:55,456 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:04:55,456 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:07:00,563 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:12:00,809 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:15:15,969 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:15:15,969 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:15:20,973 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:15:20,974 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:17:01,059 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:22:01,344 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:22:16,355 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:16,356 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:22:21,360 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:21,360 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:22:26,364 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:26,364 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:22:31,369 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:31,370 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:22:46,385 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:46,385 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:22:51,389 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:51,390 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:22:56,394 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:22:56,394 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:11,407 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:11,407 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:16,411 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:16,412 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:21,416 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:21,416 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:26,421 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:26,421 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:31,426 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:31,426 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:36,430 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:36,431 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:41,435 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:41,435 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:46,440 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:46,440 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:51,444 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:51,445 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:23:56,449 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:23:56,449 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:01,454 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:01,454 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:06,458 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:06,458 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:11,462 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:11,463 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:16,467 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:16,467 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:21,471 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:21,472 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:26,476 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:26,476 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:31,480 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:31,481 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:36,486 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:36,486 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:41,491 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:41,491 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:46,495 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:46,496 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:51,500 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:51,501 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:24:56,505 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:24:56,505 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:25:16,523 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:25:16,523 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:25:26,531 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:25:26,532 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:25:31,536 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:25:31,536 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:25:36,541 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:25:36,541 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:25:41,545 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:25:41,545 [ERROR] [IC_OvernightBot]: Order failed USDJPY SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:27:01,610 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:31:56,854 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:31:56,854 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:01,860 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:32:16,871 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:16,871 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:21,875 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:21,876 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:26,880 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:26,881 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:31,885 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:31,885 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:36,890 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:36,891 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:41,895 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:41,895 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:46,899 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:46,900 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:51,904 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:51,904 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:32:56,908 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:32:56,909 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:33:01,913 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:33:01,913 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:33:06,918 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:33:06,918 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:35:22,029 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:35:22,029 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:35:27,034 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:35:27,034 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:35:47,050 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:35:47,051 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:35:52,055 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:35:52,055 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:35:57,060 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:35:57,060 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:36:02,064 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:36:02,064 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:36:07,069 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:36:07,070 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:36:17,078 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:36:17,078 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:36:47,103 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:36:47,103 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:36:52,107 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:36:52,108 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:36:57,113 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:36:57,113 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:02,117 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:02,118 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:02,120 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:37:07,122 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:07,122 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:12,127 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:12,127 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:17,132 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:17,132 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:22,137 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:22,137 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:27,141 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:27,142 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:32,146 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:32,146 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:37,151 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:37,151 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:42,155 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:42,156 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:47,159 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:47,160 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:37:52,164 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:37:52,164 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:38:47,210 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:38:47,210 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:38:52,214 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:38:52,215 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:38:57,219 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:38:57,219 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:02,224 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:02,224 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:07,229 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:07,229 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:12,233 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:12,233 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:17,238 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:17,238 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:22,242 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:22,242 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:27,247 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:27,247 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:32,252 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:32,252 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:37,256 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:37,257 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:42,262 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:42,262 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:47,267 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:47,268 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:52,272 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:52,273 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:39:57,277 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:39:57,277 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:42:02,383 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:45:47,567 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:45:47,567 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:47:02,630 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:52:02,879 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:52:52,920 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:52:52,920 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:52:57,925 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:52:57,925 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:02,929 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:02,930 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:07,934 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:07,934 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:12,939 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:12,939 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:17,943 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:17,944 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:22,948 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:22,948 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:27,953 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:27,953 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:32,957 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:32,957 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:37,962 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:37,962 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:42,966 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:42,967 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:47,971 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:47,971 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:52,975 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:52,975 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:53:57,980 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:53:57,980 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:02,985 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:02,985 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:07,989 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:07,989 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:12,994 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:12,994 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:17,999 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:17,999 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:23,003 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:23,004 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:28,007 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:28,008 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:33,012 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:33,013 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:38,017 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:38,017 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:43,021 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:43,022 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:48,026 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:48,026 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:53,031 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:53,031 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:54:58,035 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 08:54:58,036 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 08:57:03,141 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 08:57:58,187 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:57:58,187 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:08,195 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:08,196 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:13,200 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:13,201 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:18,205 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:18,206 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:23,210 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:23,211 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:28,215 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:28,215 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:33,220 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:33,220 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:38,224 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:38,225 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:43,229 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:43,229 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:48,233 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:48,234 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:53,238 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:53,239 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:58:58,243 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:58:58,244 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:03,248 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:03,248 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:08,252 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:08,253 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:13,257 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:13,257 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:18,261 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:18,261 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:28,269 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:28,270 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:33,274 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:33,274 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:38,279 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:38,279 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:43,284 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:43,284 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:48,288 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:48,289 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:53,293 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:53,293 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 08:59:58,298 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 08:59:58,298 [ERROR] [IC_OvernightBot]: Order failed EURUSD SELL 0.02L: AutoTrading disabled by client
+2026-08-24 09:02:03,405 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 09:04:18,515 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 09:04:18,515 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 09:04:23,519 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 09:04:23,519 [ERROR] [IC_OvernightBot]: Order failed GBPUSD BUY 0.02L: AutoTrading disabled by client
+2026-08-24 09:07:03,652 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 09:12:03,899 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 09:17:04,145 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 09:22:04,396 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $200.00 | Equity: $200.00
+2026-08-24 09:46:29,717 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-24 09:46:29,718 [INFO] [IC_OvernightBot]:   IC MARKETS 24/7 OVERNIGHT BOT ENGINE INITIALIZING...
+2026-08-24 09:46:29,719 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-24 09:46:29,810 [INFO] [IC_OvernightBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $199.88 USD | Leverage: 1:500
+2026-08-24 09:46:29,813 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-24 09:46:29,814 [INFO] [IC_OvernightBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 09:46:29,814 [INFO] [IC_OvernightBot]:   PAIRS: ['EURUSD', 'GBPUSD', 'USDJPY'] | BASE LOT: 0.02 | BASKET TP: $8.0
+2026-08-24 09:46:29,814 [INFO] [IC_OvernightBot]:   OVERNIGHT AUTO-MONITORING: ON | LOGGING: ic_markets_overnight.log
+2026-08-24 09:46:29,815 [INFO] [IC_OvernightBot]: ======================================================================
+2026-08-24 09:46:29,894 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 09:46:30,507 [INFO] [IC_OvernightBot]: ORDER EXECUTED: USDJPY BUY 0.02L @ 158.939 (L1_Entry) | Ticket: 1878647813
+2026-08-24 09:51:25,822 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.81 | Equity: $199.48
+2026-08-24 09:56:26,113 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.81 | Equity: $199.27
+2026-08-24 09:58:36,237 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: GBPUSD BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 09:58:36,850 [INFO] [IC_OvernightBot]: ORDER EXECUTED: GBPUSD BUY 0.02L @ 1.3646099999999999 (L1_Entry) | Ticket: 1878664508
+2026-08-24 09:58:41,857 [INFO] [IC_OvernightBot]: Grid Level 2 triggered for USDJPY BUY (Price moved -10.5 pips)
+2026-08-24 09:58:42,472 [INFO] [IC_OvernightBot]: ORDER EXECUTED: USDJPY BUY 0.03L @ 158.835 (L2) | Ticket: 1878664605
+2026-08-24 10:01:27,644 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.63 | Equity: $198.59
+2026-08-24 10:06:27,968 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.63 | Equity: $198.56
+2026-08-24 10:11:28,301 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.63 | Equity: $199.31
+2026-08-24 10:16:28,643 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.63 | Equity: $199.82
+2026-08-24 10:19:08,811 [INFO] [IC_OvernightBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 10:19:09,429 [INFO] [IC_OvernightBot]: ORDER EXECUTED: EURUSD SELL 0.02L @ 1.16798 (L1_Entry) | Ticket: 1878692410
+2026-08-24 10:21:29,598 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.04
+2026-08-24 10:26:29,978 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $198.80
+2026-08-24 10:31:30,347 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $199.62
+2026-08-24 10:36:30,738 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.08
+2026-08-24 10:41:31,136 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $199.98
+2026-08-24 10:46:31,597 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $199.99
+2026-08-24 10:51:31,936 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.31
+2026-08-24 10:56:32,273 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.92
+2026-08-24 11:01:32,625 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.78
+2026-08-24 11:06:32,974 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.19
+2026-08-24 11:11:33,314 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.64
+2026-08-24 11:16:33,657 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.75
+2026-08-24 11:21:34,008 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.33
+2026-08-24 11:26:34,405 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.28
+2026-08-24 11:31:34,822 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $199.64
+2026-08-24 11:36:35,184 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $199.19
+2026-08-24 11:41:35,532 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.20
+2026-08-24 11:46:35,876 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.09
+2026-08-24 11:51:36,215 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.26
+2026-08-24 11:56:36,559 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.67
+2026-08-24 12:01:36,900 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.48
+2026-08-24 12:06:37,259 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.72
+2026-08-24 12:11:37,604 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.87
+2026-08-24 12:16:37,953 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $201.67
+2026-08-24 12:21:38,293 [INFO] [IC_OvernightBot]: [HEARTBEAT] Bot running healthy | Balance: $199.56 | Equity: $200.86
+2026-08-24 12:23:32,763 [INFO] [IC_GlobalRiskBot]: ======================================================================
+2026-08-24 12:23:32,763 [INFO] [IC_GlobalRiskBot]:   IC MARKETS LIVE ENGINE WITH GLOBAL 10% KILL-SWITCH ACTIVE
+2026-08-24 12:23:32,763 [INFO] [IC_GlobalRiskBot]: ======================================================================
+2026-08-24 12:23:32,790 [INFO] [IC_GlobalRiskBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $199.56 USD
+2026-08-24 12:23:32,792 [INFO] [IC_GlobalRiskBot]:   ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 12:23:32,792 [INFO] [IC_GlobalRiskBot]:   GLOBAL MAX DRAWDOWN CAP: 10% ($20.00 across ENTIRE account)
+2026-08-24 12:23:32,792 [INFO] [IC_GlobalRiskBot]:   BASKET PROFIT TARGET: +$8.00 per pair
+2026-08-24 12:23:32,792 [INFO] [IC_GlobalRiskBot]: ======================================================================
+2026-08-24 12:27:01,139 [INFO] [IC_PortfolioBot]: ======================================================================
+2026-08-24 12:27:01,139 [INFO] [IC_PortfolioBot]:   IC MARKETS LIVE ENGINE WITH GLOBAL PORTFOLIO TP & HARD STOP ACTIVE
+2026-08-24 12:27:01,140 [INFO] [IC_PortfolioBot]: ======================================================================
+2026-08-24 12:27:01,142 [INFO] [IC_PortfolioBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $199.56 USD
+2026-08-24 12:27:01,142 [INFO] [IC_PortfolioBot]:   ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 12:27:01,143 [INFO] [IC_PortfolioBot]:   🌟 GLOBAL PORTFOLIO TP: +$12.00 (Locks combined multi-pair profit)
+2026-08-24 12:27:01,143 [INFO] [IC_PortfolioBot]:   🛡️ GLOBAL HARD STOP: -$20.00 (10% max loss across ENTIRE account)
+2026-08-24 12:27:01,143 [INFO] [IC_PortfolioBot]:   SINGLE PAIR TP: +$8.00 | SINGLE PAIR STOP: -$10.00
+2026-08-24 12:27:01,144 [INFO] [IC_PortfolioBot]: ======================================================================
+2026-08-24 12:31:56,497 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $199.56 | Equity: $203.89 | Net Floating: $+4.33
+2026-08-24 12:36:56,840 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $199.56 | Equity: $205.03 | Net Floating: $+5.47
+2026-08-24 12:41:57,182 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $199.56 | Equity: $206.45 | Net Floating: $+6.89
+2026-08-24 12:46:57,517 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $199.56 | Equity: $207.89 | Net Floating: $+8.33
+2026-08-24 12:47:37,560 [INFO] [IC_PortfolioBot]: 🎉 BASKET TP HIT for USDJPY! Profit: $8.03 >= $8.00
+2026-08-24 12:47:38,172 [INFO] [IC_PortfolioBot]: CLOSED TICKET 1878647813 (USDJPY 0.02L) @ 159.134 | Reason: BASKET_TP_HIT
+2026-08-24 12:47:38,774 [INFO] [IC_PortfolioBot]: CLOSED TICKET 1878664605 (USDJPY 0.03L) @ 159.133 | Reason: BASKET_TP_HIT
+2026-08-24 12:51:59,064 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.16 | Equity: $208.16 | Net Floating: $+0.00
+2026-08-24 12:56:59,333 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.16 | Equity: $208.16 | Net Floating: $+0.00
+2026-08-24 13:01:59,600 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.16 | Equity: $208.16 | Net Floating: $+0.00
+2026-08-24 13:06:59,876 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.16 | Equity: $208.16 | Net Floating: $+0.00
+2026-08-24 13:11:25,110 [INFO] [IC_PortfolioBot]: 🎯 NEW BASKET SIGNAL: GBPUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 13:11:25,719 [INFO] [IC_PortfolioBot]: ORDER EXECUTED: GBPUSD SELL 0.02L @ 1.36436 (L1_Entry) | Ticket: 1879074860
+2026-08-24 13:12:00,756 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $208.23 | Net Floating: $+0.14
+2026-08-24 13:17:01,061 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.01 | Net Floating: $+1.92
+2026-08-24 13:22:01,365 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $209.61 | Net Floating: $+1.52
+2026-08-24 13:27:01,668 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $209.25 | Net Floating: $+1.16
+2026-08-24 13:32:01,965 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.47 | Net Floating: $+2.38
+2026-08-24 13:37:02,267 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $209.77 | Net Floating: $+1.68
+2026-08-24 13:42:02,570 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.23 | Net Floating: $+2.14
+2026-08-24 13:47:02,871 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $211.01 | Net Floating: $+2.92
+2026-08-24 13:52:03,181 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.49 | Net Floating: $+2.40
+2026-08-24 13:57:03,484 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $211.47 | Net Floating: $+3.38
+2026-08-24 14:02:03,785 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $211.17 | Net Floating: $+3.08
+2026-08-24 14:07:04,084 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.57 | Net Floating: $+2.48
+2026-08-24 14:12:04,386 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.47 | Net Floating: $+2.38
+2026-08-24 14:17:04,690 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.83 | Net Floating: $+2.74
+2026-08-24 14:22:04,990 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.09 | Equity: $210.47 | Net Floating: $+2.38
+2026-08-24 14:26:00,223 [INFO] [IC_PortfolioBot]: 🎯 NEW BASKET SIGNAL: USDJPY BUY | Macro Uptrend (Close > EMA200)
+2026-08-24 14:26:00,826 [INFO] [IC_PortfolioBot]: ORDER EXECUTED: USDJPY BUY 0.02L @ 159.179 (L1_Entry) | Ticket: 1879262183
+2026-08-24 14:27:05,895 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.13 | Net Floating: $+3.11
+2026-08-24 14:32:06,215 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.81 | Net Floating: $+3.79
+2026-08-24 14:37:06,533 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $210.90 | Net Floating: $+2.88
+2026-08-24 14:42:06,851 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.32 | Net Floating: $+3.30
+2026-08-24 14:47:07,175 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.09 | Net Floating: $+3.07
+2026-08-24 14:52:07,551 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $210.98 | Net Floating: $+2.96
+2026-08-24 14:57:07,857 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.87 | Net Floating: $+3.85
+2026-08-24 15:02:08,170 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $210.68 | Net Floating: $+2.66
+2026-08-24 15:07:08,488 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.51 | Net Floating: $+3.49
+2026-08-24 15:12:08,798 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.58 | Net Floating: $+3.56
+2026-08-24 15:17:09,104 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $211.06 | Net Floating: $+3.04
+2026-08-24 15:22:09,417 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $208.02 | Equity: $210.54 | Net Floating: $+2.52
+2026-08-24 15:26:14,670 [INFO] [IC_PortfolioBot]: 🎯 NEW BASKET SIGNAL: EURUSD SELL | Macro Downtrend (Close < EMA200)
+2026-08-24 15:26:15,261 [INFO] [IC_PortfolioBot]: ORDER EXECUTED: EURUSD SELL 0.02L @ 1.16641 (L1_Entry) | Ticket: 1879381554
+2026-08-24 15:27:10,324 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $210.35 | Net Floating: $+2.40
+2026-08-24 15:32:10,656 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $210.24 | Net Floating: $+2.29
+2026-08-24 15:37:10,985 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $210.54 | Net Floating: $+2.59
+2026-08-24 15:42:11,314 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $210.07 | Net Floating: $+2.12
+2026-08-24 15:47:11,649 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $209.87 | Net Floating: $+1.92
+2026-08-24 15:52:11,987 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $209.33 | Net Floating: $+1.38
+2026-08-24 15:57:12,333 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $208.93 | Net Floating: $+0.98
+2026-08-24 16:02:12,673 [INFO] [IC_PortfolioBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $209.53 | Net Floating: $+1.58
+2026-08-24 16:05:05,420 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 16:05:05,421 [INFO] [IC_ActiveManagerBot]:   IC MARKETS LIVE ENGINE WITH THESIS-BASED ACTIVE TRADE MANAGEMENT
+2026-08-24 16:05:05,421 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 16:05:05,429 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 16:05:05,430 [INFO] [IC_ActiveManagerBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 16:05:05,430 [INFO] [IC_ActiveManagerBot]:   MULTI-TIMEFRAME THESIS EVALUATOR: ONLINE (H1 / M15 / M5)
+2026-08-24 16:05:05,430 [INFO] [IC_ActiveManagerBot]:   STRUCTURAL & ATR TRAILING ENGINE: ACTIVE
+2026-08-24 16:05:05,430 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 16:10:02,208 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $209.93 | Net Floating: $+1.98
+2026-08-24 16:12:12,911 [INFO] [IC_ActiveManagerBot]: 🛡️ [GBPUSD] Transitioned to PROFIT_PROTECTION (+1.21R). Stop raised to lock small green buffer.
+2026-08-24 16:15:03,852 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $211.17 | Net Floating: $+3.22
+2026-08-24 16:20:05,504 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $211.49 | Net Floating: $+3.54
+2026-08-24 16:25:07,217 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $210.35 | Net Floating: $+2.40
+2026-08-24 16:30:08,974 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $211.84 | Net Floating: $+3.89
+2026-08-24 16:35:10,725 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $212.45 | Net Floating: $+4.50
+2026-08-24 16:40:12,428 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $211.23 | Net Floating: $+3.28
+2026-08-24 16:45:14,154 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $211.63 | Net Floating: $+3.68
+2026-08-24 16:50:15,930 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $211.07 | Net Floating: $+3.12
+2026-08-24 16:55:17,674 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $209.97 | Net Floating: $+2.02
+2026-08-24 17:00:19,474 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.95 | Equity: $209.93 | Net Floating: $+1.98
+2026-08-24 17:02:30,222 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:02:35,224 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:02:40,245 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:02:45,246 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:02:50,264 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:02:55,265 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:03:00,286 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:03:05,289 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:03:10,311 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:03:15,312 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:03:20,331 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:03:25,332 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:03:30,351 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:03:35,353 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:04:25,622 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:04:30,623 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:05:00,782 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:05:05,783 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:05:10,805 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:05:15,806 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:05:20,824 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:05:25,825 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:05:30,844 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:05:35,845 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:05:40,863 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:05:45,864 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:05:50,882 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:05:55,883 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:06:00,901 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:06:05,902 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:06:10,924 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:06:15,925 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:06:20,943 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:06:25,944 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:06:30,962 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:06:35,963 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:06:40,985 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:06:45,986 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:06:51,004 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:06:56,005 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:07:01,024 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:07:06,025 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:07:11,043 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:07:16,044 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:07:21,061 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:07:26,062 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:07:31,087 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:07:36,088 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:07:41,105 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:07:46,107 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:07:51,129 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:07:56,130 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:08:01,148 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:08:06,149 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:08:11,176 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:08:16,177 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:08:21,203 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:08:26,204 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:08:31,222 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:08:36,223 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:08:41,243 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:08:46,244 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:08:51,262 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:08:56,263 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:09:01,285 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:09:06,286 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:09:11,305 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:09:16,306 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:09:21,323 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:09:26,325 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:09:31,342 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:09:36,344 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:09:41,363 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:09:46,364 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:09:51,381 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:09:56,382 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:10:01,400 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:10:06,402 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:10:11,427 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:10:16,428 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:10:21,448 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:10:26,449 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:10:31,471 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:10:36,472 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:10:41,494 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:10:46,495 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:10:51,513 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:10:56,514 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:11:01,532 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:11:06,533 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:11:11,554 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:11:16,556 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:11:21,581 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:11:26,583 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:11:31,602 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:11:38,369 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:11:38,369 [INFO] [IC_ActiveManagerBot]:   IC MARKETS LIVE ENGINE WITH THESIS-BASED ACTIVE TRADE MANAGEMENT
+2026-08-24 17:11:38,369 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:11:38,371 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:11:38,372 [INFO] [IC_ActiveManagerBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 17:11:38,372 [INFO] [IC_ActiveManagerBot]:   MULTI-TIMEFRAME THESIS EVALUATOR: ONLINE (H1 / M15 / M5)
+2026-08-24 17:11:38,372 [INFO] [IC_ActiveManagerBot]:   STRUCTURAL & ATR TRAILING ENGINE: ACTIVE
+2026-08-24 17:11:38,378 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:12:08,577 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:12:13,578 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:12:18,613 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:12:23,614 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:12:33,680 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:12:38,681 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:12:43,710 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:12:48,711 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:12:53,743 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:12:58,744 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:13:18,868 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:13:23,869 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:14:29,241 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:14:34,242 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:14:39,272 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:14:44,273 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:14:49,297 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:14:54,298 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:14:59,327 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:15:04,328 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:15:09,361 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:15:14,362 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:15:19,392 [ERROR] [IC_ActiveManagerBot]: Error in active trade manager loop: 'NoneType' object has no attribute 'retcode'
+2026-08-24 17:15:24,393 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:15:27,582 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:15:27,582 [INFO] [IC_ActiveManagerBot]:   IC MARKETS LIVE ENGINE WITH THESIS-BASED ACTIVE TRADE MANAGEMENT
+2026-08-24 17:15:27,582 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:15:27,584 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:15:27,584 [INFO] [IC_ActiveManagerBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 17:15:27,584 [INFO] [IC_ActiveManagerBot]:   MULTI-TIMEFRAME THESIS EVALUATOR: ONLINE (H1 / M15 / M5)
+2026-08-24 17:15:27,585 [INFO] [IC_ActiveManagerBot]:   STRUCTURAL & ATR TRAILING ENGINE: ACTIVE
+2026-08-24 17:15:27,585 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:15:52,737 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:15:57,762 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:02,787 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:07,813 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:12,837 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:17,865 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:22,890 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:27,915 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:32,939 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:37,963 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:42,989 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:48,013 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:53,038 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:16:58,063 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:03,087 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:08,112 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:13,137 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:18,161 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:23,186 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:28,210 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:33,235 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:38,260 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:43,284 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:48,309 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:53,333 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:17:58,358 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:03,384 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:08,408 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:13,433 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:18,459 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:23,484 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:28,512 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:33,537 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:38,562 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:43,586 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:48,611 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:53,636 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:18:58,660 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:19:03,684 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:19:08,709 [WARNING] [IC_ActiveManagerBot]: Failed to close ticket 1879262183: (-2, 'Invalid "comment" argument')
+2026-08-24 17:20:23,382 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:20:23,383 [INFO] [IC_ActiveManagerBot]:   IC MARKETS LIVE ENGINE WITH THESIS-BASED ACTIVE TRADE MANAGEMENT
+2026-08-24 17:20:23,383 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:20:23,384 [INFO] [IC_ActiveManagerBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $207.95 USD
+2026-08-24 17:20:23,385 [INFO] [IC_ActiveManagerBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 17:20:23,385 [INFO] [IC_ActiveManagerBot]:   MULTI-TIMEFRAME THESIS EVALUATOR: ONLINE (H1 / M15 / M5)
+2026-08-24 17:20:23,385 [INFO] [IC_ActiveManagerBot]:   STRUCTURAL & ATR TRAILING ENGINE: ACTIVE
+2026-08-24 17:20:23,385 [INFO] [IC_ActiveManagerBot]: ===========================================================================
+2026-08-24 17:24:55,345 [INFO] [IC_ActiveManagerBot]: ⚡ CLOSED TICKET #1879074860 (GBPUSD 0.02L) @ 1.36384 | Reason: M15_STRUCTURE_BREAK
+2026-08-24 17:25:20,535 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $208.86 | Equity: $206.66 | Net Floating: $-2.20
+2026-08-24 17:25:31,188 [INFO] [IC_ActiveManagerBot]: ⚡ CLOSED TICKET #1879262183 (USDJPY 0.02L) @ 159.059 | Reason: TRAILING_STOP_HIT (R=-1.01)
+2026-08-24 17:30:22,635 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.27 | Equity: $206.79 | Net Floating: $-0.48
+2026-08-24 17:35:24,106 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.27 | Equity: $207.21 | Net Floating: $-0.06
+2026-08-24 17:40:25,566 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.27 | Equity: $207.37 | Net Floating: $+0.10
+2026-08-24 17:45:27,029 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.27 | Equity: $207.11 | Net Floating: $-0.16
+2026-08-24 17:50:28,522 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $207.27 | Equity: $206.43 | Net Floating: $-0.84
+2026-08-24 17:53:24,962 [INFO] [IC_ActiveManagerBot]: ⚡ CLOSED TICKET #1879381554 (EURUSD 0.02L) @ 1.16723 | Reason: M15_STRUCTURE_BREAK
+2026-08-24 17:55:30,603 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:00:32,072 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:05:33,549 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:10:35,009 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:15:36,472 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:20:37,924 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:25:39,381 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:30:40,841 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:35:42,302 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:40:43,754 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:45:45,241 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:50:46,989 [INFO] [IC_ActiveManagerBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 18:51:40,428 [INFO] [IC_BrokerSyncedBot]: ===========================================================================
+2026-08-24 18:51:40,428 [INFO] [IC_BrokerSyncedBot]:   IC MARKETS LIVE ENGINE WITH BROKER-SIDE HARD SL/TP SYNCHRONIZATION
+2026-08-24 18:51:40,429 [INFO] [IC_BrokerSyncedBot]: ===========================================================================
+2026-08-24 18:51:40,430 [INFO] [IC_BrokerSyncedBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $205.56 USD
+2026-08-24 18:51:40,431 [INFO] [IC_BrokerSyncedBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 18:51:40,431 [INFO] [IC_BrokerSyncedBot]:   BROKER-SIDE SL/TP REGISTRATION: ACTIVATED
+2026-08-24 18:51:40,431 [INFO] [IC_BrokerSyncedBot]:   FAIL-SAFE SERVER EXECUTION: GUARANTEED (Even on internet cutoff)
+2026-08-24 18:51:40,431 [INFO] [IC_BrokerSyncedBot]: ===========================================================================
+2026-08-24 18:56:17,488 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 18:56:17,488 [INFO] [IC_TrendExpansionBot]:   IC MARKETS LIVE ENGINE WITH ASYMMETRIC TREND-EXPANSION & TIGHT-LOCK
+2026-08-24 18:56:17,488 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 18:56:17,490 [INFO] [IC_TrendExpansionBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $205.56 USD
+2026-08-24 18:56:17,490 [INFO] [IC_TrendExpansionBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 18:56:17,491 [INFO] [IC_TrendExpansionBot]:   ASYMMETRIC TREND EXPANSION: ACTIVE (TP expands to +6R on strong trends)
+2026-08-24 18:56:17,491 [INFO] [IC_TrendExpansionBot]:   TIGHT-LOCK PROFIT TRAILING: ACTIVE (Locks 80-90% of gains)
+2026-08-24 18:56:17,491 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 19:01:14,236 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:06:15,967 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:11:17,688 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:17:00,016 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 19:17:00,017 [INFO] [IC_TrendExpansionBot]:   IC MARKETS LIVE ENGINE WITH ASYMMETRIC TREND-EXPANSION & TIGHT-LOCK
+2026-08-24 19:17:00,017 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 19:17:01,767 [INFO] [IC_TrendExpansionBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $205.56 USD
+2026-08-24 19:17:01,768 [INFO] [IC_TrendExpansionBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 19:17:01,768 [INFO] [IC_TrendExpansionBot]:   ASYMMETRIC TREND EXPANSION: ACTIVE (TP expands to +6R on strong trends)
+2026-08-24 19:17:01,768 [INFO] [IC_TrendExpansionBot]:   TIGHT-LOCK PROFIT TRAILING: ACTIVE (Locks 80-90% of gains)
+2026-08-24 19:17:01,768 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 19:21:58,694 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:27:00,539 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:32:02,296 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:37:04,020 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:42:05,695 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:47:07,481 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:52:09,148 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 19:55:44,064 [INFO] [IC_TrendExpansionBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $205.56 USD
+2026-08-24 19:58:52,183 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 19:58:52,183 [INFO] [IC_TrendExpansionBot]:   IC MARKETS LIVE ENGINE WITH ASYMMETRIC TREND-EXPANSION & TIGHT-LOCK
+2026-08-24 19:58:52,183 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 19:58:52,186 [INFO] [IC_TrendExpansionBot]: CONNECTED TO IC MARKETS: #53016472 | Name: ABDUL  RAHMAN | Balance: $205.56 USD
+2026-08-24 19:58:52,186 [INFO] [IC_TrendExpansionBot]:   ACTIVE ACCOUNT: #53016472 | SERVER: ICMarketsSC-Demo
+2026-08-24 19:58:52,186 [INFO] [IC_TrendExpansionBot]:   ASYMMETRIC TREND EXPANSION: ACTIVE (TP expands to +6R on strong trends)
+2026-08-24 19:58:52,186 [INFO] [IC_TrendExpansionBot]:   TIGHT-LOCK PROFIT TRAILING: ACTIVE (Locks 80-90% of gains)
+2026-08-24 19:58:52,186 [INFO] [IC_TrendExpansionBot]: ===========================================================================
+2026-08-24 20:03:49,156 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00
+2026-08-24 20:08:50,856 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $205.56 | Equity: $205.56 | Net Floating: $+0.00

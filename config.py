@@ -75,12 +75,13 @@ SQUARE_OFF_MINUTE = 15
 # ─────────────────────────────────────────────
 # Enable/disable individual strategies
 STRATEGIES = {
-    "ema_crossover": True,
-    "rsi":           True,
-    "vwap":          True,
-    "supertrend":    True,
-    "candlestick":   True,
-    "orb":           True,   # Opening Range Breakout
+    "ema_crossover":        True,
+    "rsi":                  True,
+    "vwap":                 True,
+    "supertrend":           True,
+    "candlestick":          True,
+    "orb":                  True,   # Opening Range Breakout
+    "asymmetric_expansion": True,   # Multi-Timeframe Asymmetric Trend Expansion
 }
 
 # Minimum confidence score to execute a trade (0.0 – 1.0)

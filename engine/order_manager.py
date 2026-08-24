@@ -24,8 +24,22 @@ from utils.logger import get_logger
 log = get_logger("OrderManager")
 
 
+from enum import Enum
+import pandas as pd
+
+
+class TradeState(Enum):
+    INITIAL = "INITIAL"
+    PROFIT_PROTECTION = "PROFIT_PROTECTION"
+    TREND_RUN = "TREND_RUN"
+    MAX_PROFIT_EXPANSION = "MAX_PROFIT_EXPANSION"
+    MOMENTUM_WEAKENING = "MOMENTUM_WEAKENING"
+    INVALIDATED = "INVALIDATED"
+    CLOSED = "CLOSED"
+
+
 class OpenPosition:
-    """Tracks an open intraday position."""
+    """Tracks an active intraday position with dynamic state lifecycle."""
 
     def __init__(
         self,
@@ -52,11 +66,18 @@ class OpenPosition:
         self.current_price = entry_price
         self.trailing_sl   = stop_loss          # Starts at original SL; updated as trade profits
         self.breakeven_set = False              # True once SL has been moved to breakeven
-        self.partial_booked = False             # True once 50% of position is booked at 1:1
+        self.partial_booked = False             # True once 50% of position is booked
+        
+        # ── State Machine & Thesis Metrics ──
+        self.state         = TradeState.INITIAL
+        self.thesis_score  = 100.0
+        self.warning_bars  = 0
+        self.initial_r     = abs(entry_price - stop_loss) if abs(entry_price - stop_loss) > 0 else (entry_price * 0.005)
+        self.current_tp    = target
 
     @property
     def risk(self) -> float:
-        return abs(self.entry_price - self.initial_sl)
+        return self.initial_r
 
     @property
     def unrealised_pnl(self) -> float:
@@ -65,19 +86,31 @@ class OpenPosition:
         else:
             return (self.entry_price - self.current_price) * self.quantity
 
+    @property
+    def current_r_multiple(self) -> float:
+        if self.initial_r <= 0:
+            return 0.0
+        if self.direction == "BUY":
+            return (self.current_price - self.entry_price) / self.initial_r
+        else:
+            return (self.entry_price - self.current_price) / self.initial_r
+
     def to_dict(self) -> dict:
         return {
-            "trade_id":     self.trade_id,
-            "symbol":       self.symbol,
-            "direction":    self.direction,
-            "quantity":     self.quantity,
-            "entry_price":  self.entry_price,
-            "stop_loss":    self.trailing_sl,   # Show current (trailing) SL
-            "target":       self.target,
-            "current_price": self.current_price,
+            "trade_id":       self.trade_id,
+            "symbol":         self.symbol,
+            "direction":      self.direction,
+            "quantity":       self.quantity,
+            "entry_price":    self.entry_price,
+            "stop_loss":      self.trailing_sl,   # Show current (trailing) SL
+            "target":         self.current_tp,
+            "current_price":  self.current_price,
             "unrealised_pnl": round(self.unrealised_pnl, 2),
-            "strategy":     self.strategy,
-            "breakeven_set": self.breakeven_set,
+            "strategy":       self.strategy,
+            "state":          self.state.value,
+            "thesis_score":   round(self.thesis_score, 1),
+            "r_multiple":     round(self.current_r_multiple, 2),
+            "breakeven_set":  self.breakeven_set,
         }
 
 
@@ -188,90 +221,157 @@ class OrderManager:
         with self._lock:
             self.open_positions[signal.symbol] = pos
 
-        log.info("Trade opened | id=%d | %s %s x%d @ %.2f | SL=%.2f | TGT=%.2f",
+        log.info("Trade opened | id=%s | %s %s x%d @ %.2f | SL=%.2f | TGT=%.2f",
                  trade_id, signal.direction, signal.symbol, qty,
                  actual_entry, actual_sl, actual_tgt)
         return True
 
-    # ── Position Monitoring ──────────────────────────────────────────────────
+    # ── Position Monitoring & Active Lifecycle Management ────────────────────
 
-    def update_position_price(self, symbol: str, ltp: float):
-        """Update current price, apply trailing SL logic, and check SL/Target."""
+    def update_position_price(
+        self,
+        symbol: str,
+        ltp: float,
+        df_m5: Optional[pd.DataFrame] = None,
+        df_m15: Optional[pd.DataFrame] = None,
+        df_h1: Optional[pd.DataFrame] = None,
+    ):
+        """
+        Update current price, evaluate thesis score, apply Finite State Trailing & Asymmetric Expansion.
+        """
         with self._lock:
             pos = self.open_positions.get(symbol)
         if not pos:
             return
 
         pos.current_price = ltp
-        risk = pos.risk  # Original risk distance
+        r_unit = pos.initial_r
+        current_r = pos.current_r_multiple
 
-        # ── Trailing SL Logic ─────────────────────────────────────────────────
-        # +1.0R profit -> Move SL to Breakeven (+0.0R)
-        # +1.5R profit -> Move SL to Lock Profit (+0.75R)
-        # +1.8R profit -> Move SL to Lock Profit (+1.2R)
-        if pos.direction == "BUY":
-            one_r_level   = pos.entry_price + (risk * 1.0)
-            one_half_r    = pos.entry_price + (risk * 1.5)
-            one_eight_r   = pos.entry_price + (risk * 1.8)
+        # Compute Thesis score if multi-timeframe candle data is provided
+        from strategies.asymmetric_expansion import AsymmetricTrendExpansionStrategy
+        if df_m5 is not None and len(df_m5) >= 20:
+            if df_m15 is None:
+                df_m15 = AsymmetricTrendExpansionStrategy.resample_ohlcv(df_m5, "15min")
+            if df_h1 is None:
+                df_h1 = AsymmetricTrendExpansionStrategy.resample_ohlcv(df_m5, "60min")
 
-            if not pos.breakeven_set and ltp >= one_r_level:
-                pos.trailing_sl = pos.entry_price  # Move SL to breakeven
-                pos.breakeven_set = True
-                log.info("Trailing SL: Moved to BREAKEVEN for %s @ %.2f (LTP=%.2f)", symbol, pos.entry_price, ltp)
-            elif pos.breakeven_set and ltp >= one_eight_r:
-                new_tsl = round(pos.entry_price + (risk * 1.2), 2)
-                if new_tsl > pos.trailing_sl:
-                    pos.trailing_sl = new_tsl
-                    log.info("Trailing SL: Locked +1.2R Profit @ %.2f for %s", new_tsl, symbol)
-            elif pos.breakeven_set and ltp >= one_half_r:
-                new_tsl = round(pos.entry_price + (risk * 0.75), 2)
-                if new_tsl > pos.trailing_sl:
-                    pos.trailing_sl = new_tsl
-                    log.info("Trailing SL: Locked +0.75R Profit @ %.2f for %s", new_tsl, symbol)
+            m5_ind, m15_ind, h1_ind = AsymmetricTrendExpansionStrategy.compute_indicators(df_m5, df_m15, df_h1)
+            row_m5 = m5_ind.iloc[-1]
+            prev_m5 = m5_ind.iloc[-2]
+            row_m15 = m15_ind.iloc[-1] if not m15_ind.empty else row_m5
+            row_h1 = h1_ind.iloc[-1] if not h1_ind.empty else row_m5
 
-        else:  # SELL position
-            one_r_level   = pos.entry_price - (risk * 1.0)
-            one_half_r    = pos.entry_price - (risk * 1.5)
-            one_eight_r   = pos.entry_price - (risk * 1.8)
+            pos.thesis_score = AsymmetricTrendExpansionStrategy.evaluate_thesis_score(pos.direction, row_m5, row_m15, row_h1)
 
-            if not pos.breakeven_set and ltp <= one_r_level:
-                pos.trailing_sl = pos.entry_price
-                pos.breakeven_set = True
-                log.info("Trailing SL: Moved to BREAKEVEN for %s @ %.2f (LTP=%.2f)", symbol, pos.entry_price, ltp)
-            elif pos.breakeven_set and ltp <= one_eight_r:
-                new_tsl = round(pos.entry_price - (risk * 1.2), 2)
-                if new_tsl < pos.trailing_sl:
-                    pos.trailing_sl = new_tsl
-                    log.info("Trailing SL: Locked +1.2R Profit @ %.2f for %s", new_tsl, symbol)
-            elif pos.breakeven_set and ltp <= one_half_r:
-                new_tsl = round(pos.entry_price - (risk * 0.75), 2)
-                if new_tsl < pos.trailing_sl:
-                    pos.trailing_sl = new_tsl
-                    log.info("Trailing SL: Locked +0.75R Profit @ %.2f for %s", new_tsl, symbol)
+            # Check Structural Invalidation
+            if pos.direction == "BUY":
+                if row_m5["close"] < row_m5.get("ema20", row_m5["close"]):
+                    pos.warning_bars += 1
+                else:
+                    pos.warning_bars = 0
 
-        # ── Check Trailing SL Hit ─────────────────────────────────────────────
+                if row_h1.get("close", 0) < row_h1.get("ema200", 0) and row_m5.get("close", 0) < row_m5.get("ema50", 0):
+                    log.warning("[INVALIDATION] MACRO H1 INVALIDATION on %s @ %.2f — closing trade.", symbol, ltp)
+                    self._close_position(symbol, ltp, "MACRO_H1_INVALIDATION")
+                    return
+
+                if row_m15.get("close", 0) < row_m15.get("ema50", 0) and pos.warning_bars >= 2:
+                    log.warning("[INVALIDATION] M15 STRUCTURE BREAK on %s @ %.2f — closing trade.", symbol, ltp)
+                    self._close_position(symbol, ltp, "M15_STRUCTURE_BREAK")
+                    return
+            else: # SELL
+                if row_m5["close"] > row_m5.get("ema20", row_m5["close"]):
+                    pos.warning_bars += 1
+                else:
+                    pos.warning_bars = 0
+
+                if row_h1.get("close", 0) > row_h1.get("ema200", 0) and row_m5.get("close", 0) > row_m5.get("ema50", 0):
+                    log.warning("[INVALIDATION] MACRO H1 INVALIDATION on %s @ %.2f — closing trade.", symbol, ltp)
+                    self._close_position(symbol, ltp, "MACRO_H1_INVALIDATION")
+                    return
+
+                if row_m15.get("close", 0) > row_m15.get("ema50", 0) and pos.warning_bars >= 2:
+                    log.warning("[INVALIDATION] M15 STRUCTURE BREAK on %s @ %.2f — closing trade.", symbol, ltp)
+                    self._close_position(symbol, ltp, "M15_STRUCTURE_BREAK")
+                    return
+
+        # ── FINITE STATE MACHINE ACTIVE TRAILING & ASYMMETRIC EXPANSION ──
+
+        # 1. STAGE 1: PROFIT PROTECTION (+1.2R) -> Lock +0.3R green buffer
+        if pos.state == TradeState.INITIAL and current_r >= 1.2:
+            pos.state = TradeState.PROFIT_PROTECTION
+            pos.breakeven_set = True
+            if pos.direction == "BUY":
+                new_sl = round(pos.entry_price + (0.3 * r_unit), 2)
+                pos.trailing_sl = max(pos.trailing_sl, new_sl)
+            else:
+                new_sl = round(pos.entry_price - (0.3 * r_unit), 2)
+                pos.trailing_sl = min(pos.trailing_sl, new_sl)
+            log.info("[PROFIT PROTECTION] [%s] (R=+%.2f) -> SL locked at %.2f (+0.3R green buffer)",
+                     symbol, current_r, pos.trailing_sl)
+
+        # 2. STAGE 2: TREND RUN (+2.0R & Thesis >= 70) -> Dynamic ATR-Swing Trailing
+        if pos.state in [TradeState.INITIAL, TradeState.PROFIT_PROTECTION] and current_r >= 2.0 and pos.thesis_score >= 70:
+            pos.state = TradeState.TREND_RUN
+            log.info("[TREND RUN] [%s] ACTIVE (R=+%.2f, Thesis=%.0f) -> Swing trailing enabled",
+                     symbol, current_r, pos.thesis_score)
+
+        # 3. STAGE 3: MAX ASYMMETRIC PROFIT EXPANSION (>= +3.0R & Thesis >= 80)
+        # Expand TP to +6.0R / +8.0R & Tighten SL to (R - 0.5R) locking in 80-90% of accumulated profit!
+        if pos.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION] and current_r >= 3.0 and pos.thesis_score >= 80:
+            pos.state = TradeState.MAX_PROFIT_EXPANSION
+            if pos.direction == "BUY":
+                pos.current_tp = round(pos.entry_price + (6.0 * r_unit), 2)
+                tight_sl = round(pos.entry_price + ((current_r - 0.5) * r_unit), 2)
+                pos.trailing_sl = max(pos.trailing_sl, tight_sl)
+            else:
+                pos.current_tp = round(pos.entry_price - (6.0 * r_unit), 2)
+                tight_sl = round(pos.entry_price - ((current_r - 0.5) * r_unit), 2)
+                pos.trailing_sl = min(pos.trailing_sl, tight_sl)
+            log.info("[ASYMMETRIC EXPANSION] [%s] (R=+%.2f)! TP expanded to +6.0R (%.2f), SL tightened to %.2f",
+                     symbol, current_r, pos.current_tp, pos.trailing_sl)
+
+        # Continuous Dynamic Swing Trailing in TREND_RUN or MAX_PROFIT_EXPANSION
+        if pos.state in [TradeState.TREND_RUN, TradeState.MAX_PROFIT_EXPANSION]:
+            if df_m5 is not None and len(df_m5) >= 3:
+                atr_val = df_m5["atr14"].iloc[-1] if "atr14" in df_m5.columns else (r_unit * 0.5)
+                if pos.direction == "BUY":
+                    swing_low = df_m5["low"].iloc[-3:].min()
+                    swing_stop = round(swing_low - (0.2 * atr_val), 2)
+                    if swing_stop > pos.trailing_sl:
+                        pos.trailing_sl = swing_stop
+                        log.info("[SWING TRAILING] Trailed SL behind M5 swing low to %.2f for %s", swing_stop, symbol)
+                else:
+                    swing_high = df_m5["high"].iloc[-3:].max()
+                    swing_stop = round(swing_high + (0.2 * atr_val), 2)
+                    if swing_stop < pos.trailing_sl:
+                        pos.trailing_sl = swing_stop
+                        log.info("[SWING TRAILING] Trailed SL behind M5 swing high to %.2f for %s", swing_stop, symbol)
+
+        # ── Check Trailing Stop Hit ──
         sl_hit = False
-        if pos.direction == "BUY"  and ltp <= pos.trailing_sl:
+        if pos.direction == "BUY" and ltp <= pos.trailing_sl:
             sl_hit = True
-        if pos.direction == "SELL" and ltp >= pos.trailing_sl:
+        elif pos.direction == "SELL" and ltp >= pos.trailing_sl:
             sl_hit = True
 
         if sl_hit:
-            reason = "BREAKEVEN_EXIT" if pos.breakeven_set else "SL_HIT"
-            log.warning("STOP LOSS HIT | %s @ %.2f | SL was %.2f | %s",
+            reason = f"TRAILING_STOP (R={current_r:+.2f})" if pos.breakeven_set else "SL_HIT"
+            log.warning("STOP LOSS / TRAILING EXIT | %s @ %.2f | SL was %.2f | %s",
                         symbol, ltp, pos.trailing_sl, reason)
             self._close_position(symbol, ltp, reason)
             return
 
-        # ── Check Target Hit ──────────────────────────────────────────────────
+        # ── Check Target Hit ──
         tgt_hit = False
-        if pos.direction == "BUY"  and ltp >= pos.target:
+        if pos.direction == "BUY" and ltp >= pos.current_tp:
             tgt_hit = True
-        if pos.direction == "SELL" and ltp <= pos.target:
+        elif pos.direction == "SELL" and ltp <= pos.current_tp:
             tgt_hit = True
 
         if tgt_hit:
-            log.info("TARGET HIT | %s @ %.2f | TGT was %.2f", symbol, ltp, pos.target)
+            log.info("🎯 TARGET HIT (R=+%.2f) | %s @ %.2f | TGT was %.2f", current_r, symbol, ltp, pos.current_tp)
             self._close_position(symbol, ltp, "TARGET_HIT")
 
     def _close_position(self, symbol: str, exit_price: float, status: str):
