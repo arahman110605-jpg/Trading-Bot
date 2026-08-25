@@ -116,6 +116,16 @@ class EquityBotRunner:
 
         while self._running:
             try:
+                # 1. End-of-day auto square-off check (15:15 IST)
+                if self.risk_mgr.should_square_off_all():
+                    if self.order_mgr.get_open_positions():
+                        log.info("%s: Square-off time reached (15:15 IST). Closing all intraday positions.", self.bot_id)
+                        self.order_mgr.square_off_all()
+                        if self.on_update:
+                            self.on_update()
+                    time.sleep(30)
+                    continue
+
                 # Market hours check (IST 9:15 AM - 3:15 PM)
                 if not self.risk_mgr.is_market_open():
                     time.sleep(30)

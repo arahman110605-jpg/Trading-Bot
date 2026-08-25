@@ -76,7 +76,7 @@ BASE_LOT = 0.02
 LOT_MULTIPLIER = 1.35
 MAX_GRID_LEVELS = 4
 CHECK_INTERVAL_SEC = 5
-SYMBOLS = ["EURUSD", "GBPUSD", "USDJPY"]
+SYMBOLS = ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "USDCAD"]
 GLOBAL_HARD_STOP_PCT = 0.10
 
 class TradeState(Enum):
@@ -312,9 +312,10 @@ def manage_active_trade(pos_mt5, row_m5: pd.Series, prev_m5: pd.Series, row_m15:
     atr = row_m5['atr14']
     
     if ticket not in live_position_states:
-        r_pips = max(12.0, (atr / pip_size) * 1.5)
+        # Generous breathing room: 2.5x ATR (20 to 25 pips buffer)
+        r_pips = max(18.0, (atr / pip_size) * 2.5)
         init_stop = pos_mt5.price_open - (r_pips * pip_size) if direction == "BUY" else pos_mt5.price_open + (r_pips * pip_size)
-        init_tp = pos_mt5.price_open + (r_pips * 3.0 * pip_size) if direction == "BUY" else pos_mt5.price_open - (r_pips * 3.0 * pip_size)
+        init_tp = pos_mt5.price_open + (r_pips * 2.5 * pip_size) if direction == "BUY" else pos_mt5.price_open - (r_pips * 2.5 * pip_size)
         
         if pos_mt5.sl == 0.0 or pos_mt5.sl is None:
             modify_broker_sl_tp(ticket, pos_mt5.symbol, init_stop, init_tp)
@@ -344,106 +345,106 @@ def manage_active_trade(pos_mt5, row_m5: pd.Series, prev_m5: pd.Series, row_m15:
     thesis_score = evaluate_thesis_score(direction, row_m5, row_m15, row_h1)
     p_state.thesis_score = thesis_score
     
-    # ── STAGE 1: PROFIT PROTECTION (+1.2R) -> Lock Green Buffer ──
-    if p_state.state == TradeState.INITIAL and current_r >= 1.2:
+    # ── STEPPED 15-PIP INSTITUTIONAL MEGA-TREND TRAILING LADDER ──
+    # Calculate exact net pip profit on this trade
+    if direction == "BUY":
+        pip_profit = (curr_price - p_state.entry_price) / pip_size
+    else:
+        pip_profit = (p_state.entry_price - curr_price) / pip_size
+        
+    # Track Maximum Favorable Excursion (Peak Pips)
+    if pip_profit > p_state.mfe_pips:
+        p_state.mfe_pips = pip_profit
+
+    # 🪜 STEP 1: +12 PIPS GAIN (+$2.40) -> Lock Breakeven (+2 pips green buffer)
+    if pip_profit >= 12.0 and p_state.state == TradeState.INITIAL:
         p_state.state = TradeState.PROFIT_PROTECTION
         if direction == "BUY":
-            new_stop = p_state.entry_price + (0.3 * p_state.initial_r_pips * pip_size)
+            new_stop = p_state.entry_price + (2.0 * pip_size)
             if new_stop > p_state.current_stop:
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
         else:
-            new_stop = p_state.entry_price - (0.3 * p_state.initial_r_pips * pip_size)
+            new_stop = p_state.entry_price - (2.0 * pip_size)
             if new_stop < p_state.current_stop:
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
-        logger.info(f"🛡️ [{pos_mt5.symbol}] PROFIT_PROTECTION (+{current_r:.2f}R). SL moved above entry to lock green P&L.")
+        logger.info(f"🛡️ [{pos_mt5.symbol}] STEP 1 (+{pip_profit:.1f} pips): SL locked at Entry (+2 pips green buffer). 100% RISK-FREE!")
 
-    # ── STAGE 2: TREND RUN (+2.0R) -> ATR Swing Trailing ──
-    if p_state.state in [TradeState.INITIAL, TradeState.PROFIT_PROTECTION] and current_r >= 2.0 and thesis_score >= 70:
+    # 🪜 STEP 2: +25 PIPS GAIN (+$5.00) -> Lock +10 Pips (15-pip breathing room)
+    if pip_profit >= 25.0 and p_state.state in [TradeState.INITIAL, TradeState.PROFIT_PROTECTION]:
         p_state.state = TradeState.TREND_RUN
-        logger.info(f"🚀 [{pos_mt5.symbol}] TREND_RUN active (+{current_r:.2f}R). Dynamic swing trailing enabled.")
+        if direction == "BUY":
+            new_stop = p_state.entry_price + (10.0 * pip_size)
+            if new_stop > p_state.current_stop:
+                p_state.current_stop = new_stop
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
+        else:
+            new_stop = p_state.entry_price - (10.0 * pip_size)
+            if new_stop < p_state.current_stop:
+                p_state.current_stop = new_stop
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
+        logger.info(f"🔒 [{pos_mt5.symbol}] STEP 2 (+{pip_profit:.1f} pips): SL moved to +10 pips. Guaranteed +$2.00 locked in!")
 
-    # ── STAGE 3: 🌟 ASYMMETRIC TREND EXPANSION & TIGHT-LOCK TRAILING (>= +3.0R & Thesis >= 80) ──
-    # If a massive trend breakout happens: EXPAND Take-Profit to +6R/8R & TIGHTEN SL right behind current candle!
-    if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION] and current_r >= 3.0 and thesis_score >= 80:
+    # 🪜 STEP 3: +40 PIPS GAIN (+$8.00) -> Lock +20 Pips & EXPAND TP TO +80 PIPS
+    if pip_profit >= 40.0:
         p_state.state = TradeState.MAX_PROFIT_EXPANSION
-        # Expand TP to 6R
         if direction == "BUY":
-            new_expanded_tp = p_state.entry_price + (6.0 * p_state.initial_r_pips * pip_size)
-            # Tighten SL to lock in 80% of current gain (current_r - 0.5R)
-            tight_sl = p_state.entry_price + ((current_r - 0.5) * p_state.initial_r_pips * pip_size)
-            if tight_sl > p_state.current_stop:
-                p_state.current_stop = tight_sl
-                p_state.current_tp = new_expanded_tp
-                modify_broker_sl_tp(ticket, pos_mt5.symbol, tight_sl, new_expanded_tp)
+            new_stop = p_state.entry_price + (20.0 * pip_size)
+            expanded_tp = p_state.entry_price + (80.0 * pip_size) # Expand TP for mega-trend
+            if new_stop > p_state.current_stop:
+                p_state.current_stop = new_stop
+                p_state.current_tp = expanded_tp
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, expanded_tp)
         else:
-            new_expanded_tp = p_state.entry_price - (6.0 * p_state.initial_r_pips * pip_size)
-            tight_sl = p_state.entry_price - ((current_r - 0.5) * p_state.initial_r_pips * pip_size)
-            if tight_sl < p_state.current_stop:
-                p_state.current_stop = tight_sl
-                p_state.current_tp = new_expanded_tp
-                modify_broker_sl_tp(ticket, pos_mt5.symbol, tight_sl, new_expanded_tp)
-        logger.info(f"💰💰 [{pos_mt5.symbol}] ASYMMETRIC EXPANSION (+{current_r:.2f}R)! Expanded TP to 6R & Tightened SL to lock 80% of profit.")
+            new_stop = p_state.entry_price - (20.0 * pip_size)
+            expanded_tp = p_state.entry_price - (80.0 * pip_size)
+            if new_stop < p_state.current_stop:
+                p_state.current_stop = new_stop
+                p_state.current_tp = expanded_tp
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, expanded_tp)
+        logger.info(f"💰💰 [{pos_mt5.symbol}] STEP 3 (+{pip_profit:.1f} pips): SL at +20 pips & TP expanded to +80 pips!")
 
-    # Continuous Dynamic Trailing in TREND_RUN / EXPANSION
-    if p_state.state in [TradeState.TREND_RUN, TradeState.MAX_PROFIT_EXPANSION]:
+    # 🪜 STEP 4: +60 PIPS GAIN (+$12.00) -> Lock +40 Pips
+    if pip_profit >= 60.0:
         if direction == "BUY":
-            swing_stop = row_m5['swing_low_val'] - (0.3 * atr)
-            if swing_stop > p_state.current_stop + (1.5 * pip_size):
-                p_state.current_stop = swing_stop
-                modify_broker_sl_tp(ticket, pos_mt5.symbol, swing_stop, p_state.current_tp)
+            new_stop = p_state.entry_price + (40.0 * pip_size)
+            if new_stop > p_state.current_stop:
+                p_state.current_stop = new_stop
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
         else:
-            swing_stop = row_m5['swing_high_val'] + (0.3 * atr)
-            if swing_stop < p_state.current_stop - (1.5 * pip_size):
-                p_state.current_stop = swing_stop
-                modify_broker_sl_tp(ticket, pos_mt5.symbol, swing_stop, p_state.current_tp)
+            new_stop = p_state.entry_price - (40.0 * pip_size)
+            if new_stop < p_state.current_stop:
+                p_state.current_stop = new_stop
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
+        logger.info(f"🚀 [{pos_mt5.symbol}] STEP 4 (+{pip_profit:.1f} pips): SL moved to +40 pips. Guaranteed +$8.00 locked in!")
 
-    # Evaluate structural bar counting only once per confirmed M5 closed bar
+    # 🪜 STEP 5: +80+ PIPS GAIN (+$16.00+) -> Trail 18 Pips Behind Peak High/Low
+    if pip_profit >= 80.0:
+        if direction == "BUY":
+            new_stop = curr_price - (18.0 * pip_size)
+            if new_stop > p_state.current_stop + (2.0 * pip_size):
+                p_state.current_stop = new_stop
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
+        else:
+            new_stop = curr_price + (18.0 * pip_size)
+            if new_stop < p_state.current_stop - (2.0 * pip_size):
+                p_state.current_stop = new_stop
+                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
+
+    # ── MACRO REGIME INVALIDATION (Only on decisive H1 macro reversal after 6+ bars) ──
     bar_time = row_m5['time']
     if p_state.last_evaluated_bar != bar_time:
         p_state.last_evaluated_bar = bar_time
         p_state.bars_held += 1
+
+    if p_state.bars_held >= 6: # At least 30 minutes of trade time
         if direction == "BUY":
-            if row_m5['close'] < row_m5['ema20']:
-                p_state.warning_bars += 1
-            else:
-                p_state.warning_bars = 0
+            if row_h1['close'] < row_h1['ema200'] and row_m15['close'] < row_m15['ema50']:
+                return True, "MACRO_H1_REVERSAL"
         else:
-            if row_m5['close'] > row_m5['ema20']:
-                p_state.warning_bars += 1
-            else:
-                p_state.warning_bars = 0
-
-    # ── STRUCTURAL INVALIDATION RULES (Requires minimum 2 closed M5 bars to mature) ──
-    if p_state.bars_held >= 2:
-        if direction == "BUY":
-            if row_h1['close'] < row_h1['ema200'] and row_m5['close'] < row_m5['ema50']:
-                return True, "MACRO_H1_INVALIDATION"
-                
-            if row_m15['close'] < row_m15['ema50'] and p_state.warning_bars >= 2:
-                return True, "M15_STRUCTURE_BREAK"
-                
-            if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION, TradeState.MAX_PROFIT_EXPANSION]:
-                if thesis_score < 40 and row_m5['ema20_slope'] < 0 and p_state.warning_bars >= 2:
-                    p_state.state = TradeState.MOMENTUM_WEAKENING
-                    p_state.current_stop = max(p_state.current_stop, prev_m5['low'])
-            if p_state.state == TradeState.MOMENTUM_WEAKENING and thesis_score < 30:
-                return True, "THESIS_EXHAUSTION"
-
-        else: # SELL
-            if row_h1['close'] > row_h1['ema200'] and row_m5['close'] > row_m5['ema50']:
-                return True, "MACRO_H1_INVALIDATION"
-                
-            if row_m15['close'] > row_m15['ema50'] and p_state.warning_bars >= 2:
-                return True, "M15_STRUCTURE_BREAK"
-                
-            if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION, TradeState.MAX_PROFIT_EXPANSION]:
-                if thesis_score < 40 and row_m5['ema20_slope'] > 0 and p_state.warning_bars >= 2:
-                    p_state.state = TradeState.MOMENTUM_WEAKENING
-                    p_state.current_stop = min(p_state.current_stop, prev_m5['high'])
-            if p_state.state == TradeState.MOMENTUM_WEAKENING and thesis_score < 30:
-                return True, "THESIS_EXHAUSTION"
+            if row_h1['close'] > row_h1['ema200'] and row_m15['close'] > row_m15['ema50']:
+                return True, "MACRO_H1_REVERSAL"
 
     return False, ""
 
@@ -473,11 +474,13 @@ def analyze_and_trade():
         if df_m5 is None:
             continue
             
-        curr_bar_time = df_m5['time'].iloc[-1]
-        row_m5 = df_m5.iloc[-1]
-        prev_m5 = df_m5.iloc[-2]
-        row_m15 = df_m15.iloc[-1]
-        row_h1 = df_h1.iloc[-1]
+        # In MetaTrader 5, df.iloc[-1] is the LIVE UNCLOSED forming bar.
+        # Closed completed candles are df.iloc[-2] (last closed) and df.iloc[-3] (previous closed).
+        curr_bar_time = df_m5['time'].iloc[-2]
+        row_m5 = df_m5.iloc[-2]
+        prev_m5 = df_m5.iloc[-3]
+        row_m15 = df_m15.iloc[-2]
+        row_h1 = df_h1.iloc[-2]
         atr = row_m5['atr14']
         
         # ── 1. MANAGE ACTIVE POSITIONS ──
@@ -493,26 +496,29 @@ def analyze_and_trade():
                 continue
             last_processed_m5_bar[sym] = curr_bar_time
             
-            r_pips = max(12.0, (atr / pip_size) * 1.5)
-            tp_pips = r_pips * 3.0
+            r_pips = max(18.0, (atr / pip_size) * 2.5)
+            tp_pips = r_pips * 2.5
             
-            if row_m5['close'] > row_m5['ema200'] and row_m5['close'] > row_m5['ema20'] and prev_m5['close'] <= prev_m5['ema20']:
-                if row_h1['close'] > row_h1['ema200'] and row_m15['close'] > row_m15['ema20']:
-                    tick = mt5.symbol_info_tick(sym)
-                    entry_p = tick.ask if tick else row_m5['close']
-                    sl_p = entry_p - (r_pips * pip_size)
-                    tp_p = entry_p + (tp_pips * pip_size)
-                    logger.info(f"🎯 NEW ENTRY SIGNAL: {sym} BUY | M5 + M15 + H1 Triple-Confluence")
-                    open_order(sym, "BUY", BASE_LOT, sl_price=sl_p, tp_price=tp_p, comment="L1_Expansion")
-                    
-            elif row_m5['close'] < row_m5['ema200'] and row_m5['close'] < row_m5['ema20'] and prev_m5['close'] >= prev_m5['ema20']:
-                if row_h1['close'] < row_h1['ema200'] and row_m15['close'] < row_m15['ema20']:
-                    tick = mt5.symbol_info_tick(sym)
-                    entry_p = tick.bid if tick else row_m5['close']
-                    sl_p = entry_p + (r_pips * pip_size)
-                    tp_p = entry_p - (tp_pips * pip_size)
-                    logger.info(f"🎯 NEW ENTRY SIGNAL: {sym} SELL | M5 + M15 + H1 Triple-Confluence")
-                    open_order(sym, "SELL", BASE_LOT, sl_price=sl_p, tp_price=tp_p, comment="L1_Expansion")
+            # Compute Real-Time Multi-Timeframe Thesis Score
+            thesis_buy = evaluate_thesis_score("BUY", row_m5, row_m15, row_h1)
+            thesis_sell = evaluate_thesis_score("SELL", row_m5, row_m15, row_h1)
+            
+            # High-Probability Momentum Entry (Thesis >= 60 + M5 Directional Trigger)
+            if thesis_buy >= 60.0 and row_m5['close'] > row_m5['ema20'] and prev_m5['close'] <= prev_m5['ema20']:
+                tick = mt5.symbol_info_tick(sym)
+                entry_p = tick.ask if tick else row_m5['close']
+                sl_p = entry_p - (r_pips * pip_size)
+                tp_p = entry_p + (tp_pips * pip_size)
+                logger.info(f"🎯 NEW ENTRY SIGNAL: {sym} BUY (Thesis Score: {thesis_buy:.0f}/100 | M5 EMA20 Breakout)")
+                open_order(sym, "BUY", BASE_LOT, sl_price=sl_p, tp_price=tp_p, comment="L1_Expansion")
+                
+            elif thesis_sell >= 60.0 and row_m5['close'] < row_m5['ema20'] and prev_m5['close'] >= prev_m5['ema20']:
+                tick = mt5.symbol_info_tick(sym)
+                entry_p = tick.bid if tick else row_m5['close']
+                sl_p = entry_p + (r_pips * pip_size)
+                tp_p = entry_p - (tp_pips * pip_size)
+                logger.info(f"🎯 NEW ENTRY SIGNAL: {sym} SELL (Thesis Score: {thesis_sell:.0f}/100 | M5 EMA20 Breakdown)")
+                open_order(sym, "SELL", BASE_LOT, sl_price=sl_p, tp_price=tp_p, comment="L1_Expansion")
 
 def main():
     logger.info("=" * 75)
