@@ -272,6 +272,9 @@ class MarketDataHub:
                     self.refresh_equity()
                     self.refresh_options()
                 except Exception as e:
+                    log.error("MarketDataHub: Refresh loop error: %s", e)
+                    time.sleep(30)
+
         def _fast_ltp_loop():
             log.info("MarketDataHub: Fast live LTP ticker thread started (3s cycle).")
             while self._running:

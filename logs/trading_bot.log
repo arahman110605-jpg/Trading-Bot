@@ -4047,3 +4047,13 @@
 2026-08-24 20:18:14 | INFO     | TradingBot.AngelClient | Loaded 38612 NSE and NFO tokens.
 2026-08-24 20:18:14 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve dual engines (Intraday + F&O).
 2026-08-25 09:44:58 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-25 20:26:44 | INFO     | TradingBot.Main | Starting Trading Bot | mode=PAPER | date=2026-08-25
+2026-08-25 20:26:48 | INFO     | TradingBot.AngelClient | AngelClient init | ANGEL_AVAILABLE=True | api_key=8NVX... | client_code=AABB879420
+2026-08-25 20:26:48 | INFO     | TradingBot.AngelClient | Logging into Angel One SmartAPI...
+2026-08-25 20:26:48 | INFO     | TradingBot.AngelClient | [OK] Angel One authentication successful!
+2026-08-25 20:26:49 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
+2026-08-25 20:26:57 | INFO     | TradingBot.AngelClient | Loaded 38764 NSE and NFO tokens.
+2026-08-25 20:26:57 | INFO     | TradingBot.Main | Broker active: Angel One (SmartAPI - FREE)
+2026-08-25 20:27:02 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db
+2026-08-25 20:27:02 | INFO     | TradingBot.RiskManager | RiskManager | initial_capital=INR 100,000 | risk/trade=1.0% | max_daily_loss=2.0%
+2026-08-25 20:27:02 | INFO     | TradingBot.Main | MULTI-BOT MODE enabled — launching 8 bots with shared MarketDataHub

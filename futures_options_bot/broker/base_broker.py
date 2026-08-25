@@ -9,7 +9,7 @@ import pandas as pd
 class BaseFOBroker(ABC):
 
     @abstractmethod
-    def connect((self) -> bool:
+    def connect(self) -> bool:
         """Authenticate with the broker API."""
         pass
 
