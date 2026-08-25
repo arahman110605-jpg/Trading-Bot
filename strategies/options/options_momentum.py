@@ -32,18 +32,25 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
     """Buy ATM CE/PE based on equity consensus signal."""
 
     def generate_signal(self, hub_snapshot: Dict) -> Optional[OptionsSignal]:
-        # Read the consensus signal from the hub snapshot
-        # The hub will include the latest equity consensus direction
-        consensus_direction = hub_snapshot.get("consensus_signal")  # 'BUY' or 'SELL' or None
-        consensus_symbol    = hub_snapshot.get("consensus_symbol", "")
+        # Read the consensus signal or fallback to broader market breadth trend
+        direction = hub_snapshot.get("consensus_signal")
+        trigger_src = hub_snapshot.get("consensus_symbol", "EQUITY")
+        if not direction or direction == "NONE":
+            mkt_trend = hub_snapshot.get("market_trend")
+            if mkt_trend == "BULLISH":
+                direction = "BUY"
+                trigger_src = "MARKET_BREADTH_BULLISH"
+            elif mkt_trend == "BEARISH":
+                direction = "SELL"
+                trigger_src = "MARKET_BREADTH_BEARISH"
 
-        if not consensus_direction or consensus_direction == "NONE":
-            log.debug("%s: No consensus equity signal — skipping options entry.", self.bot_id)
+        if not direction or direction == "NONE":
+            log.debug("%s: No directional trigger available — skipping options entry.", self.bot_id)
             return None
 
-        # Time filter: only buy options before 1:30 PM IST (heavy time decay after that)
+        # Time filter: only buy options before 2:00 PM IST (heavy time decay after that)
         now = datetime.now(IST)
-        entry_window_end = self.bot_config.get("entry_window_end", "13:30")
+        entry_window_end = self.bot_config.get("entry_window_end", "14:00")
         end_h, end_m = map(int, entry_window_end.split(":"))
         if now.hour > end_h or (now.hour == end_h and now.minute > end_m):
             log.debug("%s: Past entry window for options buying.", self.bot_id)
@@ -52,7 +59,7 @@ class OptionsMomentumStrategy(BaseOptionsStrategy):
         # Use NIFTY as proxy for directional index options
         index = "NIFTY"
         interval = 50 if index == "NIFTY" else 100
-        opt_type = "CE" if consensus_direction == "BUY" else "PE"
+        opt_type = "CE" if direction == "BUY" else "PE"
 
         atm = hub_snapshot.get("atm_strikes", {}).get(index)
         if not atm:

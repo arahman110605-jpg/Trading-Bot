@@ -177,4 +177,6 @@ class MultiBotManager:
         for runner in self._options_runners:
             if hasattr(runner, "order_mgr"):
                 positions.extend(runner.order_mgr.get_open_positions())
+            elif hasattr(runner, "get_open_positions"):
+                positions.extend(runner.get_open_positions())
         return positions

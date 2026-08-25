@@ -83,6 +83,7 @@ class OptionsRunner:
                     "vix":              self.hub.get_vix(),
                     "consensus_signal": self._get_consensus_direction(),
                     "consensus_symbol": "NIFTY",
+                    "market_trend":     self.hub.get_market_trend(),
                 }
 
                 # Check exit conditions for active position
@@ -99,7 +100,7 @@ class OptionsRunner:
                             log.info("%s: OPTIONS SIGNAL | %s %s | Premium=%.1f | SL=%.1f | Target=%.1f",
                                      self.bot_id, sig.direction, sig.index, sig.total_premium,
                                      sig.sl_premium, sig.target_premium)
-                            # Log to Firestore
+                            # Log to Analytics & Journal
                             self._log_signal(sig)
                     except Exception as e:
                         log.error("%s: Strategy error: %s", self.bot_id, e)
@@ -130,12 +131,12 @@ class OptionsRunner:
                 pnl = (sig.total_premium - current_premium) * sig.lot_size * sig.lots
                 log.warning("%s: SL HIT | Premium %.1f >= SL %.1f | PnL=%.0f",
                             self.bot_id, current_premium, sig.sl_premium, pnl)
-                self._close_position(pnl, "SL_HIT")
+                self._close_position(pnl, "SL_HIT", exit_price=current_premium)
             elif current_premium <= sig.target_premium:
                 pnl = (sig.total_premium - current_premium) * sig.lot_size * sig.lots
                 log.info("%s: TARGET HIT | Premium %.1f <= Target %.1f | PnL=%.0f",
                          self.bot_id, current_premium, sig.target_premium, pnl)
-                self._close_position(pnl, "TARGET_HIT")
+                self._close_position(pnl, "TARGET_HIT", exit_price=current_premium)
 
         elif "buy" in sig.direction.lower():
             # For bought options: apply active multi-stage profit protection & asymmetric expansion
@@ -148,7 +149,7 @@ class OptionsRunner:
                 locked_sl = round(entry_p * 1.10, 2)
                 if locked_sl > sig.sl_premium:
                     sig.sl_premium = locked_sl
-                    log.info("🛡️ [%s] Options Profit Protection: SL locked at %.2f (+10%% green buffer)", self.bot_id, locked_sl)
+                    log.info("[%s] Options Profit Protection: SL locked at %.2f (+10%% green buffer)", self.bot_id, locked_sl)
 
             # 2. Asymmetric Expansion: at +100% gain -> Expand TP to +200% & Tighten SL to +60%
             if gain_pct >= 1.00:
@@ -157,19 +158,19 @@ class OptionsRunner:
                 if expanded_tp > sig.target_premium:
                     sig.target_premium = expanded_tp
                     sig.sl_premium = max(sig.sl_premium, tightened_sl)
-                    log.info("💰💰 [%s] Options Asymmetric Expansion! Target expanded to %.2f (+200%%), SL tightened to %.2f",
+                    log.info("[%s] Options Asymmetric Expansion! Target expanded to %.2f (+200%%), SL tightened to %.2f",
                              self.bot_id, expanded_tp, tightened_sl)
 
             if current_ltp <= sig.sl_premium:
                 pnl = (current_ltp - sig.total_premium) * sig.lot_size * sig.lots
                 log.warning("%s: SL / TRAILING HIT | LTP %.1f <= SL %.1f | PnL=%.0f",
                             self.bot_id, current_ltp, sig.sl_premium, pnl)
-                self._close_position(pnl, "SL_HIT")
+                self._close_position(pnl, "SL_HIT", exit_price=current_ltp)
             elif current_ltp >= sig.target_premium:
                 pnl = (current_ltp - sig.total_premium) * sig.lot_size * sig.lots
                 log.info("%s: TARGET HIT | LTP %.1f >= Target %.1f | PnL=%.0f",
                          self.bot_id, current_ltp, sig.target_premium, pnl)
-                self._close_position(pnl, "TARGET_HIT")
+                self._close_position(pnl, "TARGET_HIT", exit_price=current_ltp)
 
         # Force exit at 3:00 PM IST
         now = datetime.now(IST)
@@ -177,16 +178,30 @@ class OptionsRunner:
         exit_h, exit_m = map(int, exit_time.split(":"))
         if now.hour > exit_h or (now.hour == exit_h and now.minute >= exit_m):
             log.info("%s: EOD EXIT — squaring off options position.", self.bot_id)
-            self._close_position(0.0, "EOD_SQUAREOFF")
+            current_ltp = ce_ltp if "ce" in sig.direction.lower() else pe_ltp
+            pnl = (current_ltp - sig.total_premium) * sig.lot_size * sig.lots if "buy" in sig.direction.lower() else 0.0
+            self._close_position(pnl, "EOD_SQUAREOFF", exit_price=current_ltp)
 
-    def _close_position(self, pnl: float, reason: str):
+    def _close_position(self, pnl: float, reason: str, exit_price: float = 0.0):
         self._daily_pnl += pnl
         log.info("%s: Position closed | reason=%s | pnl=%.0f | daily_pnl=%.0f",
                  self.bot_id, reason, pnl, self._daily_pnl)
+        if self._active_signal and hasattr(self, "_active_trade_id") and self._active_trade_id:
+            try:
+                from utils.trade_journal import TradeJournal
+                journal = TradeJournal()
+                journal.log_exit(
+                    trade_id=self._active_trade_id,
+                    exit_price=exit_price or self._active_signal.total_premium,
+                    status=reason,
+                )
+            except Exception as e:
+                log.debug("Options trade exit journal logging: %s", e)
         self._active_signal = None
+        self._active_trade_id = None
 
     def _get_consensus_direction(self) -> Optional[str]:
-        """Read the latest direction from Bot 05 (consensus) via shared MarketDataHub."""
+        """Read the latest direction from Bot 01 via shared MarketDataHub."""
         direction, _ = self.hub.get_consensus_signal()
         return direction
 
@@ -205,8 +220,50 @@ class OptionsRunner:
                 rejection_reason="",
                 notes=sig.notes,
             )
+            from utils.trade_journal import TradeJournal
+            journal = TradeJournal()
+            strike = sig.ce_strike if "ce" in sig.direction.lower() else sig.pe_strike
+            opt_type = "CE" if "ce" in sig.direction.lower() else "PE"
+            trade_id = journal.log_entry(
+                symbol=f"{sig.index}_{strike}_{opt_type}",
+                exchange="NFO",
+                direction=sig.direction,
+                quantity=sig.lot_size * sig.lots,
+                entry_price=sig.total_premium,
+                stop_loss=sig.sl_premium,
+                target=sig.target_premium,
+                strategy=sig.strategy,
+                bot_id=self.bot_id,
+            )
+            self._active_trade_id = trade_id
         except Exception as e:
             log.error("%s: Failed to log options signal: %s", self.bot_id, e)
+
+    def get_open_positions(self) -> List[Dict]:
+        sig = self._active_signal
+        if not sig:
+            return []
+        options = self.hub.get_options_snapshot()
+        strike = sig.ce_strike if "ce" in sig.direction.lower() else sig.pe_strike
+        opt_type = "CE" if "ce" in sig.direction.lower() else "PE"
+        cur_ltp = options.get(f"{sig.index}_{strike}_{opt_type}", {}).get("ltp", sig.total_premium)
+        if "buy" in sig.direction.lower():
+            unrealised = (cur_ltp - sig.total_premium) * sig.lot_size * sig.lots
+        else:
+            unrealised = (sig.total_premium - cur_ltp) * sig.lot_size * sig.lots
+        return [{
+            "trade_id": getattr(self, "_active_trade_id", None) or f"{self.bot_id}_opt",
+            "symbol": f"{sig.index} {strike} {opt_type}",
+            "direction": sig.direction,
+            "quantity": sig.lot_size * sig.lots,
+            "entry_price": sig.total_premium,
+            "current_price": cur_ltp,
+            "stop_loss": sig.sl_premium,
+            "target": sig.target_premium,
+            "unrealised_pnl": round(unrealised, 2),
+            "strategy": sig.strategy,
+            "state": "ACTIVE",
+        }]
 
     def stop(self):
         self._running = False

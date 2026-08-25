@@ -178,8 +178,8 @@ class EquityBotRunner:
                 # Execute best signal
                 if candidate_signals:
                     best = max(candidate_signals, key=lambda s: s.confidence)
-                    if "consensus" in self.bot_id:
-                        self.hub.set_consensus_signal(best.direction, best.symbol)
+                    # Broadcast directional momentum to shared hub for F&O bot
+                    self.hub.set_consensus_signal(best.direction, best.symbol)
 
                     # Market Breadth / Macro trend alignment check
                     if getattr(config, "INDEX_TREND_FILTER_ENABLED", True):

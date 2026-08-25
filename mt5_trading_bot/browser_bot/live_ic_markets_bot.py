@@ -31,6 +31,12 @@ from enum import Enum
 from typing import List, Dict, Optional, Tuple
 
 LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ic_markets_overnight.log")
+JOURNAL_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trade_journal.csv")
+JOURNAL_JSON = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trade_journal.jsonl")
+
+import json
+import csv
+from datetime import datetime
 
 logging.basicConfig(
     level=logging.INFO,
@@ -41,6 +47,24 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger("IC_TrendExpansionBot")
+
+def log_trade_to_journal(trade_data: dict):
+    """Log structured trade execution locally into CSV and JSON Lines format for auditing & strategy optimization"""
+    try:
+        # 1. Append to JSON Lines
+        with open(JOURNAL_JSON, mode="a", encoding="utf-8") as jf:
+            jf.write(json.dumps(trade_data) + "\n")
+            
+        # 2. Append to CSV
+        file_exists = os.path.isfile(JOURNAL_CSV)
+        with open(JOURNAL_CSV, mode="a", newline="", encoding="utf-8") as cf:
+            writer = csv.DictWriter(cf, fieldnames=list(trade_data.keys()))
+            if not file_exists:
+                writer.writeheader()
+            writer.writerow(trade_data)
+        logger.info(f"💾 TRADE SAVED TO LOCAL JOURNAL ({trade_data.get('event')}: Ticket #{trade_data.get('ticket')})")
+    except Exception as e:
+        logger.error(f"Failed to log trade to local journal: {e}")
 
 ACCOUNT_LOGIN = 53016472
 ACCOUNT_PASSWORD = "1C$Sb3MehAno6R"
@@ -80,6 +104,8 @@ class ActivePositionState:
         self.state = TradeState.INITIAL
         self.thesis_score = 100.0
         self.warning_bars = 0
+        self.bars_held = 0
+        self.last_evaluated_bar: Optional[pd.Timestamp] = None
         self.mfe_pips = 0.0
         self.mae_pips = 0.0
 
@@ -164,6 +190,16 @@ def close_position(ticket: int, symbol: str, volume: float, pos_type: int, reaso
         return False
     else:
         logger.info(f"⚡ CLOSED TICKET #{ticket} ({symbol} {volume}L) @ {close_price} | Reason: {reason}")
+        log_trade_to_journal({
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "event": "EXIT",
+            "ticket": ticket,
+            "symbol": symbol,
+            "type": "SELL" if pos_type == 0 else "BUY",
+            "volume": volume,
+            "exit_price": close_price,
+            "reason": reason
+        })
         if ticket in live_position_states:
             del live_position_states[ticket]
         return True
@@ -199,6 +235,18 @@ def open_order(symbol: str, order_type: str, lot: float, sl_price: float, tp_pri
     logger.info(f"🎯 ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
     logger.info(f"   Symbol: {symbol} | {order_type} {lot}L @ {price} | Ticket: #{res.order}")
     logger.info(f"   HARD BROKER SL: {sl_price:.5f} | HARD BROKER TP: {tp_price:.5f}")
+    log_trade_to_journal({
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "event": "ENTRY",
+        "ticket": res.order,
+        "symbol": symbol,
+        "type": order_type,
+        "volume": lot,
+        "entry_price": price,
+        "sl_price": sl_price,
+        "tp_price": tp_price,
+        "comment": clean_comment
+    })
     return res.order
 
 def calculate_multi_timeframe_data(symbol: str):
@@ -351,40 +399,51 @@ def manage_active_trade(pos_mt5, row_m5: pd.Series, prev_m5: pd.Series, row_m15:
                 p_state.current_stop = swing_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, swing_stop, p_state.current_tp)
 
-    # ── STRUCTURAL INVALIDATION RULES ──
-    if direction == "BUY":
-        if row_m5['close'] < row_m5['ema20']: p_state.warning_bars += 1
-        else: p_state.warning_bars = 0
-            
-        if row_h1['close'] < row_h1['ema200'] and row_m5['close'] < row_m5['ema50']:
-            return True, "MACRO_H1_INVALIDATION"
-            
-        if row_m15['close'] < row_m15['ema50'] and p_state.warning_bars >= 2:
-            return True, "M15_STRUCTURE_BREAK"
-            
-        if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION, TradeState.MAX_PROFIT_EXPANSION]:
-            if thesis_score < 40 and row_m5['ema20_slope'] < 0 and p_state.warning_bars >= 2:
-                p_state.state = TradeState.MOMENTUM_WEAKENING
-                p_state.current_stop = max(p_state.current_stop, prev_m5['low'])
-        if p_state.state == TradeState.MOMENTUM_WEAKENING and thesis_score < 30:
-            return True, "THESIS_EXHAUSTION"
+    # Evaluate structural bar counting only once per confirmed M5 closed bar
+    bar_time = row_m5['time']
+    if p_state.last_evaluated_bar != bar_time:
+        p_state.last_evaluated_bar = bar_time
+        p_state.bars_held += 1
+        if direction == "BUY":
+            if row_m5['close'] < row_m5['ema20']:
+                p_state.warning_bars += 1
+            else:
+                p_state.warning_bars = 0
+        else:
+            if row_m5['close'] > row_m5['ema20']:
+                p_state.warning_bars += 1
+            else:
+                p_state.warning_bars = 0
 
-    else: # SELL
-        if row_m5['close'] > row_m5['ema20']: p_state.warning_bars += 1
-        else: p_state.warning_bars = 0
-            
-        if row_h1['close'] > row_h1['ema200'] and row_m5['close'] > row_m5['ema50']:
-            return True, "MACRO_H1_INVALIDATION"
-            
-        if row_m15['close'] > row_m15['ema50'] and p_state.warning_bars >= 2:
-            return True, "M15_STRUCTURE_BREAK"
-            
-        if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION, TradeState.MAX_PROFIT_EXPANSION]:
-            if thesis_score < 40 and row_m5['ema20_slope'] > 0 and p_state.warning_bars >= 2:
-                p_state.state = TradeState.MOMENTUM_WEAKENING
-                p_state.current_stop = min(p_state.current_stop, prev_m5['high'])
-        if p_state.state == TradeState.MOMENTUM_WEAKENING and thesis_score < 30:
-            return True, "THESIS_EXHAUSTION"
+    # ── STRUCTURAL INVALIDATION RULES (Requires minimum 2 closed M5 bars to mature) ──
+    if p_state.bars_held >= 2:
+        if direction == "BUY":
+            if row_h1['close'] < row_h1['ema200'] and row_m5['close'] < row_m5['ema50']:
+                return True, "MACRO_H1_INVALIDATION"
+                
+            if row_m15['close'] < row_m15['ema50'] and p_state.warning_bars >= 2:
+                return True, "M15_STRUCTURE_BREAK"
+                
+            if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION, TradeState.MAX_PROFIT_EXPANSION]:
+                if thesis_score < 40 and row_m5['ema20_slope'] < 0 and p_state.warning_bars >= 2:
+                    p_state.state = TradeState.MOMENTUM_WEAKENING
+                    p_state.current_stop = max(p_state.current_stop, prev_m5['low'])
+            if p_state.state == TradeState.MOMENTUM_WEAKENING and thesis_score < 30:
+                return True, "THESIS_EXHAUSTION"
+
+        else: # SELL
+            if row_h1['close'] > row_h1['ema200'] and row_m5['close'] > row_m5['ema50']:
+                return True, "MACRO_H1_INVALIDATION"
+                
+            if row_m15['close'] > row_m15['ema50'] and p_state.warning_bars >= 2:
+                return True, "M15_STRUCTURE_BREAK"
+                
+            if p_state.state in [TradeState.TREND_RUN, TradeState.PROFIT_PROTECTION, TradeState.MAX_PROFIT_EXPANSION]:
+                if thesis_score < 40 and row_m5['ema20_slope'] > 0 and p_state.warning_bars >= 2:
+                    p_state.state = TradeState.MOMENTUM_WEAKENING
+                    p_state.current_stop = min(p_state.current_stop, prev_m5['high'])
+            if p_state.state == TradeState.MOMENTUM_WEAKENING and thesis_score < 30:
+                return True, "THESIS_EXHAUSTION"
 
     return False, ""
 
