@@ -68,6 +68,10 @@ def _build_state() -> dict:
     else:
         positions = _orders.get_open_positions() if _orders else []
 
+    unrealised_pnl = round(sum(p.get("unrealised_pnl", 0.0) for p in positions), 2)
+    if stats:
+        stats["unrealised_pnl"] = unrealised_pnl
+
     total_pnl = _journal.get_total_pnl() if _journal else 0.0
 
     arena_data = _multi_manager.get_all_status() if _multi_manager else []

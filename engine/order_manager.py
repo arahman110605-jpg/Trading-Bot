@@ -423,11 +423,19 @@ class OrderManager:
                 ltp = self.kite.get_ltp(symbol) or pos.current_price
                 self._close_position(symbol, ltp, "SQUARED_OFF")
 
-    # ── State ────────────────────────────────────────────────────────────────
-
     def get_open_positions(self) -> List[dict]:
         with self._lock:
-            return [p.to_dict() for p in self.open_positions.values()]
+            positions = []
+            for p in self.open_positions.values():
+                try:
+                    if self.kite and hasattr(self.kite, "get_ltp"):
+                        ltp = self.kite.get_ltp(p.symbol)
+                        if ltp and ltp > 0:
+                            p.current_price = ltp
+                except Exception:
+                    pass
+                positions.append(p.to_dict())
+            return positions
 
     def get_position(self, symbol: str) -> Optional[OpenPosition]:
         with self._lock:

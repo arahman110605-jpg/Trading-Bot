@@ -42,12 +42,14 @@ class MarketDataHub:
         self._options_cache: Dict[str, Dict[str, Any]] = {}
         self._atm_strikes: Dict[str, int] = {}
         self._index_ltp: Dict[str, float] = {}
+        self._ltp_cache: Dict[str, float] = {}
         self._vix: Optional[float] = None
         self._consensus_direction: Optional[str] = None
         self._consensus_symbol: Optional[str] = None
         self._lock = threading.RLock()
         self._last_equity_refresh: Optional[datetime] = None
         self._last_options_refresh: Optional[datetime] = None
+        self._running = False
         log.info("MarketDataHub: Initialised. Ready to serve dual engines (Intraday + F&O).")
 
     # ── Consensus Signal API ───────────────────────────────────────────────
@@ -62,6 +64,22 @@ class MarketDataHub:
             return self._consensus_direction, self._consensus_symbol
 
     # ── Public read API ───────────────────────────────────────────────────────
+
+    def get_ltp(self, symbol: str) -> Optional[float]:
+        """Return latest live LTP for symbol (cached or freshly polled)."""
+        with self._lock:
+            cached = self._ltp_cache.get(symbol)
+        if cached:
+            return cached
+        try:
+            ltp = self._client.get_ltp(symbol)
+            if ltp:
+                with self._lock:
+                    self._ltp_cache[symbol] = ltp
+                return ltp
+        except Exception:
+            pass
+        return None
 
     def get_equity(self, symbol: str) -> pd.DataFrame:
         """Return cached OHLCV DataFrame for an equity symbol. Thread-safe."""
@@ -254,11 +272,28 @@ class MarketDataHub:
                     self.refresh_equity()
                     self.refresh_options()
                 except Exception as e:
-                    log.error("MarketDataHub: Refresh loop error: %s", e)
-                    time.sleep(30)
+        def _fast_ltp_loop():
+            log.info("MarketDataHub: Fast live LTP ticker thread started (3s cycle).")
+            while self._running:
+                try:
+                    # Update live LTP for watchlist & active symbols
+                    for sym in config.WATCHLIST:
+                        if not self._running:
+                            break
+                        ltp = self._client.get_ltp(sym)
+                        if ltp:
+                            with self._lock:
+                                self._ltp_cache[sym] = ltp
+                        time.sleep(0.3)
+                except Exception as e:
+                    log.debug("Fast LTP ticker error: %s", e)
+                time.sleep(3)
 
         t = threading.Thread(target=_loop, name="MarketDataHub-Refresh", daemon=True)
         t.start()
+        
+        t_fast = threading.Thread(target=_fast_ltp_loop, name="MarketDataHub-FastLTP", daemon=True)
+        t_fast.start()
         return t
 
     def stop(self):

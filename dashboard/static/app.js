@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSocket();
   startClock();
   fetchInitialState();
+  setInterval(fetchInitialState, 3000); // Continuous live tick updates
 });
 
 // ── WebSocket ─────────────────────────────────────────────────────────────────
