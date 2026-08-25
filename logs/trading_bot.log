@@ -4046,3 +4046,4 @@
 2026-08-24 20:18:00 | INFO     | TradingBot.AngelClient | Fetching dynamic token map from Angel One...
 2026-08-24 20:18:14 | INFO     | TradingBot.AngelClient | Loaded 38612 NSE and NFO tokens.
 2026-08-24 20:18:14 | INFO     | TradingBot.MarketDataHub | MarketDataHub: Initialised. Ready to serve dual engines (Intraday + F&O).
+2026-08-25 09:44:58 | WARNING  | TradingBot.TradeJournal | Firebase not configured. Falling back to local SQLite at data/trades.db

@@ -117,6 +117,13 @@ def api_arena():
     return jsonify([])
 
 
+@app.route("/api/trades/all")
+def api_all_trades():
+    if _journal:
+        return jsonify(_journal.get_all_trades(limit=100))
+    return jsonify([])
+
+
 @app.route("/api/bot/start", methods=["POST"])
 def api_start():
     if _runner:
