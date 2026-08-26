@@ -38,7 +38,7 @@ STRATEGY_MAP = {
     "asymmetric_expansion": AsymmetricTrendExpansionStrategy,
 }
 
-TREND_ONLY = {"ema_crossover", "supertrend", "orb", "asymmetric_expansion"}
+TREND_ONLY = {"ema_crossover", "supertrend", "orb"}
 
 
 class EquityBotRunner:

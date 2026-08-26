@@ -497,3 +497,198 @@
 2026-08-25 20:14:50,095 [SUPERVISOR]: [CHILD]: 2026-08-25 20:14:50,095 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $203.48 | Net Floating: $+0.32
 2026-08-25 20:19:52,935 [SUPERVISOR]: [CHILD]: 2026-08-25 20:19:52,935 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $205.86 | Net Floating: $+2.70
 2026-08-25 20:24:56,022 [SUPERVISOR]: [CHILD]: 2026-08-25 20:24:56,022 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $202.64 | Net Floating: $-0.52
+2026-08-25 20:29:59,089 [SUPERVISOR]: [CHILD]: 2026-08-25 20:29:59,089 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $202.59 | Net Floating: $-0.57
+2026-08-25 20:35:02,125 [SUPERVISOR]: [CHILD]: 2026-08-25 20:35:02,125 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $202.73 | Net Floating: $-0.43
+2026-08-25 20:39:22,958 [SUPERVISOR]: Bot process exited with code: 1073807364
+2026-08-25 20:39:22,958 [SUPERVISOR]: 🔄 Auto-Healing & Restarting Bot in 3 seconds (Crash Count: 1)...
+2026-08-25 20:39:25,962 [SUPERVISOR]: Launching Live Active Trading Bot child process...
+2026-08-25 20:39:25,974 [SUPERVISOR]: Bot successfully launched with PID: 20788
+2026-08-25 20:41:10,502 [SUPERVISOR]: ======================================================================
+2026-08-25 20:41:10,502 [SUPERVISOR]:   24/7 AUTONOMOUS SELF-HEALING SUPERVISOR STARTED
+2026-08-25 20:41:10,502 [SUPERVISOR]:   Target Bot: d:\trading bot\mt5_trading_bot\browser_bot\live_ic_markets_bot.py
+2026-08-25 20:41:10,502 [SUPERVISOR]: ======================================================================
+2026-08-25 20:41:10,502 [SUPERVISOR]: Launching Live Active Trading Bot child process...
+2026-08-25 20:41:10,510 [SUPERVISOR]: Bot successfully launched with PID: 11840
+2026-08-25 20:46:14,415 [SUPERVISOR]: [CHILD]: 2026-08-25 20:46:14,415 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $202.13 | Net Floating: $-1.03
+2026-08-25 20:51:17,282 [SUPERVISOR]: [CHILD]: 2026-08-25 20:51:17,282 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $202.73 | Net Floating: $-0.43
+2026-08-25 20:56:20,065 [SUPERVISOR]: [CHILD]: 2026-08-25 20:56:20,065 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $203.04 | Net Floating: $-0.12
+2026-08-25 21:01:23,111 [SUPERVISOR]: [CHILD]: 2026-08-25 21:01:23,111 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.16 | Equity: $203.60 | Net Floating: $+0.44
+2026-08-25 21:04:55,901 [SUPERVISOR]: [CHILD]: logger.info(f"\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
+2026-08-25 21:04:55,901 [SUPERVISOR]: [CHILD]: Message: '\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:'
+2026-08-25 21:05:51,438 [SUPERVISOR]: [CHILD]: 2026-08-25 21:05:51,438 [WARNING] [IC_TrendExpansionBot]: Failed to update broker SL/TP for #1882876105: No changes
+2026-08-25 21:06:26,844 [SUPERVISOR]: [CHILD]: 2026-08-25 21:06:26,844 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.98 | Net Floating: $+1.89
+2026-08-25 21:11:29,871 [SUPERVISOR]: [CHILD]: 2026-08-25 21:11:29,871 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.55 | Net Floating: $+0.46
+2026-08-25 21:16:33,065 [SUPERVISOR]: [CHILD]: 2026-08-25 21:16:33,065 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.43 | Net Floating: $+0.34
+2026-08-25 21:21:36,201 [SUPERVISOR]: [CHILD]: 2026-08-25 21:21:36,201 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.87 | Net Floating: $+0.78
+2026-08-25 21:26:39,249 [SUPERVISOR]: [CHILD]: 2026-08-25 21:26:39,249 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.75 | Net Floating: $+0.66
+2026-08-25 21:31:42,292 [SUPERVISOR]: [CHILD]: 2026-08-25 21:31:42,292 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.15 | Net Floating: $+2.06
+2026-08-25 21:36:45,332 [SUPERVISOR]: [CHILD]: 2026-08-25 21:36:45,332 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.89 | Net Floating: $+1.80
+2026-08-25 21:41:48,408 [SUPERVISOR]: [CHILD]: 2026-08-25 21:41:48,408 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.79 | Net Floating: $+0.70
+2026-08-25 21:46:51,380 [SUPERVISOR]: [CHILD]: 2026-08-25 21:46:51,379 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $202.61 | Net Floating: $-0.48
+2026-08-25 21:51:54,289 [SUPERVISOR]: [CHILD]: 2026-08-25 21:51:54,288 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $202.47 | Net Floating: $-0.62
+2026-08-25 21:56:57,201 [SUPERVISOR]: [CHILD]: 2026-08-25 21:56:57,201 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $202.63 | Net Floating: $-0.46
+2026-08-25 22:02:00,265 [SUPERVISOR]: [CHILD]: 2026-08-25 22:02:00,265 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.33 | Net Floating: $+0.24
+2026-08-25 22:07:03,387 [SUPERVISOR]: [CHILD]: 2026-08-25 22:07:03,387 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.86 | Net Floating: $+0.77
+2026-08-25 22:12:06,397 [SUPERVISOR]: [CHILD]: 2026-08-25 22:12:06,397 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.20 | Net Floating: $+0.11
+2026-08-25 22:17:09,504 [SUPERVISOR]: [CHILD]: 2026-08-25 22:17:09,504 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.22 | Net Floating: $+0.13
+2026-08-25 22:22:12,676 [SUPERVISOR]: [CHILD]: 2026-08-25 22:22:12,676 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.11 | Net Floating: $+0.02
+2026-08-25 22:27:15,814 [SUPERVISOR]: [CHILD]: 2026-08-25 22:27:15,814 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $202.91 | Net Floating: $-0.18
+2026-08-25 22:32:18,895 [SUPERVISOR]: [CHILD]: 2026-08-25 22:32:18,895 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.45 | Net Floating: $+0.36
+2026-08-25 22:37:22,012 [SUPERVISOR]: [CHILD]: 2026-08-25 22:37:22,012 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.18 | Net Floating: $+0.09
+2026-08-25 22:42:25,164 [SUPERVISOR]: [CHILD]: 2026-08-25 22:42:25,163 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $203.03 | Net Floating: $-0.06
+2026-08-25 22:47:28,220 [SUPERVISOR]: [CHILD]: 2026-08-25 22:47:28,220 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.10 | Net Floating: $+1.01
+2026-08-25 22:52:31,305 [SUPERVISOR]: [CHILD]: 2026-08-25 22:52:31,305 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.08 | Net Floating: $+0.99
+2026-08-25 22:57:34,412 [SUPERVISOR]: [CHILD]: 2026-08-25 22:57:34,412 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.53 | Net Floating: $+1.44
+2026-08-25 23:02:37,572 [SUPERVISOR]: [CHILD]: 2026-08-25 23:02:37,572 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.58 | Net Floating: $+1.49
+2026-08-25 23:07:40,694 [SUPERVISOR]: [CHILD]: 2026-08-25 23:07:40,694 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.50 | Net Floating: $+2.41
+2026-08-25 23:12:43,848 [SUPERVISOR]: [CHILD]: 2026-08-25 23:12:43,848 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $204.40 | Net Floating: $+1.31
+2026-08-25 23:17:46,991 [SUPERVISOR]: [CHILD]: 2026-08-25 23:17:46,991 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.61 | Net Floating: $+2.52
+2026-08-25 23:22:50,146 [SUPERVISOR]: [CHILD]: 2026-08-25 23:22:50,146 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.30 | Net Floating: $+2.21
+2026-08-25 23:27:53,329 [SUPERVISOR]: [CHILD]: 2026-08-25 23:27:53,329 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.95 | Net Floating: $+2.86
+2026-08-25 23:32:56,471 [SUPERVISOR]: [CHILD]: 2026-08-25 23:32:56,471 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.28 | Net Floating: $+2.19
+2026-08-25 23:37:59,666 [SUPERVISOR]: [CHILD]: 2026-08-25 23:37:59,666 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.58 | Net Floating: $+3.49
+2026-08-25 23:43:02,854 [SUPERVISOR]: [CHILD]: 2026-08-25 23:43:02,854 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.59 | Net Floating: $+3.50
+2026-08-25 23:48:06,074 [SUPERVISOR]: [CHILD]: 2026-08-25 23:48:06,074 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.10 | Net Floating: $+3.01
+2026-08-25 23:53:09,278 [SUPERVISOR]: [CHILD]: 2026-08-25 23:53:09,278 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.99 | Net Floating: $+2.90
+2026-08-25 23:58:12,434 [SUPERVISOR]: [CHILD]: 2026-08-25 23:58:12,434 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.79 | Net Floating: $+3.70
+2026-08-26 00:03:15,591 [SUPERVISOR]: [CHILD]: 2026-08-26 00:03:15,591 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.50 | Net Floating: $+3.41
+2026-08-26 00:08:18,768 [SUPERVISOR]: [CHILD]: 2026-08-26 00:08:18,768 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.32 | Net Floating: $+3.23
+2026-08-26 00:13:22,020 [SUPERVISOR]: [CHILD]: 2026-08-26 00:13:22,020 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.80 | Net Floating: $+3.71
+2026-08-26 00:18:25,204 [SUPERVISOR]: [CHILD]: 2026-08-26 00:18:25,204 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.86 | Net Floating: $+3.77
+2026-08-26 00:23:28,394 [SUPERVISOR]: [CHILD]: 2026-08-26 00:23:28,394 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.92 | Net Floating: $+3.83
+2026-08-26 00:28:31,559 [SUPERVISOR]: [CHILD]: 2026-08-26 00:28:31,559 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $207.47 | Net Floating: $+4.38
+2026-08-26 00:33:34,783 [SUPERVISOR]: [CHILD]: 2026-08-26 00:33:34,783 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $207.37 | Net Floating: $+4.28
+2026-08-26 00:38:37,959 [SUPERVISOR]: [CHILD]: 2026-08-26 00:38:37,959 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $208.05 | Net Floating: $+4.96
+2026-08-26 00:43:41,120 [SUPERVISOR]: [CHILD]: 2026-08-26 00:43:41,120 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $208.52 | Net Floating: $+5.43
+2026-08-26 00:48:44,285 [SUPERVISOR]: [CHILD]: 2026-08-26 00:48:44,284 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $209.38 | Net Floating: $+6.29
+2026-08-26 00:53:47,498 [SUPERVISOR]: [CHILD]: 2026-08-26 00:53:47,498 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $208.55 | Net Floating: $+5.46
+2026-08-26 00:58:50,664 [SUPERVISOR]: [CHILD]: 2026-08-26 00:58:50,664 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $208.21 | Net Floating: $+5.12
+2026-08-26 01:03:53,880 [SUPERVISOR]: [CHILD]: 2026-08-26 01:03:53,880 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.80 | Net Floating: $+3.71
+2026-08-26 01:08:57,117 [SUPERVISOR]: [CHILD]: 2026-08-26 01:08:57,117 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $205.68 | Net Floating: $+2.59
+2026-08-26 01:14:00,325 [SUPERVISOR]: [CHILD]: 2026-08-26 01:14:00,325 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $206.43 | Net Floating: $+3.34
+2026-08-26 01:19:03,608 [SUPERVISOR]: [CHILD]: 2026-08-26 01:19:03,608 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $207.42 | Net Floating: $+4.33
+2026-08-26 01:24:06,815 [SUPERVISOR]: [CHILD]: 2026-08-26 01:24:06,815 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $203.09 | Equity: $208.45 | Net Floating: $+5.36
+2026-08-26 01:29:10,596 [SUPERVISOR]: [CHILD]: 2026-08-26 01:29:10,596 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $208.79 | Net Floating: $+8.18
+2026-08-26 01:34:13,818 [SUPERVISOR]: [CHILD]: 2026-08-26 01:34:13,818 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $207.28 | Net Floating: $+6.67
+2026-08-26 01:39:16,953 [SUPERVISOR]: [CHILD]: 2026-08-26 01:39:16,953 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $209.13 | Net Floating: $+8.52
+2026-08-26 01:44:20,318 [SUPERVISOR]: [CHILD]: 2026-08-26 01:44:20,318 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $208.99 | Net Floating: $+8.38
+2026-08-26 01:49:23,422 [SUPERVISOR]: [CHILD]: 2026-08-26 01:49:23,422 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $208.78 | Net Floating: $+8.17
+2026-08-26 01:54:26,589 [SUPERVISOR]: [CHILD]: 2026-08-26 01:54:26,589 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $208.14 | Net Floating: $+7.53
+2026-08-26 01:59:30,320 [SUPERVISOR]: [CHILD]: 2026-08-26 01:59:30,320 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $208.29 | Net Floating: $+7.68
+2026-08-26 02:04:33,454 [SUPERVISOR]: [CHILD]: 2026-08-26 02:04:33,454 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.61 | Equity: $207.77 | Net Floating: $+7.16
+2026-08-26 02:04:54,225 [SUPERVISOR]: [CHILD]: logger.info(f"\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
+2026-08-26 02:04:54,225 [SUPERVISOR]: [CHILD]: Message: '\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:'
+2026-08-26 02:09:37,192 [SUPERVISOR]: [CHILD]: 2026-08-26 02:09:37,192 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.54 | Equity: $206.38 | Net Floating: $+5.84
+2026-08-26 02:14:40,373 [SUPERVISOR]: [CHILD]: 2026-08-26 02:14:40,373 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.54 | Equity: $205.87 | Net Floating: $+5.33
+2026-08-26 02:19:43,541 [SUPERVISOR]: [CHILD]: 2026-08-26 02:19:43,540 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.54 | Equity: $205.55 | Net Floating: $+5.01
+2026-08-26 02:24:46,818 [SUPERVISOR]: [CHILD]: 2026-08-26 02:24:46,818 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.54 | Equity: $206.28 | Net Floating: $+5.74
+2026-08-26 02:29:49,776 [SUPERVISOR]: [CHILD]: 2026-08-26 02:29:49,776 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.54 | Equity: $204.75 | Net Floating: $+4.21
+2026-08-26 02:30:00,293 [SUPERVISOR]: [CHILD]: 2026-08-26 02:30:00,292 [WARNING] [IC_TrendExpansionBot]: Failed to close ticket 1883301892: Market closed
+2026-08-26 02:30:05,905 [SUPERVISOR]: [CHILD]: 2026-08-26 02:30:05,905 [WARNING] [IC_TrendExpansionBot]: Failed to close ticket 1883301892: Market closed
+2026-08-26 02:30:13,581 [SUPERVISOR]: [CHILD]: 2026-08-26 02:30:13,581 [WARNING] [IC_TrendExpansionBot]: Failed to close ticket 1883301892: Market closed
+2026-08-26 02:30:18,967 [SUPERVISOR]: [CHILD]: 2026-08-26 02:30:18,967 [WARNING] [IC_TrendExpansionBot]: Failed to close ticket 1883301892: Market closed
+2026-08-26 02:30:24,357 [SUPERVISOR]: [CHILD]: 2026-08-26 02:30:24,357 [WARNING] [IC_TrendExpansionBot]: Failed to close ticket 1883301892: Market closed
+2026-08-26 02:30:49,942 [SUPERVISOR]: [CHILD]: 2026-08-26 02:30:49,942 [WARNING] [IC_TrendExpansionBot]: Failed to close ticket 1883301892: Market closed
+2026-08-26 02:34:57,271 [SUPERVISOR]: [CHILD]: 2026-08-26 02:34:57,271 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.75 | Equity: $203.29 | Net Floating: $+2.54
+2026-08-26 02:39:55,647 [SUPERVISOR]: [CHILD]: logger.info(f"\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
+2026-08-26 02:39:55,648 [SUPERVISOR]: [CHILD]: Message: '\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:'
+2026-08-26 02:40:00,724 [SUPERVISOR]: [CHILD]: 2026-08-26 02:40:00,724 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.68 | Equity: $203.00 | Net Floating: $+2.32
+2026-08-26 02:45:03,557 [SUPERVISOR]: [CHILD]: 2026-08-26 02:45:03,557 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $201.16 | Net Floating: $+0.14
+2026-08-26 02:50:06,426 [SUPERVISOR]: [CHILD]: 2026-08-26 02:50:06,426 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $200.18 | Net Floating: $-0.84
+2026-08-26 02:55:09,283 [SUPERVISOR]: [CHILD]: 2026-08-26 02:55:09,283 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $200.37 | Net Floating: $-0.65
+2026-08-26 03:00:12,239 [SUPERVISOR]: [CHILD]: 2026-08-26 03:00:12,238 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $200.32 | Net Floating: $-0.70
+2026-08-26 03:05:15,138 [SUPERVISOR]: [CHILD]: 2026-08-26 03:05:15,138 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $198.79 | Net Floating: $-2.23
+2026-08-26 03:10:18,059 [SUPERVISOR]: [CHILD]: 2026-08-26 03:10:18,059 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $199.38 | Net Floating: $-1.64
+2026-08-26 03:15:20,989 [SUPERVISOR]: [CHILD]: 2026-08-26 03:15:20,989 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $199.85 | Net Floating: $-1.17
+2026-08-26 03:20:23,886 [SUPERVISOR]: [CHILD]: 2026-08-26 03:20:23,886 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $199.85 | Net Floating: $-1.17
+2026-08-26 03:25:26,868 [SUPERVISOR]: [CHILD]: 2026-08-26 03:25:26,868 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $198.25 | Net Floating: $-2.77
+2026-08-26 03:30:29,790 [SUPERVISOR]: [CHILD]: 2026-08-26 03:30:29,790 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $201.02 | Equity: $201.47 | Net Floating: $+0.45
+2026-08-26 03:34:58,007 [SUPERVISOR]: [CHILD]: logger.info(f"\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
+2026-08-26 03:34:58,007 [SUPERVISOR]: [CHILD]: Message: '\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:'
+2026-08-26 03:35:33,342 [SUPERVISOR]: [CHILD]: 2026-08-26 03:35:33,342 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.44 | Net Floating: $+1.49
+2026-08-26 03:40:36,302 [SUPERVISOR]: [CHILD]: 2026-08-26 03:40:36,302 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.44 | Net Floating: $+0.49
+2026-08-26 03:45:39,405 [SUPERVISOR]: [CHILD]: 2026-08-26 03:45:39,405 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.92 | Net Floating: $+0.97
+2026-08-26 03:50:42,499 [SUPERVISOR]: [CHILD]: 2026-08-26 03:50:42,499 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.02 | Net Floating: $+1.07
+2026-08-26 03:55:45,696 [SUPERVISOR]: [CHILD]: 2026-08-26 03:55:45,695 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.23 | Net Floating: $+1.28
+2026-08-26 04:00:48,912 [SUPERVISOR]: [CHILD]: 2026-08-26 04:00:48,911 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.96 | Net Floating: $+1.01
+2026-08-26 04:05:52,196 [SUPERVISOR]: [CHILD]: 2026-08-26 04:05:52,196 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.34 | Net Floating: $+1.39
+2026-08-26 04:10:55,395 [SUPERVISOR]: [CHILD]: 2026-08-26 04:10:55,394 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.74 | Net Floating: $+1.79
+2026-08-26 04:15:58,546 [SUPERVISOR]: [CHILD]: 2026-08-26 04:15:58,545 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.37 | Net Floating: $+2.42
+2026-08-26 04:21:01,689 [SUPERVISOR]: [CHILD]: 2026-08-26 04:21:01,689 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.43 | Net Floating: $+2.48
+2026-08-26 04:26:04,869 [SUPERVISOR]: [CHILD]: 2026-08-26 04:26:04,869 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.44 | Net Floating: $+2.49
+2026-08-26 04:31:08,044 [SUPERVISOR]: [CHILD]: 2026-08-26 04:31:08,044 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.32 | Net Floating: $+2.37
+2026-08-26 04:36:11,211 [SUPERVISOR]: [CHILD]: 2026-08-26 04:36:11,210 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.45 | Net Floating: $+2.50
+2026-08-26 04:41:14,391 [SUPERVISOR]: [CHILD]: 2026-08-26 04:41:14,391 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.22 | Net Floating: $+2.27
+2026-08-26 04:46:17,530 [SUPERVISOR]: [CHILD]: 2026-08-26 04:46:17,530 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.91 | Net Floating: $+1.96
+2026-08-26 04:51:20,684 [SUPERVISOR]: [CHILD]: 2026-08-26 04:51:20,684 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.26 | Net Floating: $+2.31
+2026-08-26 04:56:23,766 [SUPERVISOR]: [CHILD]: 2026-08-26 04:56:23,766 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.66 | Net Floating: $+1.71
+2026-08-26 05:01:26,915 [SUPERVISOR]: [CHILD]: 2026-08-26 05:01:26,915 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.39 | Net Floating: $+1.44
+2026-08-26 05:06:30,020 [SUPERVISOR]: [CHILD]: 2026-08-26 05:06:30,019 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.31 | Net Floating: $+1.36
+2026-08-26 05:11:33,113 [SUPERVISOR]: [CHILD]: 2026-08-26 05:11:33,113 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.84 | Net Floating: $+0.89
+2026-08-26 05:16:36,234 [SUPERVISOR]: [CHILD]: 2026-08-26 05:16:36,234 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.27 | Net Floating: $+1.32
+2026-08-26 05:21:39,372 [SUPERVISOR]: [CHILD]: 2026-08-26 05:21:39,372 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.23 | Net Floating: $+1.28
+2026-08-26 05:26:42,481 [SUPERVISOR]: [CHILD]: 2026-08-26 05:26:42,481 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.88 | Net Floating: $+0.93
+2026-08-26 05:31:45,653 [SUPERVISOR]: [CHILD]: 2026-08-26 05:31:45,653 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.98 | Net Floating: $+1.03
+2026-08-26 05:36:48,805 [SUPERVISOR]: [CHILD]: 2026-08-26 05:36:48,805 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.13 | Net Floating: $+0.18
+2026-08-26 05:41:51,937 [SUPERVISOR]: [CHILD]: 2026-08-26 05:41:51,937 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.61 | Net Floating: $+1.66
+2026-08-26 05:46:55,136 [SUPERVISOR]: [CHILD]: 2026-08-26 05:46:55,136 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $203.00 | Net Floating: $+2.05
+2026-08-26 05:51:58,276 [SUPERVISOR]: [CHILD]: 2026-08-26 05:51:58,276 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.66 | Net Floating: $+1.71
+2026-08-26 05:57:01,389 [SUPERVISOR]: [CHILD]: 2026-08-26 05:57:01,389 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.88 | Net Floating: $+0.93
+2026-08-26 06:02:04,543 [SUPERVISOR]: [CHILD]: 2026-08-26 06:02:04,542 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $202.16 | Net Floating: $+1.21
+2026-08-26 06:07:07,727 [SUPERVISOR]: [CHILD]: 2026-08-26 06:07:07,727 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $200.40 | Net Floating: $-0.55
+2026-08-26 06:12:10,909 [SUPERVISOR]: [CHILD]: 2026-08-26 06:12:10,909 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $200.21 | Net Floating: $-0.74
+2026-08-26 06:17:14,024 [SUPERVISOR]: [CHILD]: 2026-08-26 06:17:14,024 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $201.35 | Net Floating: $+0.40
+2026-08-26 06:22:17,136 [SUPERVISOR]: [CHILD]: 2026-08-26 06:22:17,136 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $200.45 | Net Floating: $-0.50
+2026-08-26 06:27:20,224 [SUPERVISOR]: [CHILD]: 2026-08-26 06:27:20,224 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $199.82 | Net Floating: $-1.13
+2026-08-26 06:32:23,400 [SUPERVISOR]: [CHILD]: 2026-08-26 06:32:23,400 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $199.20 | Net Floating: $-1.75
+2026-08-26 06:37:26,585 [SUPERVISOR]: [CHILD]: 2026-08-26 06:37:26,585 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $198.21 | Net Floating: $-2.74
+2026-08-26 06:42:29,749 [SUPERVISOR]: [CHILD]: 2026-08-26 06:42:29,749 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $197.64 | Net Floating: $-3.31
+2026-08-26 06:47:32,898 [SUPERVISOR]: [CHILD]: 2026-08-26 06:47:32,898 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $199.02 | Net Floating: $-1.93
+2026-08-26 06:52:36,047 [SUPERVISOR]: [CHILD]: 2026-08-26 06:52:36,047 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $198.30 | Net Floating: $-2.65
+2026-08-26 06:57:39,122 [SUPERVISOR]: [CHILD]: 2026-08-26 06:57:39,122 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $198.13 | Net Floating: $-2.82
+2026-08-26 07:02:42,312 [SUPERVISOR]: [CHILD]: 2026-08-26 07:02:42,311 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $199.58 | Net Floating: $-1.37
+2026-08-26 07:07:45,505 [SUPERVISOR]: [CHILD]: 2026-08-26 07:07:45,505 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $200.48 | Net Floating: $-0.47
+2026-08-26 07:12:48,703 [SUPERVISOR]: [CHILD]: 2026-08-26 07:12:48,703 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $199.14 | Net Floating: $-1.81
+2026-08-26 07:17:52,498 [SUPERVISOR]: [CHILD]: 2026-08-26 07:17:52,498 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $200.95 | Equity: $200.45 | Net Floating: $-0.50
+2026-08-26 07:22:55,695 [SUPERVISOR]: [CHILD]: 2026-08-26 07:22:55,695 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $198.64 | Equity: $200.91 | Net Floating: $+2.27
+2026-08-26 07:27:58,838 [SUPERVISOR]: [CHILD]: 2026-08-26 07:27:58,838 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $198.64 | Equity: $199.77 | Net Floating: $+1.13
+2026-08-26 07:29:55,612 [SUPERVISOR]: [CHILD]: logger.info(f"\u26a1 CLOSED TICKET #{ticket} ({symbol} {volume}L) @ {close_price} | Reason: {reason}")
+2026-08-26 07:29:55,613 [SUPERVISOR]: [CHILD]: Message: '\u26a1 CLOSED TICKET #1883560861 (USDCAD 0.02L) @ 1.38456 | Reason: MACRO_H1_REVERSAL'
+2026-08-26 07:30:01,266 [SUPERVISOR]: [CHILD]: logger.info(f"\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
+2026-08-26 07:30:01,266 [SUPERVISOR]: [CHILD]: Message: '\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:'
+2026-08-26 07:33:03,183 [SUPERVISOR]: [CHILD]: 2026-08-26 07:33:03,182 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $199.66 | Net Floating: $+2.51
+2026-08-26 07:38:06,340 [SUPERVISOR]: [CHILD]: 2026-08-26 07:38:06,340 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.21 | Net Floating: $+3.06
+2026-08-26 07:43:09,526 [SUPERVISOR]: [CHILD]: 2026-08-26 07:43:09,526 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.76 | Net Floating: $+3.61
+2026-08-26 07:48:12,741 [SUPERVISOR]: [CHILD]: 2026-08-26 07:48:12,741 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.34 | Net Floating: $+3.19
+2026-08-26 07:53:15,964 [SUPERVISOR]: [CHILD]: 2026-08-26 07:53:15,964 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $201.24 | Net Floating: $+4.09
+2026-08-26 07:58:19,114 [SUPERVISOR]: [CHILD]: 2026-08-26 07:58:19,114 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.25 | Net Floating: $+3.10
+2026-08-26 08:03:22,294 [SUPERVISOR]: [CHILD]: 2026-08-26 08:03:22,293 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $201.32 | Net Floating: $+4.17
+2026-08-26 08:08:25,430 [SUPERVISOR]: [CHILD]: 2026-08-26 08:08:25,430 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.89 | Net Floating: $+3.74
+2026-08-26 08:13:28,560 [SUPERVISOR]: [CHILD]: 2026-08-26 08:13:28,560 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $201.46 | Net Floating: $+4.31
+2026-08-26 08:18:31,771 [SUPERVISOR]: [CHILD]: 2026-08-26 08:18:31,771 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $201.05 | Net Floating: $+3.90
+2026-08-26 08:23:34,690 [SUPERVISOR]: [CHILD]: 2026-08-26 08:23:34,689 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.52 | Net Floating: $+3.37
+2026-08-26 08:28:37,642 [SUPERVISOR]: [CHILD]: 2026-08-26 08:28:37,641 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $199.83 | Net Floating: $+2.68
+2026-08-26 08:33:40,612 [SUPERVISOR]: [CHILD]: 2026-08-26 08:33:40,612 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.15 | Equity: $200.14 | Net Floating: $+2.99
+2026-08-26 08:34:56,912 [SUPERVISOR]: [CHILD]: logger.info(f"\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:")
+2026-08-26 08:34:56,912 [SUPERVISOR]: [CHILD]: Message: '\U0001f3af ORDER EXECUTED WITH HARD BROKER-SIDE SL/TP:'
+2026-08-26 08:38:44,161 [SUPERVISOR]: [CHILD]: 2026-08-26 08:38:44,160 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.08 | Equity: $199.05 | Net Floating: $+1.97
+2026-08-26 08:43:47,776 [SUPERVISOR]: [CHILD]: 2026-08-26 08:43:47,775 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.08 | Equity: $199.19 | Net Floating: $+2.11
+2026-08-26 08:48:50,818 [SUPERVISOR]: [CHILD]: 2026-08-26 08:48:50,818 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.08 | Equity: $199.88 | Net Floating: $+2.80
+2026-08-26 08:53:53,861 [SUPERVISOR]: [CHILD]: 2026-08-26 08:53:53,861 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.08 | Equity: $200.21 | Net Floating: $+3.13
+2026-08-26 08:58:56,800 [SUPERVISOR]: [CHILD]: 2026-08-26 08:58:56,800 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.08 | Equity: $201.11 | Net Floating: $+4.03
+2026-08-26 09:03:59,775 [SUPERVISOR]: [CHILD]: 2026-08-26 09:03:59,775 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $201.27 | Net Floating: $+4.13
+2026-08-26 09:09:02,741 [SUPERVISOR]: [CHILD]: 2026-08-26 09:09:02,741 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $201.00 | Net Floating: $+3.86
+2026-08-26 09:14:05,764 [SUPERVISOR]: [CHILD]: 2026-08-26 09:14:05,764 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $200.89 | Net Floating: $+3.75
+2026-08-26 09:19:08,739 [SUPERVISOR]: [CHILD]: 2026-08-26 09:19:08,739 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $200.17 | Net Floating: $+3.03
+2026-08-26 09:24:11,713 [SUPERVISOR]: [CHILD]: 2026-08-26 09:24:11,713 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $200.76 | Net Floating: $+3.62
+2026-08-26 09:29:14,709 [SUPERVISOR]: [CHILD]: 2026-08-26 09:29:14,709 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $199.84 | Net Floating: $+2.70
+2026-08-26 09:34:17,699 [SUPERVISOR]: [CHILD]: 2026-08-26 09:34:17,699 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $199.72 | Net Floating: $+2.58
+2026-08-26 09:39:20,697 [SUPERVISOR]: [CHILD]: 2026-08-26 09:39:20,697 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $199.50 | Net Floating: $+2.36
+2026-08-26 09:44:23,721 [SUPERVISOR]: [CHILD]: 2026-08-26 09:44:23,721 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $197.14 | Equity: $199.15 | Net Floating: $+2.01
+2026-08-26 09:46:41,904 [SUPERVISOR]: ======================================================================
+2026-08-26 09:46:41,904 [SUPERVISOR]:   24/7 AUTONOMOUS SELF-HEALING SUPERVISOR STARTED
+2026-08-26 09:46:41,905 [SUPERVISOR]:   Target Bot: d:\trading bot\mt5_trading_bot\browser_bot\live_ic_markets_bot.py
+2026-08-26 09:46:41,905 [SUPERVISOR]: ======================================================================
+2026-08-26 09:46:41,905 [SUPERVISOR]: Launching Live Active Trading Bot child process...
+2026-08-26 09:46:41,914 [SUPERVISOR]: Bot successfully launched with PID: 4280
+2026-08-26 09:51:40,452 [SUPERVISOR]: [CHILD]: 2026-08-26 09:51:40,452 [INFO] [IC_TrendExpansionBot]: [HEARTBEAT] Account Healthy | Balance: $193.41 | Equity: $198.86 | Net Floating: $+5.45

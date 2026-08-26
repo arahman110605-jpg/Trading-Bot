@@ -345,7 +345,7 @@ def manage_active_trade(pos_mt5, row_m5: pd.Series, prev_m5: pd.Series, row_m15:
     thesis_score = evaluate_thesis_score(direction, row_m5, row_m15, row_h1)
     p_state.thesis_score = thesis_score
     
-    # ── STEPPED 15-PIP INSTITUTIONAL MEGA-TREND TRAILING LADDER ──
+    # ── TRUE ASYMMETRIC INSTITUTIONAL MEGA-TREND TRAILING LADDER ──
     # Calculate exact net pip profit on this trade
     if direction == "BUY":
         pip_profit = (curr_price - p_state.entry_price) / pip_size
@@ -356,78 +356,65 @@ def manage_active_trade(pos_mt5, row_m5: pd.Series, prev_m5: pd.Series, row_m15:
     if pip_profit > p_state.mfe_pips:
         p_state.mfe_pips = pip_profit
 
-    # 🪜 STEP 1: +12 PIPS GAIN (+$2.40) -> Lock Breakeven (+2 pips green buffer)
-    if pip_profit >= 12.0 and p_state.state == TradeState.INITIAL:
+    # 🪜 STEP 1: +20 PIPS GAIN (+$4.00) -> Lock Breakeven (+3 pips green buffer)
+    # Allows normal 12-15 pip intraday market retests WITHOUT scratching the trade prematurely!
+    if pip_profit >= 20.0 and p_state.state == TradeState.INITIAL:
         p_state.state = TradeState.PROFIT_PROTECTION
         if direction == "BUY":
-            new_stop = p_state.entry_price + (2.0 * pip_size)
+            new_stop = p_state.entry_price + (3.0 * pip_size)
             if new_stop > p_state.current_stop:
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
         else:
-            new_stop = p_state.entry_price - (2.0 * pip_size)
+            new_stop = p_state.entry_price - (3.0 * pip_size)
             if new_stop < p_state.current_stop:
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
-        logger.info(f"🛡️ [{pos_mt5.symbol}] STEP 1 (+{pip_profit:.1f} pips): SL locked at Entry (+2 pips green buffer). 100% RISK-FREE!")
+        logger.info(f"🛡️ [{pos_mt5.symbol}] STEP 1 (+{pip_profit:.1f} pips): SL locked at Entry (+3 pips green buffer). 100% RISK-FREE!")
 
-    # 🪜 STEP 2: +25 PIPS GAIN (+$5.00) -> Lock +10 Pips (15-pip breathing room)
-    if pip_profit >= 25.0 and p_state.state in [TradeState.INITIAL, TradeState.PROFIT_PROTECTION]:
+    # 🪜 STEP 2: +35 PIPS GAIN (+$7.00) -> Lock +18 Pips & EXPAND TP TO +80 PIPS
+    if pip_profit >= 35.0 and p_state.state in [TradeState.INITIAL, TradeState.PROFIT_PROTECTION]:
         p_state.state = TradeState.TREND_RUN
         if direction == "BUY":
-            new_stop = p_state.entry_price + (10.0 * pip_size)
-            if new_stop > p_state.current_stop:
-                p_state.current_stop = new_stop
-                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
-        else:
-            new_stop = p_state.entry_price - (10.0 * pip_size)
-            if new_stop < p_state.current_stop:
-                p_state.current_stop = new_stop
-                modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
-        logger.info(f"🔒 [{pos_mt5.symbol}] STEP 2 (+{pip_profit:.1f} pips): SL moved to +10 pips. Guaranteed +$2.00 locked in!")
-
-    # 🪜 STEP 3: +40 PIPS GAIN (+$8.00) -> Lock +20 Pips & EXPAND TP TO +80 PIPS
-    if pip_profit >= 40.0:
-        p_state.state = TradeState.MAX_PROFIT_EXPANSION
-        if direction == "BUY":
-            new_stop = p_state.entry_price + (20.0 * pip_size)
-            expanded_tp = p_state.entry_price + (80.0 * pip_size) # Expand TP for mega-trend
+            new_stop = p_state.entry_price + (18.0 * pip_size)
+            expanded_tp = p_state.entry_price + (80.0 * pip_size)
             if new_stop > p_state.current_stop:
                 p_state.current_stop = new_stop
                 p_state.current_tp = expanded_tp
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, expanded_tp)
         else:
-            new_stop = p_state.entry_price - (20.0 * pip_size)
+            new_stop = p_state.entry_price - (18.0 * pip_size)
             expanded_tp = p_state.entry_price - (80.0 * pip_size)
             if new_stop < p_state.current_stop:
                 p_state.current_stop = new_stop
                 p_state.current_tp = expanded_tp
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, expanded_tp)
-        logger.info(f"💰💰 [{pos_mt5.symbol}] STEP 3 (+{pip_profit:.1f} pips): SL at +20 pips & TP expanded to +80 pips!")
+        logger.info(f"🔒 [{pos_mt5.symbol}] STEP 2 (+{pip_profit:.1f} pips): SL moved to +18 pips (+$3.60 banked) & TP expanded to +80 pips!")
 
-    # 🪜 STEP 4: +60 PIPS GAIN (+$12.00) -> Lock +40 Pips
-    if pip_profit >= 60.0:
+    # 🪜 STEP 3: +55 PIPS GAIN (+$11.00) -> Lock +35 Pips
+    if pip_profit >= 55.0:
+        p_state.state = TradeState.MAX_PROFIT_EXPANSION
         if direction == "BUY":
-            new_stop = p_state.entry_price + (40.0 * pip_size)
+            new_stop = p_state.entry_price + (35.0 * pip_size)
             if new_stop > p_state.current_stop:
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
         else:
-            new_stop = p_state.entry_price - (40.0 * pip_size)
+            new_stop = p_state.entry_price - (35.0 * pip_size)
             if new_stop < p_state.current_stop:
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
-        logger.info(f"🚀 [{pos_mt5.symbol}] STEP 4 (+{pip_profit:.1f} pips): SL moved to +40 pips. Guaranteed +$8.00 locked in!")
+        logger.info(f"💰💰 [{pos_mt5.symbol}] STEP 3 (+{pip_profit:.1f} pips): SL at +35 pips (+$7.00 banked)!")
 
-    # 🪜 STEP 5: +80+ PIPS GAIN (+$16.00+) -> Trail 18 Pips Behind Peak High/Low
+    # 🪜 STEP 4: +80+ PIPS GAIN (+$16.00+) -> Trail 20 Pips Behind Peak High/Low
     if pip_profit >= 80.0:
         if direction == "BUY":
-            new_stop = curr_price - (18.0 * pip_size)
+            new_stop = curr_price - (20.0 * pip_size)
             if new_stop > p_state.current_stop + (2.0 * pip_size):
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
         else:
-            new_stop = curr_price + (18.0 * pip_size)
+            new_stop = curr_price + (20.0 * pip_size)
             if new_stop < p_state.current_stop - (2.0 * pip_size):
                 p_state.current_stop = new_stop
                 modify_broker_sl_tp(ticket, pos_mt5.symbol, new_stop, p_state.current_tp)
@@ -496,8 +483,11 @@ def analyze_and_trade():
                 continue
             last_processed_m5_bar[sym] = curr_bar_time
             
+            # Avoid low-liquidity rollover deadzone (21:30 - 23:30 Server Time / spreads widen significantly)
+            server_hour = datetime.now().hour
+            
             r_pips = max(18.0, (atr / pip_size) * 2.5)
-            tp_pips = r_pips * 2.5
+            tp_pips = r_pips * 3.0 # True 1:3 Asymmetric Target
             
             # Compute Real-Time Multi-Timeframe Thesis Score
             thesis_buy = evaluate_thesis_score("BUY", row_m5, row_m15, row_h1)
